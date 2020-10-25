@@ -37,16 +37,33 @@ h1{
     }
   }
   
-  #nav{
+  #tim-logo{
+    position: absolute;
+    float: left;
+    width: 100px;
+    height:50px;
+    background-image: url('../media/tim-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #tim-logo-link{
+      position: absolute;
+      transform: translate(20px, 20px);
+      width: 100px;
+      height: 50px;
+  }
+
+  #site-navigation{
     position: relative;
     float: right;
-    width: 100%;
+    width: 50%;
     text-align: left;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
   }
 
-  #nav .page_item{
+  #site-navigation .page_item{
     margin: 0 10px 0 30px;
     width: auto;
     font-size: 12px;
@@ -54,40 +71,66 @@ h1{
   }
 
   @media screen and (min-width: 600px) {
-      #nav .page_item{
-      margin: 0 10px 0 30px;
-      width: auto;
-      font-size: 15px;
+    #site-navigation{
+        width: 70%;
+    }
+    #site-navigation .page_item{
+        margin: 0 10px 0 30px;
+        width: auto;
+        font-size: 15px;
+    }
+    #tim-logo{
+        width: 75px;
+        height:37.5px;
+    }
+
+    #tim-logo-link{
+        transform: translate(15px, 15px);
+        width: 75px;
+        height: 37.5px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-      #nav .page_item{
+    #site-navigation{
+        width: 90%;
+    }
+    #site-navigation .page_item{
       margin: 0 25px 0 75px;
       font-size: 20px;
     }
+    #tim-logo{
+        width: 100px;
+        height:50px;
+    }
+
+    #tim-logo-link{
+        transform: translate(15px, 15px);
+        width: 100px;
+        height: 50px;
+    }
   }
 
-  #nav #primary-menu .nav-menu{
+  #site-navigation #primary-menu .nav-menu{
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
   }
 
-  #nav li{
+  #site-navigation li{
       list-style: none;
   }
 
-  #nav a{
+  #site-navigation a{
     color: black;
     transition: 0.3s;
     text-decoration: none;
   }
-  #nav a:hover{
+  #site-navigation a:hover{
     color: #6A07D2;
     transition: 0.3s;
   }
-  #nav a:active{
+  #site-navigation a:active{
     color: white;
     transition: 0.1s;
   }
