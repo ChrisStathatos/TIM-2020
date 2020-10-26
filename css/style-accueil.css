@@ -1,0 +1,29 @@
+#site-title{
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .2em;
+    padding-left: 10%;
+    padding-top: 30vh;
+}
+
+@media screen and (min-width: 600px) {
+    #site-title{
+        font-size: 1.4em;
+        letter-spacing: .28em;
+        font-size: min(1.4em, 2.5vw);
+        padding-left: 10%;
+        padding-top: 30vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #site-title{
+        font-size: 2vw;
+        letter-spacing: .4vw;
+        padding-left: 10%;
+        padding-top: 30vh;
+    }
+}
