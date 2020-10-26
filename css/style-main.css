@@ -26,6 +26,7 @@ h1{
 }
 
 #site-navigation{
+  margin-top: 8px;
   position: relative;
   float: right;
   width: 50%;
@@ -41,9 +42,14 @@ h1{
   text-transform: uppercase;
 }
 
+#primary-menu-burger{
+  
+}
+
 @media screen and (min-width: 600px) {
   #site-navigation{
     width: 70%;
+    margin-top: 15px;
   }
   #site-navigation .page_item{
     margin: 0 10px 0 30px;
@@ -51,34 +57,35 @@ h1{
     font-size: 15px;
   }
   #tim-logo{
-    width: 75px;
-    height:37.5px;
+    width: 65px;
+    height:32.5px;
   }
 
   #tim-logo-link{
     transform: translate(15px, 15px);
-    width: 75px;
-    height: 37.5px;
+    width: 65px;
+    height: 32.5px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #site-navigation{
     width: 90%;
+    margin-top: 20px;
   }
   #site-navigation .page_item{
     margin: 0 25px 0 75px;
     font-size: 20px;
   }
   #tim-logo{
-    width: 100px;
-    height:50px;
+    width: 85px;
+    height:42.5px;
   }
 
   #tim-logo-link{
     transform: translate(15px, 15px);
-    width: 100px;
-    height: 50px;
+    width: 85px;
+    height: 42.5px;
   }
 }
 
@@ -110,7 +117,7 @@ h1{
 
 #site-navigation #barre-haut{
   float: left;
-  background-color: #E527ED;
+  background-color: #FF04A1;
   width: 100px;
   height: 3px;
   margin-top: -15px;
