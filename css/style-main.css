@@ -33,6 +33,7 @@ h1, h2{
   text-align: left;
   font-family: 'Comfortaa', cursive;
   font-weight: normal;
+  overflow: hidden;
 }
 
 #site-navigation .page_item{

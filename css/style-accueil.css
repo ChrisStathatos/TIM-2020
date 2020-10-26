@@ -31,6 +31,40 @@
     margin-top: 8px;
 }
 
+#rectangles-gauche, #rectangles-gauche-tmp{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 25vw;
+    height: 90vh;
+    bottom: 0px;
+    left: 0px;
+    z-index: -999;
+}
+#rectangles-droit, #rectangles-droit-tmp{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 40vw;
+    height: 60vh;
+    bottom: 0px;
+    right: 0px;
+    z-index: -999;
+}
+
+#rectangles-gauche-tmp{
+    /*background-color: blue;*/
+    background-image: url("../media/rec2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+#rectangles-droit-tmp{
+    /*background-color: red;*/
+    background-image: url("../media/rec1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
 @media screen and (min-width: 600px) {
     #site-title{
         font-size: 1.4em;
