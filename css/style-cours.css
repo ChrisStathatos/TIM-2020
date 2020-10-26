@@ -1,0 +1,11 @@
+#notreProgramme{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+#grosLosange{
+    width: 292px;
+    height: 292px;
+    background-color: #6a07d2;
+}
