@@ -44,17 +44,17 @@
     }
     #site-navigation .page_item{
       margin: 0 0.625em 0 1.875em;
-      font-size: 0.94em;
+      font-size: 0.84em;
     }
     #tim-logo{
-      width: 3.5em;
-      height: 1.75em;
+      width: 3.2em;
+      height: 1.6em;
     }
   
     #tim-logo-link{
       transform: translate(15px, 15px);
-      width: 3.5em;
-      height: 1.75em;
+      width: 3.2em;
+      height: 1.6em;
     }
   }
   
