@@ -7,21 +7,29 @@ var boutonsNavArr = Array.from(boutonsNav);
 
 var idBoutonASuivre = 0;
 var idBoutonOriginal = parseInt(document.getElementById("nav").getAttribute("data-pageid"));
+var estEnHover = false;
 idBoutonASuivre = idBoutonOriginal;
 
 boutonsNavText[idBoutonASuivre].style.color = "#6A07D2";
 boutonsNavText[idBoutonASuivre].style.fontWeight = "bold";
 
+var timeout;
+
 for(var i = 0; i < boutonsNavArr.length; i++){
 
     boutonsNavArr[i].addEventListener("mouseenter", function (){
+        estEnHover = true;
         idBoutonASuivre = boutonsNavArr.indexOf(this);
-        DeplacerBarres();
+        DeplacerBarres(idBoutonASuivre, "");
+        clearTimeout(timeout);
     });
 
     boutonsNavArr[i].addEventListener("mouseleave", function (){
-        idBoutonASuivre = idBoutonOriginal;
-        DeplacerBarres();
+        estEnHover = false;
+        timeout = setTimeout(() => { 
+            if(estEnHover == false)
+                DeplacerBarres(idBoutonOriginal, "cubic-bezier(.4,0,.45,1)");
+        }, 500);
     });
 
     boutonsNavArr[i].addEventListener("mousedown", function(){
@@ -36,21 +44,31 @@ for(var i = 0; i < boutonsNavArr.length; i++){
 }
 
 setTimeout(() => { 
-    DeplacerBarres();
+    DeplacerBarres(idBoutonOriginal, "");
 }, 250);
 
 window.onresize = (function(){
-    DeplacerBarres();
+    DeplacerBarres(idBoutonASuivre, "");
     setTimeout(() => { 
-        DeplacerBarres();
+        DeplacerBarres(idBoutonASuivre, "");
     }, 300);
 })
 
-function DeplacerBarres(){
+function DeplacerBarres(idBouton, ease){
     //console.log(this);
     //console.log("OOF");
-    barreHaut.style.width = boutonsNav[idBoutonASuivre].clientWidth + 25;
-    barreBas.style.width = boutonsNav[idBoutonASuivre].clientWidth -20;
-    barreHaut.style.marginLeft = boutonsNav[idBoutonASuivre].offsetLeft - 25;
-    barreBas.style.marginLeft = boutonsNav[idBoutonASuivre].offsetLeft + 20;
+
+    if(ease != ""){
+        barreHaut.style.transitionTimingFunction = ease;
+        barreBas.style.transitionTimingFunction = ease;
+    }
+    else{
+        barreHaut.style.transitionTimingFunction = "cubic-bezier(.15,.66,.27,1)";
+        barreBas.style.transitionTimingFunction = "cubic-bezier(.15,.66,.27,1)";
+    }
+
+    barreHaut.style.width = boutonsNav[idBouton].clientWidth + 25;
+    barreBas.style.width = boutonsNav[idBouton].clientWidth -20;
+    barreHaut.style.marginLeft = boutonsNav[idBouton].offsetLeft - 25;
+    barreBas.style.marginLeft = boutonsNav[idBouton].offsetLeft + 20;
 }
