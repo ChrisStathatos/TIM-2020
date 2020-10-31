@@ -12,8 +12,7 @@
     display: flex;
     padding: 0.6rem;
     font-size: 1.5em;
-    float: right;
-    margin-left: 90%;
+    left: 90%;
     width: 100%;
     letter-spacing: 14px;
   }
@@ -44,7 +43,7 @@
     display: flex;
     padding: -0.4rem;
     font-size: 1.2em;
-    margin-left: 48%;
+    left: 50%;
     letter-spacing: 1px;
     margin-top: 15px;
     color: white;
@@ -56,8 +55,8 @@
     
       position: absolute;
       display: flex;
-     margin-top: 0.625em; 
-     margin-left: 0.625em;
+      margin-top: 0.625em; 
+      margin-left: 0.625em;
       width: 1.5625em;
       height:1.5625em;
       background-image: url('../media/maisonneuve.jpg');

@@ -65,7 +65,7 @@
     background-position: bottom right;
 }
 
-.media-accueil {
+/* .media-accueil {
     position: relative;
     display: flex;
     padding: 0.6rem;
@@ -73,7 +73,7 @@
     float: right;
     background-color: #6A07D2;
     letter-spacing: 14px;
-  }
+  } */
   
   .media-accueil a{
     color: white;
@@ -86,7 +86,7 @@
     
   }
 
-  .footer-accueil {
+  /* .footer-accueil {
     position: absolute;
     display: flex;
     height: 2.8em;
@@ -94,10 +94,30 @@
     bottom: 0;
     text-align: 10%;
     
-  }
+  } */
 
 
+  @media screen and (min-width: 400px) {
+   
 
+    .footer-accueil {
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        text-align: 10%;
+        
+      }
+
+      .media-accueil {
+        position: relative;
+        display: flex;
+        padding: 0.2rem;
+        font-size: 0.5em;
+        float: right;
+        letter-spacing: 8px;
+      }
+}
 
 @media screen and (min-width: 600px) {
     #site-title{
@@ -119,7 +139,24 @@
         margin-top: 8px;
     }
 
-    
+    .footer-accueil {
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        text-align: 10%;
+        
+      }
+
+      .media-accueil {
+        position: relative;
+        display: flex;
+        padding: 0.2rem;
+        font-size: 1em;
+        float: right;
+        /* background-color: #6A07D2; */
+        letter-spacing: 12px;
+      }
 }
 
 @media screen and (min-width: 1200px) {
@@ -140,7 +177,25 @@
         letter-spacing: .2em;
         margin-top: 8px;
     }
-  
-    
+   
+    .footer-accueil {
+        position: absolute;
+        display: flex;
+        height: 2.8em;
+        right: 0;
+        bottom: 0;
+        text-align: 10%;
+       
+      }
+
+      .media-accueil {
+        position: relative;
+        display: flex;
+        padding: 1rem;
+        font-size: 1.5em;
+        float: right;
+        /* background-color: #6A07D2; */
+        letter-spacing: 14px;
+      }
 }
 
