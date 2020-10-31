@@ -6,8 +6,8 @@ var boutonsNavText = document.getElementById("site-navigation").querySelectorAll
 var boutonsNavArr = Array.from(boutonsNav);
 
 var idBoutonASuivre = 0;
-
-idBoutonASuivre = parseInt(document.getElementById("nav").getAttribute("data-pageid"));
+var idBoutonOriginal = parseInt(document.getElementById("nav").getAttribute("data-pageid"));
+idBoutonASuivre = idBoutonOriginal;
 
 boutonsNavText[idBoutonASuivre].style.color = "#6A07D2";
 boutonsNavText[idBoutonASuivre].style.fontWeight = "bold";
@@ -16,6 +16,11 @@ for(var i = 0; i < boutonsNavArr.length; i++){
 
     boutonsNavArr[i].addEventListener("mouseenter", function (){
         idBoutonASuivre = boutonsNavArr.indexOf(this);
+        DeplacerBarres();
+    });
+
+    boutonsNavArr[i].addEventListener("mouseleave", function (){
+        idBoutonASuivre = idBoutonOriginal;
         DeplacerBarres();
     });
 
