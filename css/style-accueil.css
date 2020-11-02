@@ -65,15 +65,7 @@
     background-position: bottom right;
 }
 
-/* .media-accueil {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1.5em;
-    float: right;
-    background-color: #6A07D2;
-    letter-spacing: 14px;
-  } */
+
   
   .media-accueil a{
     color: white;
@@ -86,15 +78,18 @@
     
   }
 
-  /* .footer-accueil {
-    position: absolute;
-    display: flex;
-    height: 2.8em;
-    right: 0;
-    bottom: 0;
-    text-align: 10%;
+  #maisonneuve-accueil{
     
-  } */
+    position: absolute;
+    float: left;
+    width: 5em;
+    height:2.5em;
+    bottom: 5;
+    left: 2%;
+    background-image: url('../media/maisonneuve.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 
   @media screen and (min-width: 400px) {
@@ -117,6 +112,12 @@
         float: right;
         letter-spacing: 8px;
       }
+
+      #maisonneuve-accueil{
+        width: 1em;
+        height: 1.6em;
+        bottom: -8;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -157,6 +158,12 @@
         /* background-color: #6A07D2; */
         letter-spacing: 12px;
       }
+
+      #maisonneuve-accueil{
+        width: 3.2em;
+        height: 1.6em;
+        bottom: 2;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -194,8 +201,13 @@
         padding: 1rem;
         font-size: 1.5em;
         float: right;
-        /* background-color: #6A07D2; */
         letter-spacing: 14px;
       }
+
+      #maisonneuve-accueil{
+        width: 4.4em;
+        height:2.2em;
+        bottom: 2;
+    }
 }
 
