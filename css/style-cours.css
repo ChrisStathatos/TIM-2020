@@ -41,9 +41,11 @@
 }
 #cercles{
     /*margin-top:2em;*/
+    background-image:url("../media/motif-picot.png");
+    
     position:absolute;
     width:40em;
     height:20em;
-    background-color:#0da5c5;
+    /*background-color:#0da5c5;
 }
 
