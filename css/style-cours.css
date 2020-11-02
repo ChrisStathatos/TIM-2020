@@ -1,11 +1,28 @@
+#global{
+    margin: 0 auto;
+}
 #notreProgramme{
     display:flex;
-    align-items: center;
     justify-content: center;
-    align-self: center;
+    padding-top:13em;
+    width: 100%;
 }
 #grosLosange{
-    width: 292px;
-    height: 292px;
+    width: 25em;
+    height: 25em;
     background-color: #6a07d2;
+    transform:rotate(45deg);
+    border:#ff04a1 0.3em solid;
+    z-index: 2;
 }
+#ligne{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width:100%;
+    height:0.3em;
+    background-color: #ff04a1;
+    z-index: 1;
+}
+
