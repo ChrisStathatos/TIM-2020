@@ -4,10 +4,14 @@
 #notreProgramme{
     display:flex;
     justify-content: center;
+    align-items: center;
     padding-top:13em;
     width: 100%;
 }
 #grosLosange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25em;
     height: 25em;
     background-color: #6a07d2;
@@ -24,5 +28,24 @@
     height:0.3em;
     background-color: #ff04a1;
     z-index: 1;
+}
+#grosLosange h1 {
+    padding-bottom: 0.2em;
+    text-align: center;
+    color : #dfc516;
+    transform: rotate(-45deg);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    font-size:3em;
+    letter-spacing: 0.1em;
+}
+#cercles{
+    /*margin-top:2em;*/
+    background-image:url("../media/motif-picot.png");
+    
+    position:absolute;
+    width:40em;
+    height:20em;
+    /*background-color:#0da5c5;
 }
 
