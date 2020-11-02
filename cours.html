@@ -10,25 +10,27 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
 
-    <body>
-        <div id="nav" data-pageid="1"></div>
-        <script>
-            $(function(){
-            $("#nav").load("nav.html");
-            });
-        </script>
-        
+    <body>  
         <div id="global">
+            <div id="nav" data-pageid="1"></div>
+            <script>
+                $(function(){
+                $("#nav").load("nav.html");
+                });
+            </script>
             <div id="notreProgramme">
                 <div id="grosLosange"></div>
+                <div id="ligne"></div>
+                </div>
             </div>
+            <div id="footer" class="footer-page-fixe"></div>
+            <script>
+                $(function(){
+                $("#footer").load("footer.html");
+                });
+            </script>
         </div>
     </body>
 
-    <div id="footer" class="footer-page-fixe"></div>
-    <script>
-        $(function(){
-        $("#footer").load("footer.html");
-        });
-    </script>
+
 </html>
