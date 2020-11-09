@@ -14,40 +14,40 @@ var burgerOuvert = false;
 
 var timeout;
 
-(function() {
-    idBoutonASuivre = idBoutonOriginal;
+idBoutonASuivre = idBoutonOriginal;
 
-    boutonsNavText[idBoutonASuivre].style.color = "#6A07D2";
-    boutonsNavText[idBoutonASuivre].style.fontWeight = "bold";
+boutonsNavText[idBoutonASuivre].style.color = "#6A07D2";
+boutonsNavText[idBoutonASuivre].style.fontWeight = "bold";
 
-    for(var i = 0; i < boutonsNavArr.length; i++){
+for(var i = 0; i < boutonsNavArr.length; i++){
 
-        boutonsNavArr[i].addEventListener("mouseenter", function (){
-            estEnHover = true;
-            idBoutonASuivre = boutonsNavArr.indexOf(this);
-            DeplacerBarres(idBoutonASuivre, "");
-            clearTimeout(timeout);
-        });
-    
-        boutonsNavArr[i].addEventListener("mouseleave", function (){
-            estEnHover = false;
-            timeout = setTimeout(() => { 
-                if(estEnHover == false)
-                    DeplacerBarres(idBoutonOriginal, "cubic-bezier(.4,0,.45,1)");
-            }, 500);
-        });
-    
-        boutonsNavArr[i].addEventListener("mousedown", function(){
-            barreHaut.style.backgroundColor = "#FFFFFF";
-            barreBas.style.backgroundColor = "#FFFFFF";
-        });
-    
-        boutonsNavArr[i].addEventListener("mouseup", function(){
-            barreHaut.style.backgroundColor = "#FF04A1";
-            barreBas.style.backgroundColor = "#DFC516";
-        });
-    }
-});
+    boutonsNavArr[i].addEventListener("mouseenter", function (){
+        estEnHover = true;
+        idBoutonASuivre = boutonsNavArr.indexOf(this);
+        DeplacerBarres(idBoutonASuivre, "", false);
+        clearTimeout(timeout);
+    });
+
+    boutonsNavArr[i].addEventListener("mouseleave", function (){
+        estEnHover = false;
+        timeout = setTimeout(() => { 
+            if(estEnHover == false)
+                DeplacerBarres(idBoutonOriginal, "cubic-bezier(.4,0,.45,1)", false);
+        }, 500);
+    });
+
+    boutonsNavArr[i].addEventListener("mousedown", function(){
+        barreHaut.style.backgroundColor = "#FFFFFF";
+        barreBas.style.backgroundColor = "#FFFFFF";
+    });
+
+    boutonsNavArr[i].addEventListener("mouseup", function(){
+        barreHaut.style.backgroundColor = "#FF04A1";
+        barreBas.style.backgroundColor = "#DFC516";
+    });
+}
+
+DeplacerBarres(idBoutonOriginal, "", true);
 
 // pour une raison quelconque, il faut ajouter les styles et les events sur les éléments de la nav version burger après un petit délai
 setTimeout(() => { 
@@ -70,14 +70,10 @@ setTimeout(() => {
     });
 }, 100);
 
-setTimeout(() => { 
-    DeplacerBarres(idBoutonOriginal, "");
-}, 250);
-
 window.onresize = (function(){
-    DeplacerBarres(idBoutonASuivre, "");
+    DeplacerBarres(idBoutonASuivre, "", false);
     setTimeout(() => { 
-        DeplacerBarres(idBoutonASuivre, "");
+        DeplacerBarres(idBoutonASuivre, "", false);
     }, 300);
 })
 
@@ -88,6 +84,10 @@ function DeplacerBarres(idBouton, ease, initial){
     if(initial == false){
         barreHaut.style.transition = "margin-left 1.5s, width 1s, background-color 0.1s";
         barreBas.style.transition = "margin-left 2.25s, width 1.5s, background-color 0.1s";
+    }
+    else{
+        barreHaut.style.transition = "margin-left 0s, width 0s, background-color 0s";
+        barreBas.style.transition = "margin-left 0s, width 0s, background-color 0s";
     }
 
     if(ease != ""){
