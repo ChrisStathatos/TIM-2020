@@ -2,6 +2,16 @@ body{
     margin: 0;
 }
 
+#cover{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: #E8E8DB;
+}
+
 .grid-evenement{
     margin-top: 4em;
     display: grid;
@@ -13,6 +23,11 @@ body{
 .grid-item img{
     width: 100%;
     object-fit: cover;
+}
+
+.imgEvent:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .evenement-recent{
@@ -48,6 +63,7 @@ body{
 .description-txt{
     margin-left: 2em;
     margin-right: 2em;
+    text-align: justify;
 }
 
 .grid-evenement{
@@ -69,7 +85,7 @@ body{
     border-bottom: #dfc516 solid 0.2em ;
 }
 
-#titre-event{
+.titre-event{
     font-family: 'Comfortaa', cursive;
     margin-top: 2em;
     margin-bottom: 0;
@@ -139,4 +155,75 @@ body{
     float:left;
     justify-content: center;
     align-items: center;
+  }
+
+  #popup{
+      position: relative;
+      top: -86em;
+      grid-template-rows:[img] 50% [txt] 50% ;
+      display: none;
+      height: 85%;
+      width: 30%;
+      margin: 0 auto;
+      background-color: #bf96c8;
+      margin-bottom: 10em;
+      border:0.3em solid #dfc516 ;
+  }
+
+  #imageSelect{
+      grid-area: img;
+  }
+
+  .imgSelect{
+    width: 100%;
+    display: none;
+  }
+
+  .itemSelect{
+    
+    align-self: stretch;
+    text-align: center;
+    grid-area: txt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: none;
+  }
+
+  .titre-event-select{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.date-select{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    word-spacing: 1.1em;
+    font-weight: bold;
+}
+
+#local{
+    margin: 0 auto;
+    width: 40%;
+    border-bottom:#dfc516 0.4em solid;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #dfc516;
   }
