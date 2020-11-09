@@ -6,122 +6,174 @@
     background-image: url('../media/tim-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
   
+#tim-logo-link{
+  position: absolute;
+  transform: translate(20px, 20px);
+  width: 5em;
+  height: 2.5em;
+}
+
+#site-navigation{
+  top: 0;
+  right: 0;
+  position: absolute;
+  float: right;
+  width: max(50%, 10em);
+  text-align: left;
+  font-family: 'Comfortaa', cursive;
+  font-weight: normal;
+  overflow: hidden;
+  z-index: 999;
+}
+
+#site-navigation .page_item{
+  margin: 0 0.625em 0 1.875em;
+  width: auto;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+#primary-menu{
+  display: none;
+}
+#primary-menu-burger{
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translate(100%, 0);
+}
+
+#primary-menu-burger-bouton{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 1em;
+  font-size: 4em;
+  transition: transform 0.5s;
+  transform: translate(-120%, 0) rotate(0);
+  pointer-events: all;
+}
+
+#site-navigation .page_item_burger{
+  margin: 5vh 0 0 0;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+#primary-menu-burger .nav-menu{
+  position: relative;
+  margin: 2em 5vw 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  #site-navigation{
+    position: relative;
+    width: 70%;
+    margin-top: 15px;
+  }
+  #site-navigation .page_item{
+    margin: 0 0.625em 0 1.875em;
+    font-size: 0.84em;
+  }
+  #tim-logo{
+    width: 3.2em;
+    height: 1.6em;
+  }
+
   #tim-logo-link{
-    position: absolute;
-    transform: translate(20px, 20px);
+    transform: translate(15px, 15px);
+    width: 3.2em;
+    height: 1.6em;
+  }
+
+  #primary-menu{
+      display: inherit;
+  }
+  #primary-menu-burger{
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #site-navigation{
+    position: relative;
+    width: 90%;
+    margin-top: 1.25em;
+  }
+  #site-navigation .page_item{
+    margin: 0 1.5625em 0 3em;
+    font-size: 1.25em;
+  }
+  #tim-logo{
+    width: 4.4em;
+    height:2.2em;
+  }
+
+  #tim-logo-link{
+    transform: translate(15px, 15px);
     width: 5em;
     height: 2.5em;
   }
-  
-  #site-navigation{
-    margin-top: 8px;
-    position: relative;
-    float: right;
-    width: 50%;
-    text-align: left;
-    font-family: 'Comfortaa', cursive;
-    font-weight: normal;
-    overflow: hidden;
+  #primary-menu{
+      display: inherit;
   }
-  
-  #site-navigation .page_item{
-    margin: 0 0.625em 0 1.875em;
-    width: auto;
-    font-size: 0.75em;
-    text-transform: uppercase;
-  }
-  
   #primary-menu-burger{
-    
+      display: none;
   }
-  
-  @media screen and (min-width: 600px) {
-    #site-navigation{
-      width: 70%;
-      margin-top: 15px;
-    }
-    #site-navigation .page_item{
-      margin: 0 0.625em 0 1.875em;
-      font-size: 0.84em;
-    }
-    #tim-logo{
-      width: 3.2em;
-      height: 1.6em;
-    }
-  
-    #tim-logo-link{
-      transform: translate(15px, 15px);
-      width: 3.2em;
-      height: 1.6em;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    #site-navigation{
-      width: 90%;
-      margin-top: 1.25em;
-    }
-    #site-navigation .page_item{
-      margin: 0 1.5625em 0 3em;
-      font-size: 1.25em;
-    }
-    #tim-logo{
-      width: 4.4em;
-      height:2.2em;
-    }
-  
-    #tim-logo-link{
-      transform: translate(15px, 15px);
-      width: 5em;
-      height: 2.5em;
-    }
-  }
-  
-  #site-navigation #primary-menu .nav-menu{
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #site-navigation li{
-    list-style: none;
-  }
-  
-  #site-navigation a{
-    color: black;
-    transition: 0.3s;
-    text-decoration: none;
-  }
-  #site-navigation a:hover{
-    color: #6A07D2;
-    transition: 0.3s;
-    font-weight: bold;
-  }
-  #site-navigation a:active{
-    color: white;
-    transition: 0.1s;
-    font-weight: bold;
-  }
-  
-  #site-navigation #barre-haut{
-    float: left;
-    background-color: #FF04A1;
-    width: 100px;
-    height: 3px;
-    margin-top: -15px;
-    margin-left: 125vw;
-    transition: margin-left 1.5s, width 1s, background-color 0.1s;
-    transition-timing-function: cubic-bezier(.15,.66,.27,1);
-  }
-  #site-navigation #barre-bas{
-    float: left;
-    background-color: #DFC516;
-    width: 70px;
-    height: 3px;
-    margin-top: -5px;
-    margin-left: 125vw;
-    transition: margin-left 2.25s, width 1.5s, background-color 0.1s;
-    transition-timing-function: cubic-bezier(.15,.66,.27,1);
-  }
+}
+
+#site-navigation #primary-menu .nav-menu{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#site-navigation li{
+  list-style: none;
+}
+
+#site-navigation a{
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#site-navigation a:hover{
+  color: #6A07D2;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#site-navigation a:active{
+  color: white;
+  transition: 0.1s;
+  font-weight: bold;
+}
+
+#site-navigation #barre-haut{
+  float: left;
+  background-color: #FF04A1;
+  width: 100px;
+  height: 3px;
+  margin-top: -15px;
+  margin-left: 125vw;
+  transition-timing-function: cubic-bezier(.15,.66,.27,1);
+}
+#site-navigation #barre-bas{
+  float: left;
+  background-color: #DFC516;
+  width: 70px;
+  height: 3px;
+  margin-top: -5px;
+  margin-left: 125vw;
+  transition-timing-function: cubic-bezier(.15,.66,.27,1);
+}
