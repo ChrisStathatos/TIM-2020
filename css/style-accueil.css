@@ -81,43 +81,48 @@
   #maisonneuve-accueil{
     
     position: absolute;
-    float: left;
-    width: 5em;
-    height:2.5em;
-    bottom: 5;
-    left: 2%;
+    display: flex;
+    margin-top: 0.625em; 
+    margin-left: 1.625em;
+    width: 1.5625em;
+    height:1.5625em;
     background-image: url('../media/maisonneuve.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.footer-accueil{
+    
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 2.8em;
+    text-align: 10%;
+    bottom: 0%;
+
+}
+
+.media-accueil {
+    position: relative;
+    display: flex;
+    padding: 0.6rem;
+    font-size: 1.5em;
+    left: 89%;
+    letter-spacing: 14px;
+  }
+
 
   @media screen and (min-width: 400px) {
    
-
-    .footer-accueil {
-        position: absolute;
-        display: flex;
-        right: 0;
-        bottom: 0;
-        text-align: 10%;
-        
-      }
-
-      .media-accueil {
-        position: relative;
-        display: flex;
-        padding: 0.2rem;
-        font-size: 0.5em;
-        float: right;
-        letter-spacing: 8px;
-      }
-
-      #maisonneuve-accueil{
-        width: 1em;
-        height: 1.6em;
-        bottom: -8;
+    .media-accueil {
+    position: relative;
+    display: flex;
+    padding: 0.6rem;
+    font-size: 1em;
+    left: 70%;
+    letter-spacing: 14px;
     }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -140,30 +145,18 @@
         margin-top: 8px;
     }
 
-    .footer-accueil {
-        position: absolute;
-        display: flex;
-        right: 0;
-        bottom: 0;
-        text-align: 10%;
-        
-      }
+   
 
       .media-accueil {
         position: relative;
         display: flex;
-        padding: 0.2rem;
-        font-size: 1em;
-        float: right;
-        /* background-color: #6A07D2; */
-        letter-spacing: 12px;
+        padding: 0.6rem;
+        font-size: 1.4em;
+        left: 80%;
+        letter-spacing: 14px;
       }
 
-      #maisonneuve-accueil{
-        width: 3.2em;
-        height: 1.6em;
-        bottom: 2;
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,16 +191,10 @@
       .media-accueil {
         position: relative;
         display: flex;
-        padding: 1rem;
+        padding: 0.6rem;
         font-size: 1.5em;
-        float: right;
+        left: 90%;
         letter-spacing: 14px;
       }
-
-      #maisonneuve-accueil{
-        width: 4.4em;
-        height:2.2em;
-        bottom: 2;
-    }
 }
 

@@ -36,6 +36,14 @@
                 });
             </script>
         </div>
+        <div id="cours"> </div>
+      <script>
+          
+          $.getJSON('data/cours.json', function(obj) {
+    document.getElementById("cours").textContent = obj.nom;
+});
+      </script>
+
     </body>
 
 
