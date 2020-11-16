@@ -7,7 +7,7 @@
 
 <script>
 module.exports = {
-  name: "app",
+  name: "app-prof",
   components: {
     profs: httpVueLoader("js/profs.vue"),
     

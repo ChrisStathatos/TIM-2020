@@ -1,3 +1,13 @@
+
+.interior{
+  margin-top: 90%;
+  margin-right: 100%;
+  padding-top: 50%;
+  padding-right: 30%
+}
+
+
+
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
@@ -19,13 +29,15 @@
 }
 
 .modal-window > div {
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2em;
-  background: #ffffff;
+  width: 800px;
+      height: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+       border:#dfc516 0.8em solid;
 }
 
 .modal-window header {
@@ -33,22 +45,66 @@
 }
 
 .modal-window h1 {
-  font-size: 150%;
-  margin: 0 0 15px;
+  
+    font-size: 200%;
+    margin: 0 0 15px;
+    color: #6a07d2;
+    font-family: 'Montserrat',sans-serif;
+  
 }
 
 .modal-close {
-  color: #aaa;
+  color:  #6a07d2;
   line-height: 50px;
-  font-size: 80%;
+  font-size: 50px;
   position: absolute;
   right: 0;
   text-align: center;
-  top: 0;
+  top: 10;
   width: 70px;
   text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
 }
 
 .modal-close:hover {
   color: black;
+}
+
+.btn {
+  background-color: #6a07d2;
+  padding: 1em 1em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  width: 8em;
+  height: 8em;
+  transform:rotate(45deg);
+  border:#dfc516 0.5em solid;
+  z-index: 2;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Montserrat',sans-serif;
+ 
+}
+
+
+.btn:hover {
+  background-color: #dfc516;
+  border:#6a07d2 0.5em solid;
+}
+
+
+
+.textBtn{
+  transform:rotate(-45deg);
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.ponderation{
+  color: #6a07d2;
+   font-size: 30px;
+  font-family: 'Montserrat',sans-serif;
+  
 }

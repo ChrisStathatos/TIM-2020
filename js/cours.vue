@@ -6,13 +6,15 @@
                 <a class="btn"  :href="'#' + cours.nom">{{cours.nom}} </a>
             </div>
         
+        <!-- La fênetre de pop-up -->
             <div :id="cours.nom" class="modal-window">
                 <div>
                     <a :href="'#' + index + 'cours'" title="Close" class="modal-close">X</a>
                     <h1>{{cours.nom}}</h1>
-                    <div>Pondération: {{cours.ponderation}}</div>
+                    <div class="ponderation"> {{cours.ponderation}}</div>
                     <div >Préalable: {{cours.prealabe}}</div>
-                    <vue-markdown>{{cours.description}}</vue-markdown>
+                    <vue-markdown class="description">{{cours.description}}</vue-markdown>
+                      <div >{{cours.photo}}</div>
                     
                     
                 </div>
@@ -66,6 +68,7 @@ module.exports = {
       background: #ffffff;
        border:#dfc516 0.8em solid;
     }
+    
     header {
       font-weight: bold;
     }
@@ -94,8 +97,17 @@ module.exports = {
   }
   
  
+.ponderation{
+      color: #6a07d2;
+       font-size: 30px;
+      font-family: 'Montserrat',sans-serif;
+      
+    }
 
 
+.description{
+  font-family: 'Poppins Light',sans-serif;
+}
 
   a {
     color: white;

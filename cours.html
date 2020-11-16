@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style-cours.css">
     <link rel="stylesheet" href="css/style-footer.css">
     <link rel="stylesheet" href="css/modal.css">
+    <script src="js/cours.js"></script>
     <title>Cours - TIM - Technique d'Intégration Multimédia</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
@@ -31,18 +32,22 @@
 
     </div>
 
-    <div id="app">
+    <!-- <div id="app">
         <mon-app></mon-app>
-    </div>
+    </div> -->
 
-   // <ul id="listeDesCours"></ul>
-
-    
-<script src="/dist/sass.js"></script>
+<!-- <script src="/dist/sass.js"></script>
 <script src="https://unpkg.com/vue"></script>
 <script src="/js/vue-markdown.js"></script>
 <script src="https://unpkg.com/http-vue-loader"></script>
-<script src="/js/vueConfig.js" type="module"></script>
+<script src="/js/vueConfig.js" type="module"></script> -->
+
+
+
+    <ul id="listeDesCours"></ul>
+
+    
+
     <script >
 
         $(function () {
@@ -52,40 +57,6 @@
             $("#footer").load("footer.html");
         });
 
-        // fetch("data/cours.json")
-        //     .then(reponse => reponse.json())
-        //     .then(lesCours => {
-        //         const ulCours = document.querySelector("#listeDesCours")
-        //         // console.log(lesCours)
-
-        //         for (const [indexSession, uneSession] of Object.entries(lesCours)) {
-        //             // console.log(typeof uneSession)
-        //             const elUneSession = document.createElement("div")
-        //             elUneSession.style = "display: flex; justify-content: space-around;"
-        //             for (const unCours of uneSession) {
-        //                 const elUnCours = document.createElement("div")
-
-        //                 elUnCours.innerHTML = `
-        //                 <div class="interior" style="margin: 5%;">
-        //                     <a class="btn" href="#${unCours.nom}">👋 Basic CSS-Only Modal</a>
-        //                 </div>
-        //                 <div id="${unCours.nom}" class="modal-window">
-        //         <div>
-        //             <a href="#" title="Close" class="modal-close">Close</a>
-        //             <h1>${unCours.nom}</h1>
-        //             <div>${unCours.description}</div>
-        //             <div><small>${unCours.ponderation}</small></div>
-        //             <a href="https://aminoeditor.com" target="_blank">👉 ${unCours.prealabe}</div>
-        //             </div>
-        //         </div>`;
-        //                 elUneSession.appendChild(elUnCours);
-
-        //             }
-
-        //             ulCours.appendChild(elUneSession);
-        //         }
-
-        //     })
 
     </script>
 
