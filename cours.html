@@ -1,76 +1,68 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style-main.css">
-        <link rel="stylesheet" href="css/style-cours.css">
-        <link rel="stylesheet" href="css/style-footer.css">
-        <title>Cours - TIM - Technique d'Intégration Multimédia</title>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    </head>
 
-    <body>  
-        <div id="global">
-            <div id="nav" data-pageid="1"></div>
-                <script>
-                    $(function(){
-                    $("#nav").load("nav.html");
-                    });
-                </script>
-            <div id="notreProgramme">
-                <div id="grosLosange">
-                    <h1>
-                        NOTRE<br>PROGRAMME</h1>
-                </div>
-                <div id="ligne"></div>
-                <div id="cercles"></div>
-            </div>
-            <div id="cours">
-                <div class="sessions">
-                     <p>Session 1</p>
-                     <div class="losanges">
-                        <div class="losange"></div>
-                        <div class="losange"></div>
-                        <div class="losange"></div>
-                        <div class="losange"></div>
-                    </div>
-                    
-                </div>
-                <div class="sessions">
-                    <div> <p>Session 2</p></div>
-                </div>
-                <div class="sessions">
-                    <div> <p>Session 3</p></div>
-                </div>
-                <div class="sessions">
-                    <div> <p>Session 4</p></div>
-                </div>
-                <div class="sessions">
-                    <div> <p>Session 5</p></div>
-                </div>
-                <div class="sessions">
-                    <div> <p>Session 6</p></div>
-                </div>
-            </div>
-                
-        </div>
-            <div id="footer" class="footer-page-fixe"></div>
-            <script>
-                $(function(){
-                $("#footer").load("footer.html");
-                });
-            </script>
-        </div>
-        <div id="cours"> </div>
-      <script>
-          
-          $.getJSON('data/cours.json', function(obj) {
-    document.getElementById("cours").textContent = obj.nom;
-});
-      </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/style-cours.css">
+    <link rel="stylesheet" href="css/style-footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/cours.js"></script>
+    <title>Cours - TIM - Technique d'Intégration Multimédia</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
 
-    </body>
+<body>
+    <div id="global">
+        <div id="nav" data-pageid="1"></div>
+
+        <div id="notreProgramme">
+            <div id="grosLosange">
+                <h1>
+                    NOTRE<br>PROGRAMME</h1>
+            </div>
+            <div id="ligne"></div>
+            <div id="cercles">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer-page-fixe"></div>
+
+    </div>
+
+    <!-- <div id="app">
+        <mon-app></mon-app>
+    </div> -->
+
+<!-- <script src="/dist/sass.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="/js/vue-markdown.js"></script>
+<script src="https://unpkg.com/http-vue-loader"></script>
+<script src="/js/vueConfig.js" type="module"></script> -->
+
+
+
+    <ul id="listeDesCours"></ul>
+
+    
+
+    <script >
+
+        $(function () {
+            $("#nav").load("nav.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+
+
+    </script>
+
+
+
+</body>
 
 
 </html>
