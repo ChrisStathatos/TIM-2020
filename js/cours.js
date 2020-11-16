@@ -9,7 +9,7 @@ fetch("data/cours.json")
                 for (const [indexSession, uneSession] of Object.entries(lesCours)) {
                     // console.log(typeof uneSession)
                     const elUneSession = document.createElement("div")
-                    elUneSession.style = "display: flex; justify-content: space-around;"
+                    elUneSession.classList = "sessions";
                     for (const unCours of uneSession) {
                         const elUnCours = document.createElement("div")
 

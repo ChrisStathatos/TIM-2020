@@ -81,6 +81,9 @@ window.addEventListener('load', function () {
     setTimeout(() => { 
         DeplacerBarres(idBoutonASuivre, "", true);
     }, 100);
+    setTimeout(() => { 
+        DeplacerBarres(idBoutonASuivre, "", true);
+    }, 300);
 })
 
 function DeplacerBarres(idBouton, ease, initial){

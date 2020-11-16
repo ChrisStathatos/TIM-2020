@@ -48,4 +48,17 @@
     height:20em;
     /*background-color:#0da5c5;*/
 }
+.sessions{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    text-align: center;
+    
+}
+.textBtn{
+    margin : 0 0 0 0 !important;
+}
+
+
 
