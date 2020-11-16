@@ -77,6 +77,12 @@ window.onresize = (function(){
     }, 300);
 })
 
+window.addEventListener('load', function () {
+    setTimeout(() => { 
+        DeplacerBarres(idBoutonASuivre, "", true);
+    }, 100);
+})
+
 function DeplacerBarres(idBouton, ease, initial){
     //console.log(this);
     //console.log("OOF");
