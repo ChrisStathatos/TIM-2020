@@ -1,5 +1,34 @@
+@media screen and (max-width: 600px) {
 body{
     margin: 0;
+}
+
+.boutonEvent{
+  display: block;
+}
+
+#Evenement{
+  justify-self: center;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+  color: #6a07d2;
+  grid-area: txt;
+  width: min-content;
+}
+
+.ligne{
+  background-color:  #ff04a1;
+  width: 100%;
+  height: 0.5em;
+}
+
+#titre-page{
+  align-items: center;
+  display: grid;
+  grid-template-areas: "ligne1 txt ligne2";
+  grid-template-columns: 25% 50% 25%;
 }
 
 #cover{
@@ -28,13 +57,20 @@ body{
 .evenement-recent{
     margin: 0 auto;
     padding-top: 8em;
-    width: 60%;
+    width: 100%;
 }
 
 #event{
     display: grid;
-    grid-template-columns: 1;
-    width: 95%;
+    grid-template-areas: 
+    "image"
+    "description";
+    width: 100%;
+}
+
+#description{
+  grid-area: description;
+  text-align: center;
 }
 
 .event-item img{
@@ -55,63 +91,73 @@ body{
     text-transform: none;
 }
 
+#description-event-recent{
+  display: none;
+}
+
 .description-txt{
     margin-left: 2em;
     margin-right: 2em;
     text-align: justify;
+    display: none;
 }
 
 .grid-evenement{
     text-align: center;
 }
 
-#titre-event-recent {
-    font-family: 'Comfortaa', cursive;
-    margin-bottom: 0;
-    font-size: 1.8em;
-}
-
-.event-item h3{
-    width: fit-content;
-    margin-top: 0.3em;
-    word-spacing: 1.1em;
-    font-weight: bold;
-    padding-bottom: 1em;
-    border-bottom: #dfc516 solid 0.2em ;
-}
-
+.titre-event-recent,
 .titre-event{
     font-family: 'Comfortaa', cursive;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
+.event-item h3,
 .date{
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin-top: 0.5em;
-    margin-bottom: 3em;
-    word-spacing: 1.1em;
+    margin-bottom: 2em;
     font-weight: bold;
 }
 
-#afficherPlus{
+#afficherPlus-mobile{
     display: flex;
     width: 100%;
     justify-items: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     justify-content: center;
     text-transform: uppercase;
-    margin-bottom: 8em;
-    margin-top: 2em;
 }
 
 #bouton{ 
-    color: black;
+    color: #6a07d2;
     text-decoration: none;
 }
 
+
+.border-outer-mobile{
+  height:3.5em;
+  border:solid 0.2em #6a07d2;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  width: 50%;
+}
+
+.border-mobile{
+  display: flex;
+  padding-right: 0.2em;
+  padding-bottom: 0.2em;
+  height:100%;
+  width:100%;
+  border:solid 0.2em #ff04a1;
+  float:left;
+  justify-content: center;
+  align-items: center;
+}
 
   #popup{
       z-index: 10001;
@@ -220,6 +266,7 @@ body{
   .active, .dot:hover {
     background-color: #dfc516;
   }
+}
 @media screen and (min-width: 600px) {
 #cover{
     position: absolute;
@@ -273,7 +320,8 @@ body{
 }
 
 #description-event-recent,
-.description-txt{
+.description-txt,
+.description-txt-popup{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-transform: none;
@@ -282,7 +330,13 @@ body{
 .description-txt{
     margin-left: 2em;
     margin-right: 2em;
-    text-align: justify;
+    text-align: center;
+}
+
+.description-txt-popup{
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: justify;
 }
 
 .grid-evenement{
@@ -298,7 +352,6 @@ body{
 .event-item h3{
     width: fit-content;
     margin-top: 0.3em;
-    word-spacing: 1.1em;
     font-weight: bold;
     padding-bottom: 1em;
     border-bottom: #dfc516 solid 0.2em ;
@@ -316,7 +369,6 @@ body{
     font-size: 0.9em;
     margin-top: 0.5em;
     margin-bottom: 3em;
-    word-spacing: 1.1em;
     font-weight: bold;
 }
 
@@ -325,9 +377,10 @@ body{
     width: 100%;
     justify-items: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     justify-content: center;
     text-transform: uppercase;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
     margin-top: 2em;
 }
 
@@ -456,7 +509,6 @@ body{
     font-size: 0.9em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    word-spacing: 1.1em;
     font-weight: bold;
 }
 
@@ -483,4 +535,13 @@ body{
   .active, .dot:hover {
     background-color: #dfc516;
   }
+  .boutonEvent{
+    display: none;
+  }
+  #Evenement{
+    display: none;
+  }
+  #afficherPlus-mobile{
+display: none;
+}
 }
