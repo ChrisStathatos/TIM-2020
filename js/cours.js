@@ -5,13 +5,19 @@ fetch("data/cours.json")
             .then(lesCours => {
                 const ulCours = document.querySelector("#listeDesCours")
                 // console.log(lesCours)
-
+                var i = 1;
                 for (const [indexSession, uneSession] of Object.entries(lesCours)) {
+                    
                     // console.log(typeof uneSession)
-                    const elUneSession = document.createElement("div")
+                    const elUneSession = document.createElement("div");
                     elUneSession.classList = "sessions";
+                    const numeroSession = document.createElement("h1");
+                    numeroSession.textContent = "Session " + i;
+                    elUneSession.appendChild(numeroSession);
+
                     for (const unCours of uneSession) {
                         const elUnCours = document.createElement("div")
+                    
 
                         elUnCours.innerHTML = `
                         <div class="interior">
@@ -32,6 +38,7 @@ fetch("data/cours.json")
                     }
 
                     ulCours.appendChild(elUneSession);
+                    i++
                 }
 
             })

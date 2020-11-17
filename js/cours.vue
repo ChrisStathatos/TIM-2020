@@ -135,7 +135,7 @@ module.exports = {
       padding-right: 0.3em;
     }
     width: 5em;
-    height: 2em;
+    height: 5em;
     transform:rotate(45deg);
     border:#dfc516 0.3em solid;
     // z-index: 2;
