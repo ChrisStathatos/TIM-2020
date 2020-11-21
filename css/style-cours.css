@@ -62,5 +62,13 @@
     margin-top:10vw;
     font-size:1vw;
   }
+.btnChoix{
+    margin-left:5vw;
+    width:1vw;
+    height:1vw;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 99999;
+}
 
 
