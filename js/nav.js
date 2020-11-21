@@ -10,6 +10,7 @@ var boutonNavBurgerBouton = document.getElementById("primary-menu-burger-bouton"
 var idBoutonASuivre = 0;
 var idBoutonOriginal = parseInt(document.getElementById("nav").getAttribute("data-pageid"));
 var estEnHover = false;
+var aHoverUneFois = false;
 var burgerOuvert = false;
 
 var timeout;
@@ -46,8 +47,6 @@ for(var i = 0; i < boutonsNavArr.length; i++){
         barreBas.style.backgroundColor = "#DFC516";
     });
 }
-
-DeplacerBarres(idBoutonOriginal, "", true);
 
 // pour une raison quelconque, il faut ajouter les styles et les events sur les éléments de la nav version burger après un petit délai
 setTimeout(() => { 
@@ -86,6 +85,16 @@ window.addEventListener('load', function () {
     }, 300);
 })
 
+async function BarresInitiales(){
+    var timer = ms => new Promise(res => setTimeout(res, ms));
+    while(aHoverUneFois == false){
+        DeplacerBarres(idBoutonOriginal, "", true);
+        await timer(100);
+    }
+}
+
+BarresInitiales();
+
 function DeplacerBarres(idBouton, ease, initial){
     //console.log(this);
     //console.log("OOF");
@@ -93,6 +102,7 @@ function DeplacerBarres(idBouton, ease, initial){
     if(initial == false){
         barreHaut.style.transition = "margin-left 1.5s, width 1s, background-color 0.1s";
         barreBas.style.transition = "margin-left 2.25s, width 1.5s, background-color 0.1s";
+        aHoverUneFois = true;
     }
     else{
         barreHaut.style.transition = "margin-left 0s, width 0s, background-color 0s";
