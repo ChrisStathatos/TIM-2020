@@ -1,5 +1,10 @@
 #global{
     margin: 0 auto;
+    
+}
+#global h1{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
 }
 #notreProgramme{
     display:flex;
@@ -34,8 +39,6 @@
     text-align: center;
     color : #dfc516;
     transform: rotate(-45deg);
-    font-family: 'Montserrat',sans-serif;
-    font-weight: bolder;
     font-size:3em;
     letter-spacing: 0.1em;
 }
@@ -54,11 +57,10 @@
 }
 .btn{
     text-align: center;
-    
 }
-.textBtn{
-    margin : 0 0 0 0 !important;
-}
-
+.sessionTxt{
+    margin-top:10vw;
+    font-size:1vw;
+  }
 
 

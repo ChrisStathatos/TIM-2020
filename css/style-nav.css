@@ -38,6 +38,7 @@
 #primary-menu{
   display: none;
 }
+
 #primary-menu-burger{
   position: fixed;
   display: flex;

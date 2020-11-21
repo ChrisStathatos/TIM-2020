@@ -6,8 +6,6 @@
   padding-right: 30%
 }
 
-
-
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
@@ -29,7 +27,7 @@
 }
 
 .modal-window > div {
-      width:60%;
+      width: 60%;
       height: 70%;
       position: absolute;
       top: 50%;
@@ -76,8 +74,8 @@
   border-radius: 3px;
   text-decoration: none;
   color: white;
-  width: 8em;
-  height: 8em;
+  width: 7vw;
+  height: 7vw;
   transform:rotate(45deg);
   border:#dfc516 0.5em solid;
   z-index: 2;
@@ -98,13 +96,16 @@
 
 .textBtn{
   transform:rotate(-45deg);
-  margin-left: 25px;
-  margin-bottom: 30px;
+  font-size:1vw;
 }
 
 .ponderation{
   color: #6a07d2;
    font-size: 30px;
   font-family: 'Montserrat',sans-serif;
+  
+}
+.sessionTxt{
+  font-size:1vw;
   
 }
