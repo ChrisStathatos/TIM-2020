@@ -46,6 +46,11 @@ for(var i = 0; i < boutonsNavArr.length; i++){
         barreHaut.style.backgroundColor = "#FF04A1";
         barreBas.style.backgroundColor = "#DFC516";
     });
+
+    boutonsNavArr[i].addEventListener("mouseleave", function(){
+        barreHaut.style.backgroundColor = "#FF04A1";
+        barreBas.style.backgroundColor = "#DFC516";
+    });
 }
 
 // pour une raison quelconque, il faut ajouter les styles et les events sur les éléments de la nav version burger après un petit délai

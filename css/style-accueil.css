@@ -31,6 +31,19 @@
     margin-top: 8px;
 }
 
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+#site-subtitle:hover{
+    color: #6A07D2;
+    transition: 0.3s;
+}
+#site-subtitle:active{
+    color: white;
+    transition: 0.1s;
+}
+
 #rectangles-gauche, #rectangles-gauche-tmp{
     position: absolute;
     margin: 0 0 0 0;
