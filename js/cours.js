@@ -47,8 +47,9 @@ fetch("data/cours.json")
                             <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
                             <h1>${unCours[0].nom}</h1>
                             <div class="ponderation">${unCours[0].ponderation}</div>
-                            <div> Préalabe: ${unCours[0].prealabe}</div>
-                            <vue-markdown>${unCours[0].description}</vue-markdown>
+                            <div > <p class="prerequis">Cours prérequis:</p> <br> <p class="prealabe">${unCours[0].prealabe}</p></div>
+                            <vue-markdown class="description">${unCours[0].description}</vue-markdown>
+                            <img class="imgCours"  src="media/videoPhoto.png" alt=""></div>
                         </div>
                     </div>`;
                         elUneSession.appendChild(elUnCours);
