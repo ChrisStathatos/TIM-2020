@@ -40,7 +40,7 @@ fetch("data/cours.json")
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
                             <div class="interior">
-                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nom}</p></a>
+                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>
