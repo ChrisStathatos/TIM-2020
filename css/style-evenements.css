@@ -211,6 +211,7 @@ body{
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
   }
+  
   .imgSelect.transparent{
       opacity: 0;
   }
@@ -293,7 +294,11 @@ body{
 
 .imgEvent:hover{
     cursor: pointer;
-    opacity: 0.5;
+    filter: grayscale(0.8);
+}
+
+.imgEvent:active{
+  filter: grayscale();
 }
 
 .evenement-recent{
