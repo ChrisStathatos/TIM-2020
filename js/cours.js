@@ -26,7 +26,7 @@ fetch("data/cours.json")
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>
-                            <a href="#" title="Close" class="modal-close">X</a>
+                            <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
                             <h1>${unCours[0].nom}</h1>
                     
                             <div class="ponderation">${unCours[0].ponderation}</div>
@@ -44,7 +44,7 @@ fetch("data/cours.json")
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>
-                            <a href="#" title="Close" class="modal-close">X</a>
+                            <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
                             <h1>${unCours[0].nom}</h1>
                             <div class="ponderation">${unCours[0].ponderation}</div>
                             <div> Préalabe: ${unCours[0].prealabe}</div>
