@@ -98,6 +98,7 @@
 .textBtn{
   transform:rotate(-45deg);
   font-size:1vw;
+  text-transform: uppercase;
 }
 
 .ponderation{
