@@ -270,7 +270,7 @@ body{
 }
 @media screen and (min-width: 600px) {
 #cover{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     display: none;
@@ -438,8 +438,10 @@ body{
 
   #popup{
       z-index: 10001;
-      position: relative;
-      top: -86em;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 30;
       grid-template-rows:[img] 50% [txt] 50% ;
       display: none;
       height: 90%;
