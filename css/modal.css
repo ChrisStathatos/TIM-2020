@@ -1,8 +1,8 @@
 
 .interior{
-  margin-top: 90%;
+  margin-top: 60%;
   margin-right: 100%;
-  padding-top: 50%;
+  padding-top: 80%;
   padding-right: 30%
 }
 
@@ -97,6 +97,7 @@
 .textBtn{
   transform:rotate(-45deg);
   font-size:1vw;
+  text-transform: uppercase;
 }
 
 .ponderation{
