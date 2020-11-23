@@ -12,6 +12,7 @@
     
     <body>
         <div id="global">
+            <div id="cover" onclick="fermerPopUp()"></div>
             <div id="nav" data-pageid="2"></div>
             <script>
                 $(function(){
@@ -22,27 +23,31 @@
             <!-- code HTML de la page ici -->
             <div class="section-profs">
                 <div class="grid-equipe">
-                    <div class="boite-photo prof1"><img class="imgEquipe" title="Camille Semaan" src="media/camille.jpg" alt="Camille Semaan"></div>
-                    <div class="boite-photo prof2"><img class="imgEquipe" title="" src="media/caroline.jpg" alt=""></div>
-                    <div class="boite-photo prof3"><img class="imgEquipe" title="" src="media/denis.jpg" alt=""> </div>
-                    <div class="boite-photo prof4"><img class="imgEquipe" title="" src="media/dominic.jpg" alt=""></div>
-                    <div class="boite-photo prof5"><img class="imgEquipe" title="" src="media/eddy.jpg" alt=""></div>
-                    <div class="boite-photo prof6"><img class="imgEquipe" title="" src="media/gregory.jpg" alt=""></div>
-                    <div class="boite-photo prof7"><img class="imgEquipe" title="" src="media/johanne.jpg" alt=""></div>
-                    <div class="boite-photo prof8"><img class="imgEquipe" title="" src="media/jonathan.jpg" alt=""></div>
-                    <div class="boite-photo prof9"><img class="imgEquipe" title="" src="media/manon.jpg" alt=""></div>
-                    <div class="boite-photo prof10"><img class="imgEquipe" title="" src="media/martin.jpg" alt=""></div>
-                    <div class="boite-photo prof11"><img class="imgEquipe" title="" src="media/mathieu.jpg" alt=""></div>
-                    <div class="boite-photo prof12"><img class="imgEquipe" title="" src="media/vahik.jpg" alt=""></div>
-                    <div class="boite-photo prof13"><img class="imgEquipe" title="" src="media/vincent.jpg" alt=""></div>
-                    <div class="boite-photo prof14"><img class="imgEquipe" title="" src="media/ahmed.jpg" alt=""></div>
+                    <div class="boite-photo prof1"><img class="imgEquipe" title="Camille Semaan" onclick="poppup()" src="media/camille.jpg" alt=""></div>
+                    <div class="boite-photo prof2"><img class="imgEquipe" title="Caroline Martin" onclick="poppup()" src="media/caroline.jpg" alt=""></div>
+                    <div class="boite-photo prof3"><img class="imgEquipe" title="Denis Pellerin" onclick="poppup()" src="media/denis.jpg" alt=""> </div>
+                    <div class="boite-photo prof4"><img class="imgEquipe" title="Dominic Girard" onclick="poppup()" src="media/dominic.jpg" alt=""></div>
+                    <div class="boite-photo prof5"><img class="imgEquipe" title="Eddy Martin" onclick="poppup()" src="media/eddy.jpg" alt=""></div>
+                    <div class="boite-photo prof6"><img class="imgEquipe" title="Grégory Bony" onclick="poppup()" src="media/gregory.jpg" alt=""></div>
+                    <div class="boite-photo prof7"><img class="imgEquipe" title="Johanne Massé" onclick="poppup()" src="media/johanne.jpg" alt=""></div>
+                    <div class="boite-photo prof8"><img class="imgEquipe" title="Jonathan" onclick="poppup()" src="media/jonathan.jpg" alt=""></div>
+                    <div class="boite-photo prof9"><img class="imgEquipe" title="Manon Bertrand" onclick="poppup()" src="media/manon.jpg" alt=""></div>
+                    <div class="boite-photo prof10"><img class="imgEquipe" title="Martin St-Pierre" onclick="poppup()" src="media/martin.jpg" alt=""></div>
+                    <div class="boite-photo prof11"><img class="imgEquipe" title="Mathieu Dionne" onclick="poppup()" src="media/mathieu.jpg" alt=""></div>
+                    <div class="boite-photo prof12"><img class="imgEquipe" title="Vahik Toroussian" onclick="poppup()" src="media/vahik.jpg" alt=""></div>
+                    <div class="boite-photo prof13"><img class="imgEquipe" title="Vincent Leblanc" onclick="poppup()" src="media/vincent.jpg" alt=""></div>
+                    <div class="boite-photo prof14"><img class="imgEquipe" title="Ahmed Boudjani" onclick="poppup()" src="media/ahmed.jpg" alt=""></div>
                 </div>
-                <div id="ligne"></div>
+                <div id="ligneHorizontale"></div>
             </div>
         </div>
 
         <div id="popup">
-
+            <div class="boitePortraitPopup"><img class="imgProfPopup" src="media/ahmed.jpg" alt=""></div>
+            <h3 id="nomProf">Ahmed Boudjani</h3>
+            <h4 id="courrielProf">aboudjani@cmaisonneuve.qc.ca</h4>
+            <p>Domaines d’intérêt : Animation Web depuis la « préhistoire » (Flash des années 2000) à aujourd’hui, ActionScript 2.0 et 3.0 (orienté objet), Animations pour le Web avec JavaScript, Animations avec jQuery, Animations avec HTML5 , Animations avec CSS3, Moteurs de jeux : Unity 2D/3D avec C# (et anciennement JavaScript), Physique dans les jeux vidéo : chutes, forces, collisions, Système de particules de Unity, Intelligence Artificielle (« AI ») : « Machine Learning » et «Reinforcement Learning »   (PPO) , Intelligence artificielle dans Unity (ML-agents), Science et science-fiction (Arthur C. Clark est mon auteur préféré)
+            </p>
         </div>
             
             <!-- fin du code HTML-->

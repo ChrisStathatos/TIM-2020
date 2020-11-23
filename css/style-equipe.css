@@ -28,7 +28,6 @@
     animation-duration: 3s; 
     animation-iteration-count: infinite; 
     animation-timing-function: ease-in-out;
-    text-align: center;
     z-index: 2;
 }
 
@@ -55,6 +54,17 @@
     filter: grayscale();
     border: .4em solid white;
     box-shadow: .5em .5em white;
+}
+
+#ligneHorizontale{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width:100%;
+    height:0.3em;
+    background-color: #dfc516;
+    z-index: -1;
 }
 
 /* 1ière colonne */
@@ -118,22 +128,114 @@
     grid-area: 5 / 5 / span 2 / span 1;
 }
 
-#ligne{
+#cover{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width:100%;
-    height:0.3em;
-    background-color: #dfc516;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 10000;
+    background-color: #7F7F7F;
+    opacity: 0.5;
 }
 
 #popup{
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: .1em;
     z-index: 10001;
     margin: 0 auto;
-    background-color: #ff04a1;
-
+    background-color: #6a07d2;
+    box-shadow: .8em .8em #dfc516;
+    box-shadow: .8em .8em #ff04a1;
+    top: -44em;
+    width: 50%;
+    height: 65%;
+    grid-template-rows:[img] 30% [nom] 5% [courriel] 5% [desc] 50%;
+    padding-top: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+@keyframes popupOpen {
+    0%{
+      transform: scale(0.0);
+    }
 
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  @keyframes popupClose {
+    0%{
+      transform: scale(1);
+    }
+
+    100%{
+      transform: scale(0.0);
+    }
+  }
+
+  .boitePortraitPopup{
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    border:#ff04a1 0.4em solid;
+    grid-area: img;
+    margin-bottom: 1em;
+    display: flex;
+    justify-self: center;
+  }
+
+   .boitePortraitPopup img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  #nomProf{
+      font-size: 1.9em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      color:  #dfc516;
+      grid-area: nom;
+      letter-spacing: .2em;
+      margin-bottom: 1.1em;
+  }
+
+  #courrielProf{
+      font-size: .9em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      color:  #dfc516;
+      grid-area: courriel;
+      letter-spacing: .2em;
+  }
+
+  #courrielProf:hover{
+    color: #ff04a1;
+    cursor: pointer;
+  }
+
+  #courrielProf:active{
+    color: white;
+  }
+
+  p{
+      margin-top: 3em;
+      margin-bottom: 0;
+      font-size: .8em;
+      grid-area: desc;
+      padding: 0 10em 0 10em;
+      font-family: 'Comfortaa', cursive;
+      font-weight: 500;
+      color: white;
+      line-height: 2.5em;
+      letter-spacing: .2em;
+  }
+ 
