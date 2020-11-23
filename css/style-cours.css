@@ -59,6 +59,9 @@
 .sessions div{
  margin-left:3vw;
 }
+.sessions{
+    width:100%;
+}
 .btn{
     text-align: center;
 }
@@ -66,6 +69,35 @@
 .sessionTxt{
     margin-top:10vw;
     font-size:1vw;
+}
+#listeDesCours div:first-child {
+
+}
+.lignes{
+    margin-top:2vw;
+    position: absolute;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width:100%;
+    height:4vw;
+    background-color: #e427ec;
+}
+#listeDesCours div:nth-child(3) .lignes{
+    background-color: #0da5c5;    
+}
+#listeDesCours div:nth-child(4) .lignes{
+    background-color: #0da5c5;    
+}
+#listeDesCours div:nth-child(5) .lignes{
+    background-color: #ff04a1;    
+}
+#listeDesCours div:nth-child(6) .lignes{
+    background-color: #ff04a1;   
+}
+.textBtn{
+    font-size: 0.8em !important;
 }
 /*.btnChoix{
     margin-left:5vw;

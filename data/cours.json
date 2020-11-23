@@ -100,7 +100,7 @@
   [
     {
       "nom": "Création de sites Web dynamiques",
-      "nomCourt": "Création de sites Web dynamiques",
+      "nomCourt": "Création Web",
       "ponderation": "3-3-3",
       "prealabe": "Relatif : Animation et interactivité Web (582-2W2-MA)",
       "description": "Dans ce cours, les notions acquises dans les cours « 582-1W1 : Mise en page Web » et « 582-2W2 : Animation et interactivité Web » sont approfondies et complétées par des aspects plus avancés, propres à la génération dynamique de pages Web. L’étudiant est d’abord initié à la programmation HTTP de base. Utilisant un langage de programmation, il apprend à traiter les paramètres et entêtes d’une requête HTTP pour générer de façon dynamique la réponse HTTP. De plus, l’étudiant apprend à utiliser la librairie de fonctions essentielles du langage de programmation pour développer un\n \nsite Web.\n \nDans ce cours, les notions acquises dans les cours « 582-1W1 : Mise en page Web » et « 582-2W2 : Animation et interactivité Web » sont approfondies et complétées par des aspects plus avancés, propres à la génération dynamique de pages Web. L’étudiant est d’abord initié à la programmation HTTP de base. Utilisant un langage de programmation, il apprend à traiter les paramètres et entêtes d’une requête HTTP pour générer de façon dynamique la réponse HTTP. De plus, l’étudiant apprend à utiliser la librairie de fonctions essentielles du langage de programmation pour développer un\n \nsite Web."
@@ -121,7 +121,7 @@
     [
       {
       "nom": "Gestion de projets multimédias",
-      "nomCourt": "Gestion de projets multimédias",
+      "nomCourt": "Gestion de projets",
       "ponderation": "2-1-2",
       "prealabe": "Aucun",
       "description": "Ce cours initie l'étudiant aux rudiments de la gestion d’un projet multimédia. L’étudiant apprend à analyser les besoins liés à la réalisation du projet en termes de ressources humaines, matérielles et budgétaires. À cet effet, il est initié aux méthodes de gestion classiques, ainsi qu’aux méthodes dites « agiles », qu’il sera appelé à utiliser dans le cadre du cours « 582-5W5 : Projet Web en équipe ».\n \nL'étudiant est amené à exploiter les fonctions d’un logiciel de gestion de projet en vue d’établir un échéancier de production et d’en faire le suivi. Le cours couvre également les aspects légaux relatifs à la réalisation d’un projet (droits d’auteurs, contrats, etc.). Enfin, l’étudiant développe sa capacité à écrire ou à répondre à un cahier des charges ainsi qu’à rédiger une offre de services professionnels."
@@ -139,7 +139,7 @@
     [
         {
       "nom": "Création de jeu en équipe",
-      "nomCourt": "Création de jeu en équipe",
+      "nomCourt": "Création jeu",
       "ponderation": "2-5-5",
       "prealabe": "Relatif: Création de jeu 3D (582-3J3-MA)",
       "description": "Dans ce cours qui s'appuie sur une pédagogie par projets, l’étudiant réalise un projet d’envergure en équipe de travail. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences acquises afin de réaliser un prototype de jeu numérique. Il franchit, en collaboration avec les membres de son équipe, toutes les étapes du processus de production d’une telle application, qui sont : la conception du produit, la planification de sa production, la réalisation et l’intégration des médias, la programmation de l’interactivité, la réalisation des tests pour contrôler la qualité du produit ainsi que la rédaction du guide utilisateur et la présentation du produit fini. Par le fait même, ce cours initie l’étudiant à la communication interpersonnelle et à l’intégration à une équipe de production multimédia."
@@ -148,14 +148,14 @@
     [
       {
         "nom": "Interfaces Web réactives et animées",
-        "nomCourt": "",
+        "nomCourt": "Interfaces Web",
         "ponderation": "3-2-2",
         "prealabe": "Relatif : Création de sites Web dynamiques (582-3W3-MA) En session 4, l'étudiant doit choisir entre ce cours et le cours Animation 3D.",
         "description": "Dans ce cours, l'étudiant ayant un intérêt plus marqué pour la programmation a la possibilité d'approfondir les acquis des cours de la séquence Web en s'initiant à des technologies permettant de réaliser des applications riches du côté du client.\n \nIl apprendra à utiliser un cadriciel côté client pour produire un site Web dynamique dont l'interface utilisateur réactive répond en temps réel aux modifications d'états des données de l'application. L’intégration d’effets de transition et d'animation dans l’interface-utilisateur est également couverte."
       },
       {
         "nom": "Animation 3D",
-        "nomCourt": "",
+        "nomCourt": "Animation 3D",
         "ponderation": "3-2-2",
         "prealabe": "Relatif : Imagerie 3D (582-3M5-MA); En session 4, l'étudiant doit choisir entre ce cours et le cours Interfaces Web réactives et animées.",
         "description": "Ce cours a pour but de permettre à l’étudiant d’approfondir les notions acquises dans le cours « 582-3M5 : Imagerie 3D » et de les appliquer dans la création de scènes élaborées. Le cours approfondit également les techniques de scénarisation couvertes dans les cours précédents.\n \nL’étudiant apprend notamment les outils et techniques de modélisation organique ainsi que les techniques d’organisation des hiérarchies, de montage des systèmes d’articulation et d’animation. Enfin, l’étudiant apprend à maîtriser les techniques d’optimisation et d’exportation en vue de diffuser les productions 3D pour le Web ou pour des applications 3D en temps réel."
@@ -176,7 +176,7 @@
   [
     {
       "nom": "Communication et dynamique d’une équipe de travail",
-      "nomCourt": "Communication et dynamique d'équipe",
+      "nomCourt": "Communication",
       "ponderation": "1-2-1",
       "prealabe": "Corequis : Projet Web en équipe (582-5W5-MA) ",
       "description": "Ce cours permet à l’étudiant de développer ses habiletés en matière de communication interpersonnelle et de mieux interagir dans une équipe multimédia. L’étudiant est appelé à développer sa capacité́ à communiquer et à entrer en relation avec autrui sur les plans personnel et professionnel, notamment avec ses collègues de travail ou ses supérieurs immédiats. Les notions essentielles acquises dans ce cours s’appliquent à la prévention des conflits interpersonnels et à la résolution de problèmes d’équipe notamment dans le cours de Projet Web. De plus, ce cours initie l’étudiant à la présentation du produit tout en favorisant les interactions et la collaboration avec les clients."
@@ -185,7 +185,7 @@
   [
     {
       "nom": "Projet Web en équipe",
-      "nomCourt": "Projet Web en équipe",
+      "nomCourt": "Projet Web",
       "ponderation": "2-5-5",
       "prealabe": "Corequis : Communication et dynamique d’une équipe de travail (350-5N1-MA); Relatif : Conception d’interfaces et développement Web (582-4W4-MA) ",
       "description": "Dans ce cours, qui s'appuie sur une pédagogie par projets, l’étudiant participe à la réalisation d’un produit multimédia en ligne pour un client. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences et des notions acquises et de s’initier à des méthodes et des techniques de travail professionnelles. Il franchit, en collaboration avec les membres de son équipe de production, toutes les étapes du processus de production d’une telle application, qui sont : la conception du produit, la planification de sa production, la réalisation et l’intégration des médias, la programmation de l’interactivité, la réalisation des tests pour contrôler la qualité du produit ainsi que la rédaction du guide utilisateur et la présentation du produit fini. Il est également amené à mettre en pratique une approche client basée sur un climat de confiance. Le cours permet également la mise en application de différents outils facilitant la réalisation de projet : communication entre équipiers, gestion de code source, gestion des bogues. De plus, une attention particulière est portée à la relation avec le client ainsi qu’à la prévention et à la gestion des conflits entre coéquipiers."
@@ -210,14 +210,14 @@
   [
     {
       "nom": "Technologies émergentes et avancées – volet Création",
-      "nomCourt": "Technologies émergentes et avancées – volet Création",
+      "nomCourt": "Technologies émergentes   volet Création",
       "ponderation": "2-2-2",
       "prealabe": "Aucun. En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation. ",
       "description": "En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation.\n \nDans ce cours, l’étudiant davantage intéressé par les aspects créatifs du multimédia est amené à explorer et tester des approches novatrices et émergentes en multimédia telles que : système de captation de mouvement, réalité virtuelle, réalité augmentée, environnements immersifs et habillage vidéo, vidéo 360 degrés."
     },
     {
       "nom": "Technologies émergentes et avancées – volet Programmation",
-      "nomCourt": "Technologies émergentes et avancées – volet Programmation",
+      "nomCourt": "Technologies émergentes – volet Programmation",
       "ponderation": "2-2-2",
       "prealabe": "Aucun. En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Création.",
       "description": "Dans ce cours, l’étudiant plus intéressé par les aspects techniques du multimédia est amené à explorer, tester et intégrer les nouvelles tendances en matière de programmation de produits multimédias interactifs. Ce cours est donc axé sur la démonstration et l’apprentissage des toutes dernières technologies en émergence dans le domaine."

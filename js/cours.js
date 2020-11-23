@@ -14,6 +14,9 @@ fetch("data/cours.json")
                     const numeroSession = document.createElement("h1");
                     numeroSession.textContent = "Session " + i;
                     elUneSession.appendChild(numeroSession);
+                    var lignes = document.createElement("div");
+                    lignes.classList = "lignes";
+                    elUneSession.appendChild(lignes);
 
                     for (const unCours of uneSession) {
                      if(unCours.length>1){
@@ -21,7 +24,7 @@ fetch("data/cours.json")
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
                             <div class="interior">
-                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nom}</p></a>
+                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                                 <div class="btnChoix"></div
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
