@@ -92,9 +92,12 @@
   background-color: #dfc516;
   border:#6a07d2 0.5em solid;
 }
-
-
-
+/*#listeDesCours div:last-child {
+  justify-content: space-around;
+}
+#listeDesCours div:last-child h1 {
+  align-self: flex-start;
+}*/
 .textBtn{
   transform:rotate(-45deg);
   font-size:1vw;
