@@ -64,7 +64,6 @@
   text-decoration: none;
   font-family: 'Montserrat',sans-serif;
   z-index: 1;
-  opacity: 0;
 }
 
 .modal-close:hover {
@@ -109,7 +108,7 @@
   left: -20px ;
   top:60px;
   position: absolute;
-  display: none;
+ 
 }
 
 .prealabe{
@@ -119,7 +118,7 @@
   right: 40px ;
   bottom:20px;
   position: absolute;
-  display: none;
+  
 }
 
 .prerequis{
@@ -131,7 +130,7 @@
   bottom:60px;
   position: absolute;
   text-transform: uppercase;
-  display: none;
+  
 }
 
 .description{
@@ -141,17 +140,15 @@
   margin-bottom: -20em;
   display: flex;
   text-transform: uppercase;
+  
 }
 
 .imgCours{
-  height: 100%;
-  width: 100%;
-  margin-left:-2em;
- margin-top:-2.7em;
+  height: 20em;
+  width: 30em;
+ bottom: 10px;
  border-bottom: 8px solid #FF04A1;
  position: absolute;
-
-
 }
 
 .sessionTxt{
