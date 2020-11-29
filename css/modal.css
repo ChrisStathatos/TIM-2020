@@ -19,6 +19,7 @@
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+  text-transform: uppercase;
 }
 
 .modal-window:target {
@@ -28,7 +29,7 @@
 }
 
 .modal-window > div {
-      width: 60%;
+      width: 70%;
       height: 70%;
       position: absolute;
       top: 50%;
@@ -46,10 +47,12 @@
 .modal-window h1 {
   
     font-size: 200%;
-    margin: 0 0 15px;
+    top:10px;
+    left: 35px ;
     color: #6a07d2;
     font-family: 'Montserrat',sans-serif;
-  
+    position: absolute;
+    text-transform: uppercase;
 }
 
 .modal-close {
@@ -113,7 +116,7 @@
 
 .prealabe{
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Montserrat',sans-serif;
   right: 40px ;
   bottom:20px;
@@ -133,22 +136,38 @@
   
 }
 
-.description{
-  font-size: 16px;
-  font-family: 'Comfortaa', cursive;
-  line-height: 200%;
-  margin-bottom: -20em;
+
+.container{
   display: flex;
+  margin-top: 90px;
+  position: absolute;
+}
+
+
+.description{
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+  line-height: 150%;
+  /* margin-bottom: -20em;
+  margin-right:10px; */
+  left: -20px;
+  margin-left: -70px;
+  padding-right:30px;
   text-transform: uppercase;
+  flex:1;
   
 }
 
 .imgCours{
-  height: 20em;
-  width: 30em;
- bottom: 10px;
- border-bottom: 8px solid #FF04A1;
- position: absolute;
+  height: 23em;
+  width: 35em;
+  margin-top:-0px ;
+  border-bottom: 8px solid #FF04A1;
+  display: flex;
+  left: 430px;
+  margin-right: 20px;
+  flex: 1;
+
 }
 
 .sessionTxt{
