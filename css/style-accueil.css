@@ -77,9 +77,46 @@ a{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
+#rectangles-droit svg{
+    /*background-color: red;*/
+    /*background-image: url("../media/rec1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-content: bottom right;
+    transform-origin: botttom right;
+    max-height: 75vh;
+}
+#rectangles-droit-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: auto;
 
+}
+#RectangleBouge22{
+    animation: bouge22 4s cubic-bezier(.6,0,.4,1) infinite;
+}
 
+#RectangleBouge13{
+    animation: bouge13 5.1546s cubic-bezier(.6,0,.4,1) infinite;
+}
   
+
+@keyframes bouge22 {
+    0% { transform: translateY(0%) }
+    50% { transform: translateY(-2%)}
+    100% { transform: translateY(0%) }
+  } 
+@keyframes bouge13 {
+    0% { transform: translateX(0%) }
+    50% { transform: translateX(-3%)}
+    100% { transform: translateX(0%) }
+} 
+
   .media-accueil a{
     color: white;
   }
