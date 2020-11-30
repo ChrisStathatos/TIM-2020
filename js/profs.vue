@@ -1,18 +1,8 @@
 <template>
   <div>
-      <section v-for="(prof,index) in lesProfs" :key="index">
+      <section v-for="(profs,index) in lesProfs" :key="index">
    <div :id="'#' + index + 'profs'" v-for="(profs,index) in lesProfs" :key="index" >
 
-       <!-- <div :id="prof.nom" class="section-profs">
-          <div class="grid-equipe">
-             <div class="boite-photo prof1">
-                <a class="btn" onclick="poppup()" :href="'#' + profs.nom">{{profs.nom}} </a>
-
-             </div>
-
-          </div>
-    </div> -->
-    
 
    <div id="popup">
             <div class="boitePortraitPopup" ><img class="imgProfPopup" :src="profs.photo"  alt=""></div>
