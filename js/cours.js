@@ -20,26 +20,27 @@ fetch("data/cours.json")
 
                     for (const unCours of uneSession) {
                      if(unCours.length>1){
-                         
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
                             <div class="interior">
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
-                                <div class="btnChoix"></div
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>
                             <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
+                            <div>
                             <h1>${unCours[0].nom}</h1>
-                    
-                            <div class="ponderation">${unCours[0].ponderation}</div>
-                            <div > <p class="prerequis">Cours prérequis:</p> <br> <p class="prealabe">${unCours[0].prealabe}</p></div>
+                            <p class="ponderation">${unCours[0].ponderation}</p>
+                            </div>
                             <div class="container">
-                            <markdown class="description" >${unCours[0].description}</markdown>
-                            <img src="${unCours[0].photo}" class="imgCours" ></div>
+                            <p class="description" >${unCours[0].description}</p>
+                            <img src="${unCours[0].photo}" class="imgCours" >
+                            <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
+                            </div>
+                            </div>
                             </div>
                         </div>
-                     </div>`;
+                    </div>`;
                         elUneSession.appendChild(elUnCours);
                      }
                      else{
@@ -51,13 +52,16 @@ fetch("data/cours.json")
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>
                             <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
+                            <div>
                             <h1>${unCours[0].nom}</h1>
-                            
-                            <div class="ponderation">${unCours[0].ponderation}</div>
-                            <div > <p class="prerequis">Cours prérequis:</p> <br> <p class="prealabe">${unCours[0].prealabe}</p></div>
+                            <p class="ponderation">${unCours[0].ponderation}</p>
+                            </div>
                             <div class="container">
                             <p class="description" >${unCours[0].description}</p>
-                            <img src="${unCours[0].photo}" class="imgCours" ></div>
+                            <img src="${unCours[0].photo}" class="imgCours" >
+                            <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
+                            </div>
+                            </div>
                             </div>
                         </div>
                     </div>`;

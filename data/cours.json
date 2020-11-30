@@ -6,8 +6,8 @@
       "nomCourt": "Création vidéo",
       "ponderation": "3-2-3",
       "prealabe": "Aucun",
-      "description": "Ce cours initie l’étudiant au traitement des images en mouvement, au traitement du son ainsi qu'aux bases de la scénarisation linéaire. L’étudiant apprend à utiliser les périphériques associés au traitement du son et de la vidéo et à exploiter de façon créative les fonctions des logiciels de traitement vidéo et sonore. <br/> <br/> <br/>  Les techniques de montage (structure narrative, affinage de coupe, correction de couleur, etc.) sont étudiées. L’étudiant apprend à représenter ses idées et ses concepts par le dessin et l’écrit, à l’aide de scénarimages, de synopsis et de scénarios. Les particularités de la fonction de travail liées au traitement de la vidéo, du son, ainsi qu'à la scénarisation sont présentées de même que les compétences techniques et comportementales associées.",
-      "photo": "media/video.jpg"
+      "description": "Ce cours initie l’étudiant au traitement des images en mouvement, au traitement du son ainsi qu'aux bases de la scénarisation linéaire. L’étudiant apprend à utiliser les périphériques associés au traitement du son et de la vidéo et à exploiter de façon créative les fonctions des logiciels de traitement vidéo et sonore. <br/>  Les techniques de montage (structure narrative, affinage de coupe, correction de couleur, etc.) sont étudiées. L’étudiant apprend à représenter ses idées et ses concepts par le dessin et l’écrit, à l’aide de scénarimages, de synopsis et de scénarios. Les particularités de la fonction de travail liées au traitement de la vidéo, du son, ainsi qu'à la scénarisation sont présentées de même que les compétences techniques et comportementales associées.",
+      "photo": "media/event3.jpg"
     }
   ],
   [
@@ -162,7 +162,7 @@
     [
       {
         "nom": "Interfaces Web réactives et animées",
-        "nomCourt": "",
+        "nomCourt": "Interfaces Web",
         "ponderation": "3-2-2",
         "prealabe": "Relatif : Création de sites Web dynamiques (582-3W3-MA) En session 4, l'étudiant doit choisir entre ce cours et le cours Animation 3D.",
         "description": "Dans ce cours, l'étudiant ayant un intérêt plus marqué pour la programmation a la possibilité d'approfondir les acquis des cours de la séquence Web en s'initiant à des technologies permettant de réaliser des applications riches du côté du client.<br/> <br/>Il apprendra à utiliser un cadriciel côté client pour produire un site Web dynamique dont l'interface utilisateur réactive répond en temps réel aux modifications d'états des données de l'application. L’intégration d’effets de transition et d'animation dans l’interface-utilisateur est également couverte.",
@@ -170,7 +170,7 @@
       },
       {
         "nom": "Animation 3D",
-        "nomCourt": "",
+        "nomCourt": "Animation 3D",
         "ponderation": "3-2-2",
         "prealabe": "Relatif : Imagerie 3D (582-3M5-MA); En session 4, l'étudiant doit choisir entre ce cours et le cours Interfaces Web réactives et animées.",
         "description": "Ce cours a pour but de permettre à l’étudiant d’approfondir les notions acquises dans le cours « 582-3M5 : Imagerie 3D » et de les appliquer dans la création de scènes élaborées. Le cours approfondit également les techniques de scénarisation couvertes dans les cours précédents.<br/> <br/>L’étudiant apprend notamment les outils et techniques de modélisation organique ainsi que les techniques d’organisation des hiérarchies, de montage des systèmes d’articulation et d’animation. Enfin, l’étudiant apprend à maîtriser les techniques d’optimisation et d’exportation en vue de diffuser les productions 3D pour le Web ou pour des applications 3D en temps réel.",

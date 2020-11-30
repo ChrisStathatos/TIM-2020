@@ -56,8 +56,8 @@
     display: flex;
     justify-content: flex-start;
 }
-.sessions div{
- margin-left:3vw;
+.sessions>div{
+ margin-left:6vw;
 }
 .sessions{
     width:100%;
@@ -69,9 +69,6 @@
 .sessionTxt{
     margin-top:10vw;
     font-size:1vw;
-}
-#listeDesCours div:first-child {
-
 }
 .lignes{
     margin-top:2vw;
