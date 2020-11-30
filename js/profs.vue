@@ -12,10 +12,11 @@
 
           </div>
     </div> -->
+    
 
    <div id="popup">
-            <div class="boitePortraitPopup" ><img class="imgProfPopup" src=""  alt=""></div>
-            <h3 id="nomProf" >{{profs.nom}}</h3>
+            <div class="boitePortraitPopup" ><img class="imgProfPopup" :src="profs.photo"  alt=""></div>
+            <h3 id="nomProf">{{profs.nom}}</h3>
             <h4 id="courrielProf">{{profs.courriel}}</h4>
             <p id="description">{{profs.description}}</p>
             <h5 id="coursDonnes">Cours donnés :...</h5>
