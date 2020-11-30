@@ -90,13 +90,13 @@ body{
 }
 
 #cover{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 10000;
-    background-color: #7F7F7F;
-    opacity: 0.5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 10000;
+  background-color: #7F7F7F;
+  opacity: 0.5;
 }
 
 .grid-evenement{
@@ -219,22 +219,29 @@ body{
   align-items: center;
 }
 
-  #popup{
-      z-index: 10001;
-      position: relative;
-      top: -86em;
-      grid-template-rows:[img] 50% [txt] 50% ;
-      display: none;
-      height: 85%;
-      width: 30%;
-      margin: 0 auto;
-      background-color: #bf96c8;
-      margin-bottom: 10em;
-      border:0.3em solid #dfc516 ;
-      -webkit-box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-      -moz-box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-      box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-  }
+#popup{
+  z-index: 10001;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50;
+  grid-template-rows:[img] 50%[txt] 50% ;
+  display: none;
+  height: 75%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #E8E8DB;
+  margin-bottom: 10em;
+  border:0.3em solid #dfc516 ;
+  box-shadow: .8em .8em #dfc516;
+  box-shadow: .8em .8em #ff04a1;
+}
+
+#texte-pop
+{
+  height: 60%;
+  overflow-y: scroll;
+}
 
   @keyframes popupOpen {
     0%{
@@ -259,7 +266,7 @@ body{
 
   #imageSelect{
       grid-area: img;
-      
+      height: min-content;
   }
 
   .imgSelect{
