@@ -100,22 +100,29 @@ a{
 #RectangleBouge22{
     animation: bouge22 4s cubic-bezier(.6,0,.4,1) infinite;
 }
-
+#RectangleBouge19{
+    animation: bouge19 4.6536s cubic-bezier(.6,0,.4,1) infinite;
+}
 #RectangleBouge13{
     animation: bouge13 5.1546s cubic-bezier(.6,0,.4,1) infinite;
 }
   
 
-@keyframes bouge22 {
-    0% { transform: translateY(0%) }
-    50% { transform: translateY(-2%)}
-    100% { transform: translateY(0%) }
-  } 
 @keyframes bouge13 {
     0% { transform: translateX(0%) }
     50% { transform: translateX(-3%)}
     100% { transform: translateX(0%) }
 } 
+@keyframes bouge19 {
+    0% { transform: translateX(0%) }
+    50% { transform: translateX(3%)}
+    100% { transform: translateX(0%) }
+} 
+@keyframes bouge22 {
+    0% { transform: translateY(0%) }
+    50% { transform: translateY(-2%)}
+    100% { transform: translateY(0%) }
+  } 
 
   .media-accueil a{
     color: white;
