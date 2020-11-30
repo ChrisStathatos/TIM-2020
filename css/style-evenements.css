@@ -233,12 +233,14 @@ body{
   background-color: #E8E8DB;
   margin-bottom: 10em;
   border:0.3em solid #dfc516 ;
-  box-shadow: .8em .8em #dfc516;
-  box-shadow: .8em .8em #ff04a1;
+  box-shadow: .5em .5em #ff04a1;
 }
 
 #texte-pop
 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
   height: 60%;
   overflow-y: scroll;
 }
@@ -298,13 +300,13 @@ body{
     margin-top: 0.1em;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .date-select{
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.75em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     word-spacing: 1.1em;
@@ -315,6 +317,7 @@ body{
     margin: 0 auto;
     width: 40%;
     border-bottom:#dfc516 0.4em solid;
+    padding-bottom: 0.7em;
 }
 
 .dot {
