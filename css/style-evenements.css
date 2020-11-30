@@ -7,6 +7,64 @@ body{
   display: block;
 }
 
+.noMobile{
+  display: none;
+}
+
+.bottom{
+  margin-top: 2em;
+}
+
+#plus{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:auto auto;
+  width: 10em;
+  height: 10em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#plus1{
+
+  width: 100%;
+  border-bottom: 1em solid #6a07d2;
+  border-right:1em solid #6a07d2;
+}
+
+#plus2{
+  width: 100%;
+  opacity: 0;
+}
+
+#plus3{
+  width: 100%;
+  opacity: 0;
+}
+
+#plus4{
+  width: 100%;
+  border-top: 1em solid #dfc516;
+  border-left:1em solid #dfc516;
+}
+#enCours{
+  display: flex;
+  align-items: center;
+  font-size: 0.5em;
+  background-color: #6a07d2;
+  width:35%;
+  height: 15%;
+  color: #dfc516;
+  clip-path: polygon(0 0, 86% 0, 75% 100%, 0% 100%);
+  position: relative;
+  bottom:47.5;
+}
+
+#enCours h1{
+  margin-left: 0.5em;
+}
+
+
 #Evenement{
   justify-self: center;
   display: block;
@@ -42,11 +100,12 @@ body{
 }
 
 .grid-evenement{
-    margin-top: 4em;
+    margin-top: 2em;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(1, auto);
     align-content: flex-end;
+    margin-bottom: 6em;
 }
 
 .grid-item img{
@@ -131,6 +190,7 @@ body{
     font-weight: bolder;
     justify-content: center;
     text-transform: uppercase;
+    margin-bottom: 1em;
 }
 
 #bouton{ 
@@ -343,7 +403,7 @@ body{
   margin-right: 2em;
   text-align: justify;
   line-height: 2em;
-  color: white;
+  color: black;
 }
 
 .grid-evenement{
@@ -444,16 +504,14 @@ body{
       top: 30;
       grid-template-rows:[img] 50% [txt] 50% ;
       display: none;
-      height: 90%;
+      height: 87%;
       width: 32%;
       margin: 0 auto;
-      background-color: #6a07d2;
+      background-color: #E8E8DB;
       margin-bottom: 10em;
       border:0.3em solid #dfc516 ;
-      -webkit-box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-      -moz-box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-      box-shadow: 10px 10px 6px 3px rgba(0,0,0,0.19);
-      color: white;
+      box-shadow: .8em .8em #dfc516;
+    box-shadow: .8em .8em #ff04a1;
   }
 
   @keyframes popupOpen {
@@ -513,7 +571,7 @@ body{
     margin-bottom: 0;
     text-transform: uppercase;
     font-size: 1.5em;
-    color: #dfc516;
+    color: #6a07d2;
 }
 
 .date-select{
@@ -523,7 +581,7 @@ body{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-weight: bold;
-    color: #dfc516;
+    color: #6a07d2;
 
 }
 
@@ -558,5 +616,21 @@ body{
   }
   #afficherPlus-mobile{
 display: none;
+}
+
+.ligne{
+  display: none;
+}
+
+#plus{
+  display: none;
+}
+
+#enCours{
+  display: none;
+}
+
+#titrePage{
+  display: none;
 }
 }
