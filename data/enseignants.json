@@ -8,8 +8,8 @@
     {
         "nom": "Caroline Martin",
         "photo": "media/caroline.jpg",
-        "courriel": "mbertrand@cmaisonneuve.qc.ca",
-        "description": "Je me rappelle d’être tombée dans la potion magique lorsque j’étais petite. Ensuite, j’ai visité tous les pays avec Tintin. Et, ça n’a plus cessé. De Giacometti à Es Devlin (scénographe) j’ai parcouru le monde des images, des mots et de la musique. Ce monde est ma passion"
+        "courriel": "",
+        "description": ""
     },
     {
         "nom": "Dominic Girard",
@@ -27,7 +27,7 @@
     {
         
         "nom": "David Ross",
-        "photo": "media/david.jpg",
+        "photo": "media/jonathan.jpg",
         "courriel": "dross@cmaisonneuve.qc.ca",
         "description": ""
     },
@@ -59,7 +59,7 @@
         "nom": "Martin St-Pierre",
         "photo": "media/martin.jpg",
         "courriel": "mstpierre@cmaisonneuve.qc.ca",
-        "description": "J’évolue dans le domaine professionnel depuis 1988, année où j’ai fait mes débuts dans l’univers cinématographique canadien.Récipiendaire de nombreuses bourses et subventions (Conseil des Arts du Canada, Conseil des Arts du Québec, Sodec, Téléfilm Canada, etc.), j’ai réalisé et produit une gamme de films, dont celui de Rick Raxlen, The Strange Blues of Cowboy Red, un long métrage qui fut lancé au Festival des films du Monde de Montréal en 1995."
+        "description": "J’évolue dans le domaine professionnel depuis 1988, année où j’ai fait mes débuts dans l’univers cinématographique canadien.Récipiendaire de nombreuses bourses et subventions, j’ai réalisé et produit une gamme de films, dont celui de Rick Raxlen, The Strange Blues of Cowboy Red, un long métrage qui fut lancé au Festival des films du Monde de Montréal en 1995."
     },
     {
         "nom": "Vincent LeBlanc",

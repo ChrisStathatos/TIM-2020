@@ -16,20 +16,23 @@ httpVueLoader.langProcessor.scss = function (scssText) {
 
 Vue.use(VueMarkdown);
 
-//initialisation de vue. la seule chose nécéssaire pour que vue fonctionne !
+// //initialisation de vue. la seule chose nécéssaire pour que vue fonctionne !
+// new Vue({
+//   el: "#app",
+//   // il faut que je dise quels composant j'utilise dans ma page et leur url
+//   components: {
+//     "mon-app": httpVueLoader("js/app.vue"),
+    
+//   },
+// });
+
 new Vue({
-  el: "#app",
+  el: "#grille-profs",
   // il faut que je dise quels composant j'utilise dans ma page et leur url
   components: {
-    "mon-app": httpVueLoader("js/app.vue")
+    "grille-prof" : httpVueLoader("js/grilleProf.vue")
+    
   },
 });
 
-//initialisation de vue. la seule chose nécéssaire pour que vue fonctionne !
-new Vue({
-  el: "#app-prof",
-  // il faut que je dise quels composant j'utilise dans ma page et leur url
-  components: {
-    "mon-app": httpVueLoader("js/app-prof.vue")
-  },
-});
+

@@ -140,7 +140,7 @@
 
 #popup{
     margin: 0 auto;
-    display: none;
+    /* display: none; */
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,7 @@
   }
 
   .boitePortraitPopup{
+    margin:0 auto;
     width: 9em;
     height: 9em;
     border-radius: 50%;
