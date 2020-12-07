@@ -11,6 +11,8 @@ fetch("data/cours.json")
                     // console.log(typeof uneSession)
                     const elUneSession = document.createElement("div");
                     elUneSession.classList = "sessions";
+                    const elLesCours = document.createElement("div");
+                    elLesCours.classList = "lesCours";
                     const numeroSession = document.createElement("h1");
                     numeroSession.textContent = "Session " +  i;
                     elUneSession.appendChild(numeroSession);
@@ -37,7 +39,7 @@ fetch("data/cours.json")
                      if(unCours.length>1){
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
-                        <ul class="dropdown">
+                        <div class="dropdown">
                             <div class="interior"> 
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                             </div>
@@ -57,8 +59,8 @@ fetch("data/cours.json")
                             </div>
                         </div>
                     </div>
-                  </ul>`;
-                        elUneSession.appendChild(elUnCours);
+                  </div>`;
+                        elLesCours.appendChild(elUnCours);
                      }
                      else{
                         const elUnCours = document.createElement("div")
@@ -83,12 +85,12 @@ fetch("data/cours.json")
                             </div>
                         </div>
                      </div>
-                    </div>   `;
-                        elUneSession.appendChild(elUnCours);
+                    </div>`;
+                        elLesCours.appendChild(elUnCours);
 
                     }
                 }
-
+                    elUneSession.appendChild(elLesCours)
                     ulCours.appendChild(elUneSession);
                     i++
                 }
