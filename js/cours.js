@@ -12,17 +12,33 @@ fetch("data/cours.json")
                     const elUneSession = document.createElement("div");
                     elUneSession.classList = "sessions";
                     const numeroSession = document.createElement("h1");
-                    numeroSession.textContent = "Session " + i;
+                    numeroSession.textContent = "Session " +  i;
                     elUneSession.appendChild(numeroSession);
                     var lignes = document.createElement("div");
                     lignes.classList = "lignes";
                     elUneSession.appendChild(lignes);
 
+                    var boutonSession = document.createElement("div");
+                    boutonSession.classList = "bouton" ;
+                    elUneSession.appendChild(boutonSession);
+
+                    let dropdownBtn = document.querySelector('div');
+                    let menuContent = document.querySelector('.dropdown');
+                    dropdownBtn.addEventListener('click',()=>{
+                       if(menuContent.style.display===""){
+                          menuContent.style.display="block";
+                       } else {
+                          menuContent.style.display="";
+                       }
+                    })
+
+
                     for (const unCours of uneSession) {
                      if(unCours.length>1){
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
-                            <div class="interior">
+                        <ul class="dropdown">
+                            <div class="interior"> 
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
@@ -40,12 +56,14 @@ fetch("data/cours.json")
                             </div>
                             </div>
                         </div>
-                    </div>`;
+                    </div>
+                  </ul>`;
                         elUneSession.appendChild(elUnCours);
                      }
                      else{
                         const elUnCours = document.createElement("div")
                         elUnCours.innerHTML = `
+                    <div class="dropdown">
                             <div class="interior">
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                             </div>
@@ -64,7 +82,8 @@ fetch("data/cours.json")
                             </div>
                             </div>
                         </div>
-                    </div>`;
+                     </div>
+                    </div>   `;
                         elUneSession.appendChild(elUnCours);
 
                     }
@@ -75,3 +94,8 @@ fetch("data/cours.json")
                 }
 
             })
+
+
+           
+               
+             
