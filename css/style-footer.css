@@ -6,8 +6,96 @@
 }
 
 
-
 .media {
+  position: relative;
+  display: flex;
+  padding: 0.6rem;
+  font-size: 1.5em;
+  left: 89%;
+  width: 100%;
+  letter-spacing: 14px;
+}
+
+.media a{
+  color: white;
+}
+ 
+.media a:hover{
+  
+    color: #dfc516;
+    transition: 0.3s;
+  
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 2.8em;
+  background-color: #6A07D2;
+  text-align: 10%;
+  bottom: 0%;
+  z-index:1200;
+}
+
+.copyright{
+  position: absolute;
+  display: flex;
+  padding: -0.4rem;
+  font-size: 1.2em;
+  left: 47%;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
+
+#maisonneuve-logo{
+  
+    position: absolute;
+    display: flex;
+    margin-top: 0.625em; 
+    margin-left: 1.625em;
+    width: 1.5625em;
+    height:1.5625em;
+    background-image: url('../media/maisonneuve.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  
+}
+
+
+
+  @media screen and (max-width: 600px) {
+    .media {
+   display: none;
+    }
+
+    .copyright{
+      padding: -0.4rem;
+      font-size: 0.8em;
+      left: 41%;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    #maisonneuve-logo{
+    
+     display:none;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .media {
     position: relative;
     display: flex;
     padding: 0.6rem;
@@ -23,7 +111,7 @@
    
   .media a:hover{
     
-      color: grey;
+      color: #dfc516;
       transition: 0.3s;
     
   }
@@ -66,111 +154,6 @@
     
   }
 
-
-
-  @media screen and (min-width: 400px) {
-    .media {
-      position: relative;
-      display: flex;
-      padding: 0.6rem;
-      font-size: 1em;
-      left: 70%;
-      
-      width: 100%;
-      letter-spacing: 14px;
-    }
-
-    .copyright{
-      padding: -0.4rem;
-      font-size: 0.8em;
-      left: 41%;
-      letter-spacing: 1px;
-      margin-top: 15px;
-      color: white;
-      font-family: 'Comfortaa', cursive;
-    }
-
-
-}
-
-
-
-  @media screen and (min-width: 700px) {
-    .media {
-      position: relative;
-      display: flex;
-      padding: 0.6rem;
-      font-size: 1.4em;
-      left: 80%;
-      width: 100%;
-      letter-spacing: 14px;
-    }
-
-    .copyright{
-      padding: -0.4rem;
-      font-size: 1.2em;
-      left: 44%;
-      letter-spacing: 1px;
-      margin-top: 15px;
-    }
-}
-
-
-
-
-@media screen and (min-width: 900px) {
-  .media {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1.5em;
-    left: 80%;
-    width: 100%;
-    letter-spacing: 14px;
-  }
-  .copyright{
-    padding: -0.4rem;
-    font-size: 1.2em;
-    left: 44%;
-    letter-spacing: 1px;
-    margin-top: 15px;
-  }
-}
-
-
-@media screen and (min-width: 1150px) {
-  .media {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1.5em;
-    left: 85%;
-    width: 100%;
-    letter-spacing: 14px;
-  }
- 
-}
-
-
-
-
-@media screen and (min-width: 1200px) {
-  .media {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1.5em;
-    left: 90%;
-    width: 100%;
-    letter-spacing: 14px;
-  }
-  .copyright{
-    padding: -0.4rem;
-    font-size: 1.2em;
-    left: 47%;
-    letter-spacing: 1px;
-    margin-top: 15px;
-  }
 }
   
   

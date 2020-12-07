@@ -1,5 +1,6 @@
 <template>
   <div>
+
         <div id="popup">
           <div class="boitePortraitPopup">
             <img class="imgProfPopup" :src="unprofesseur.photo" alt="" />

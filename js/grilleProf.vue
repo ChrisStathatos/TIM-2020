@@ -16,6 +16,7 @@
         />
       </div>
     </div>
+    <div id="cover" onclick="fermerPopUp()"></div>
     <div id="ligneHorizontale"></div>
     <profs :unprofesseur="unprof" v-if="affichemodal"></profs>
   </div>
@@ -61,4 +62,14 @@ module.exports = {
 </script>
 
 <style>
+#cover{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 10000;
+    background-color: #7F7F7F;
+    opacity: 0.5;
+    animation: popupClose 0.3s;
+}
 </style>

@@ -31,6 +31,7 @@
 .modal-window > div {
   width:70vw;
   position: absolute;
+  height:70vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -50,6 +51,16 @@
     font-size:2vw;
     margin:0;
 }
+
+.titre {
+  color: #6a07d2;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:2vw;
+  margin:0;
+}
+
+
 .ponderation{
   margin:0;
   color: #6a07d2;
@@ -105,9 +116,10 @@
 
 .prerequis :last-child{
   color: black;
-  font-size:1vw;
+  font-size:1.2vw;
   font-family: 'Montserrat',sans-serif;
-  margin:0;
+  margin:-0.6em;
+  margin-right: 0em;
   justify-self: flex-end;
   text-align: right;
 }
@@ -122,32 +134,241 @@
 .prerequis{
   justify-self: flex-end;
   grid-area: cell3;
-  font-size:2vw;
+  font-size:1vw;
+  margin-top: 4em;
 }
+.heures :last-child{
+  color: black;
+  font-size:1.2vw;
+  font-family: 'Montserrat',sans-serif;
+  margin:-0.6em;
+  margin-right: 0em;
+  justify-self: flex-end;
+  text-align: right;
+}
+.heures :first-child{
+  color: #6a07d2;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; 
+  text-align: right;
+  margin:0;
+}
+.heures{
+  justify-self: flex-end;
+  grid-area: cell3;
+  font-size:1vw;
+}
+
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "cell1 cell2"
                        "cell3 cell3";
-  margin-top:4vw;
+  margin-top:2vw;
 }
 .description{
   margin:0;
-  font-size: 0.8vw;
+  font-size: .8em;
   font-family: 'Comfortaa', cursive;
   line-height: 1.6vw;
   margin-right:1vw; 
   text-transform: uppercase;
   flex:1;
+  height: 100%;
+  overflow-y: scroll;
+  
 }
+
+.description::-webkit-scrollbar {
+  width: .4em;
+}
+
+.description::-webkit-scrollbar-track {
+  background: none; 
+}
+
+.description::-webkit-scrollbar-thumb {
+  background: #dfc516;
+}  
+
+
+
+
 .sessionTxt{
   font-size:1vw; 
 }
 .imgCours{
   width:30vw;
   justify-self: center;
-  margin-right:2vw;
+  margin-right:-4vw;
   margin-left:1vw;
   margin-bottom: 1vw;
   border-bottom: 0.5vw #ff04a1 solid;
 }
+
+
+.bouton{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) and (min-width: 700px) {
+  
+  .interior{
+    margin-top: 10%;
+    margin-right: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    margin-bottom:10%
+  }
+
+  .modal-window > div {
+    width:115vw;
+    height:95vh;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background-color: #E8E8DB;
+    border:#dfc516 0.3em solid;
+  }
+
+
+
+
+#listeDesCours{
+margin-top: 8em;
+}
+
+.sessions h1{
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: #6a07d2;
+  border-spacing: 40px 15px;
+  width: -10em;
+}
+
+
+.btn {
+  background-color: none;
+  padding: 1em 1em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  width: 7vw;
+  height: 7vw;
+  border:solid #e427ec;
+  z-index: 2;
+  transform: rotate(0deg);
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.textBtn{
+  transform:rotate(0deg);
+  font-size:1vw;
+  text-transform: uppercase;
+}
+
+
+.lignes {
+  margin-top: 0vw; 
+  position: absolute;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 1vw;
+  background-color: #e427ec;
+}
+
+.fleche{
+  display: block;
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: #6a07d2;
+  border-width: 0px 5px 5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  left: 15em;
+  bottom: 4.5em;
+  box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
+
+  position: relative;
+  cursor: pointer;
+}
+
+
+.sessions {
+  display: grid;
+  justify-content: flex-start;
+  margin-left: 11em;
+  border-width: 100%;
+}
+  
+.dropdown{
+  border-top: 0.2em solid #e427ec;
+  border-width: 100%;
+}
+
+.sessions div:nth-child(7) .dropdown{
+  border-bottom: 0.2em solid #e427ec; 
+} 
+
+
+ .dropdown{
+  display: none;
+}
+
+/* .sessions div:nth-child(4) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(5) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(6) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(7) .dropdown{
+  display: none;    
+} */
+
+.show {
+  display: block;
+}
+
+.modal-window h1 {
+  color: #6a07d2;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:2vw;
+  margin:0;
+  border-style: none;
+}
+
+}
+
+
