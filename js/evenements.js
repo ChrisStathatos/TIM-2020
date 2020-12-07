@@ -44,3 +44,27 @@ function fermerPopUp()
         
         document.getElementById("cover").style.display = "none";
 }
+
+function enterHoverEventRecent()
+{
+  document.getElementsByClassName("border-outer-top")[0].style.borderColor = "#dfc516";
+  document.getElementsByClassName("border-top")[0].style.borderColor = "#dfc516";
+}
+
+function exitHoverEventRecent()
+{
+  document.getElementsByClassName("border-outer-top")[0].style.borderColor = "#6a07d2";
+  document.getElementsByClassName("border-top")[0].style.borderColor = "#ff04a1";
+}
+
+function enterHoverAffichez()
+{
+  document.getElementsByClassName("border-outer")[0].style.borderColor = "#dfc516";
+  document.getElementsByClassName("border")[0].style.borderColor = "#dfc516";
+}
+
+function exitHoverAffichez()
+{
+  document.getElementsByClassName("border-outer")[0].style.borderColor = "#6a07d2";
+  document.getElementsByClassName("border")[0].style.borderColor = "#ff04a1";
+}

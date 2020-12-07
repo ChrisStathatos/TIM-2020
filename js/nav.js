@@ -59,8 +59,8 @@ setTimeout(() => {
     boutonNavBurger.style.transition = "transform 0.5s";
 
     boutonNavBurgerBouton.addEventListener("mousedown", function(){
-        console.log("AAAAAAAAAAA");
-        console.log(boutonNavBurger.style.transform.toString());
+        // console.log("AAAAAAAAAAA");
+        // console.log(boutonNavBurger.style.transform.toString());
         if(burgerOuvert == false){
             boutonNavBurger.style.transform = "translate(0%, 0px)";
             boutonNavBurgerBouton.style.transform = "translate(-120%, 0) rotate(90deg)";

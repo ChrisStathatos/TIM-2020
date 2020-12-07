@@ -6,6 +6,7 @@
     background-image: url('../media/tim-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
 }
   
 #tim-logo-link{
@@ -40,6 +41,7 @@
 }
 
 #primary-menu-burger{
+  font-family: 'Montserrat', sans-serif;
   position: fixed;
   display: flex;
   top: 0;
@@ -48,11 +50,64 @@
   width: 50%;
   height: 100%;
   text-align: right;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #6A07D2;
   transform: translate(100%, 0);
+}
+#nav-mobile-footer{
+  position: absolute;
+  width: 50%;
+  height: auto;
+  bottom: 5%;
+  left: 25%;
+}
+#nav-mobile-footer-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 45vh;
+}
+.nav-mobile-footer-icon{
+  padding: Calc(2.5vh - 1.66vw) 0 Calc(2.5vh - 1.66vw) 0;
+  font-size: Min(6vw, 5vh);
+}
+#maisonneuve-logo-nav{
+  width: Min(6vw, 5vh);;
+  height: Min(6vw, 5vh);;
+  background-image: url('../media/maisonneuve.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.nav-mobile-footer-icon-bottom{
+  padding-bottom: Min(4vw, 3vh);
+}
+.nav-mobile-footer-icon-top{
+  padding-top: Min(4vw, 3vh);
+}
+
+#nav-mobile-footer-bordure-top{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: 0 0 0 0;
+  border: 5px white solid;
+  pointer-events: none;
+}
+#nav-mobile-footer-bordure-bottom{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: 0 0 0 0;
+  border: 5px white solid;
+  transform: translate(-10px, -10px);
+  pointer-events: none;
 }
 
 #primary-menu-burger-bouton{
+  color: #dfc516;
   position: fixed;
   display: flex;
   top: 0;
@@ -76,8 +131,36 @@
   padding: 0 0 0 0;
   width: 100%;
 }
+#site-navigation a{
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+#site-navigation a:hover{
+  color: #dfc516;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#site-navigation a:active{
+  color: white;
+  transition: 0.1s;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 600px) {
+  #site-navigation a{
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  #site-navigation a:hover{
+    color: #6A07D2;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
   #site-navigation{
     position: relative;
     width: 70%;
@@ -90,6 +173,7 @@
   #tim-logo{
     width: 3.2em;
     height: 1.6em;
+    display: initial;
   }
 
   #tim-logo-link{
@@ -142,22 +226,6 @@
 
 #site-navigation li{
   list-style: none;
-}
-
-#site-navigation a{
-  color: black;
-  transition: 0.3s;
-  text-decoration: none;
-}
-#site-navigation a:hover{
-  color: #6A07D2;
-  transition: 0.3s;
-  font-weight: bold;
-}
-#site-navigation a:active{
-  color: white;
-  transition: 0.1s;
-  font-weight: bold;
 }
 
 #site-navigation #barre-haut{
