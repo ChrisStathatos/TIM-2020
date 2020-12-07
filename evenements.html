@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="css/style-footer.css">
         <title>Événements - TIM - Technique d'Intégration Multimédia</title>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
     </head>
 
     <body>
 
     <div id="global" >
+
         <div id="cover" onclick="fermerPopUp()"></div>
         <div id="nav" data-pageid="3"></div>
+
         <script>
             $(function(){
             $("#nav").load("nav.html");
@@ -62,10 +63,11 @@
 
         <div class="grid-evenement">
 
+        <div class="evenement-dans-grille" onclick="poppup()">
+            <div class="grid-item"><img class="imgEvent"src="media/event1.jpg" alt=""></div>
 
-            <div class="grid-item"><img class="imgEvent" onclick="poppup()" src="media/event1.jpg" alt=""></div>
             <div class="grid-item">
-                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
+                <h1 class="titre-event">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -81,8 +83,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
 
             <div class="ligne bottom"></div>
 
@@ -93,9 +95,11 @@
                 <div id="plus4"></div>
             </div>
 
-            <div class="grid-item noMobile"><img class="imgEvent" onclick="poppup()" src="media/event2.jpg" alt=""></div>
+        <div class="evenement-dans-grille" onclick="poppup()" >
+            <div class="grid-item noMobile"><img class="imgEvent"src="media/event2.jpg" alt=""></div>
+
             <div class="grid-item noMobile">
-                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
+                <h1 class="titre-event">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -112,10 +116,12 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="evenement-dans-grille" onclick="poppup()">
             <div class="grid-item noMobile">
                 
-                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
+                <h1 class="titre-event">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -123,8 +129,8 @@
                     et dolore magna aliqua. Quis ipsum suspendi
                     sse ultrices gravida. Risus commodo viverra
                 </p>
-
-                <div id="afficherPlus-mobile" >
+           
+                <div id="afficherPlus-mobile" onclick="poppup()">
                     <div class="border-outer-mobile">
                         <div class="border-mobile"> 
                             <a id="bouton" href="">en savoir plus</a> 
@@ -132,12 +138,14 @@
                     </div>
                 </div>
             </div>
+             <div class="grid-item noMobile"><img class="imgEvent"src="media/event3.jpg" alt=""></div>
+        </div>
 
-            <div class="grid-item noMobile"><img class="imgEvent" onclick="poppup()" src="media/event3.jpg" alt=""></div>
 
+
+        <div class="evenement-dans-grille" onclick="poppup()">
             <div class="grid-item noMobile">
-
-                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
+                <h1 class="titre-event">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -145,9 +153,11 @@
                     et dolore magna aliqua. Quis ipsum suspendi
                     sse ultrices gravida. Risus commodo viverra
                 </p>
+            </div>
+
+            <div class="grid-item noMobile"><img class="imgEvent"src="media/event4.jpg" alt=""></div>
         </div>
-        <div class="grid-item noMobile"><img class="imgEvent" onclick="poppup()" src="media/event4.jpg" alt=""></div>
-        
+
         </div>
 
         <div id="afficherPlus">
@@ -157,24 +167,24 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    
+    </div>
 
     <div id="popup">
 
         <div id="imageSelect">
     
-        <img  class="imgSelect" src="media/event4.jpg" alt="">
-        <img  class="imgSelect" src="media/event1.jpg" alt="">
-        <img  class="imgSelect" src="media/event2.jpg" alt="">
-    
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+            <img  class="imgSelect" src="media/event4.jpg" alt="">
+            <img  class="imgSelect" src="media/event1.jpg" alt="">
+            <img  class="imgSelect" src="media/event2.jpg" alt="">
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </div>
-        </div>
+
         <div class="itemSelect">
     
             <h1 class="titre-event-select">tim_talk hiver 2020</h1>
@@ -199,15 +209,18 @@
     
         </div>
     
-        </div>
+    </div>
 
     </body>
 
     <div id="footer" class="footer-page-fixe"></div>
+
     <script>
         $(function(){
         $("#footer").load("footer.html");
         });
     </script>
-            <script src="js/evenements.js"></script>
+
+    <script src="js/evenements.js"></script>
+
 </html>
