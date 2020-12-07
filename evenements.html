@@ -22,7 +22,7 @@
             });
         </script>
 
-        <div class="evenement-recent" >
+        <div class="evenement-recent" onclick="poppup()" onmouseover="enterHoverEventRecent()" onmouseout="exitHoverEventRecent()">
 
             <div id="titre-page">
                 <div class="ligne"></div>
@@ -44,7 +44,7 @@
                 </p>
             </div>
             <div class="event-item">
-                <img onclick="poppup()" class="imgEvent" src="media/event5.jpg" alt="">
+                <img  class="imgEvent" src="media/event5.jpg" alt="">
                 <div id="enCours"><h1>en Cours</h1></div>
             </div>
 
@@ -62,9 +62,10 @@
 
         <div class="grid-evenement">
 
+
             <div class="grid-item"><img class="imgEvent" onclick="poppup()" src="media/event1.jpg" alt=""></div>
             <div class="grid-item">
-                <h1 class="titre-event">tim_talk hiver 2020</h1>
+                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -94,7 +95,7 @@
 
             <div class="grid-item noMobile"><img class="imgEvent" onclick="poppup()" src="media/event2.jpg" alt=""></div>
             <div class="grid-item noMobile">
-                <h1 class="titre-event">tim_talk hiver 2020</h1>
+                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -114,7 +115,7 @@
 
             <div class="grid-item noMobile">
                 
-                <h1 class="titre-event">tim_talk hiver 2020</h1>
+                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -136,7 +137,7 @@
 
             <div class="grid-item noMobile">
 
-                <h1 class="titre-event">tim_talk hiver 2020</h1>
+                <h1 class="titre-event" onclick="poppup()">tim_talk hiver 2020</h1>
                 <h3 class="date">jeudi 13 février 2020 de 12h15 à 14h00</h3>
                 <p class="description-txt">description courte de l’événement : Lorem ipsum 
                     dolor sit amet, consectetur adipiscing elit,
@@ -149,10 +150,10 @@
         
         </div>
 
-        <div id="afficherPlus" >
-            <div class="border-outer">
+        <div id="afficherPlus">
+            <div class="border-outer" onmouseover="enterHoverAffichez()" onmouseout="exitHoverAffichez()">
                 <div class="border"> 
-                    <a id="bouton" href="">afficher plus</a> 
+                    <a id="bouton">afficher plus</a> 
                 </div>
             </div>
         </div>
