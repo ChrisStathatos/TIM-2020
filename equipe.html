@@ -1,50 +1,87 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style-main.css" />
-    <link rel="stylesheet" href="css/style-equipe.css" />
-    <link rel="stylesheet" href="css/style-footer.css" />
-    <title>L'équipe - TIM - Technique d'Intégration Multimédia</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style-main.css">
+        <link rel="stylesheet" href="css/style-equipe.css">
+        <link rel="stylesheet" href="css/style-footer.css">
+        <title>L'équipe - TIM - Technique d'Intégration Multimédia</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="global">
+            <div id="cover" onclick="fermerPopUp()"></div>
+            <div id="nav" data-pageid="2"></div>
+            <script>
+                $(function(){
+                $("#nav").load("nav.html");
+                });
+            </script>
 
-  <body>
-    <div id="global">
-      <div id="cover" onclick="fermerPopUp()"></div>
-      <div id="nav" data-pageid="2"></div>
-      <script>
-        $(function () {
-          $("#nav").load("nav.html");
+            <!-- code HTML de la page ici -->
+
+            <div id="notreEquipe">
+                <div id="grosLosange">
+                    <h1>
+                        Notre<br>Équipe
+                    </h1>
+                </div>
+                <div id="ligneTitre"></div>
+                <div id="cercles"></div>
+            </div>
+
+            <div class="section-profs">
+                <div class="grid-equipe">
+                    <div class="boite-photo prof1"><img class="imgEquipe" title="Camille Semaan" onclick="poppup()" src="media/camille.jpg" alt=""></div>
+                    <div class="boite-photo prof2"><img class="imgEquipe" title="Caroline Martin" onclick="poppup()" src="media/caroline.jpg" alt=""></div>
+                    <div class="boite-photo prof3"><img class="imgEquipe" title="Denis Pellerin" onclick="poppup()" src="media/denis.jpg" alt=""> </div>
+                    <div class="boite-photo prof4"><img class="imgEquipe" title="Dominic Girard" onclick="poppup()" src="media/dominic.jpg" alt=""></div>
+                    <div class="boite-photo prof5"><img class="imgEquipe" title="Eddy Martin" onclick="poppup()" src="media/eddy.jpg" alt=""></div>
+                    <div class="boite-photo prof6"><img class="imgEquipe" title="Grégory Bony" onclick="poppup()" src="media/gregory.jpg" alt=""></div>
+                    <div class="boite-photo prof7"><img class="imgEquipe" title="Johanne Massé" onclick="poppup()" src="media/johanne.jpg" alt=""></div>
+                    <div class="boite-photo prof8"><img class="imgEquipe" title="Jonathan" onclick="poppup()" src="media/jonathan.jpg" alt=""></div>
+                    <div class="boite-photo prof9"><img class="imgEquipe" title="Manon Bertrand" onclick="poppup()" src="media/manon.jpg" alt=""></div>
+                    <div class="boite-photo prof10"><img class="imgEquipe" title="Martin St-Pierre" onclick="poppup()" src="media/martin.jpg" alt=""></div>
+                    <div class="boite-photo prof11"><img class="imgEquipe" title="Mathieu Dionne" onclick="poppup()" src="media/mathieu.jpg" alt=""></div>
+                    <div class="boite-photo prof12"><img class="imgEquipe" title="Vahik Toroussian" onclick="poppup()" src="media/vahik.jpg" alt=""></div>
+                    <div class="boite-photo prof13"><img class="imgEquipe" title="Vincent Leblanc" onclick="poppup()" src="media/vincent.jpg" alt=""></div>
+                    <div class="boite-photo prof14"><img class="imgEquipe" title="Ahmed Boudjani" onclick="poppup()" src="media/ahmed.jpg" alt=""></div>
+                </div>
+                <div id="ligneHorizontale"></div>
+            </div>
+        </div>
+
+        <!-- <div id="popup">
+            <div class="boitePortraitPopup"><img class="imgProfPopup" src="media/johanne.jpg" alt=""></div>
+            <h3 id="nomProf">Johanne Massé</h3>
+            <h4 id="courrielProf">jmasse@cmaisonneuve.qc.ca</h4>
+            <p>Je suis gestionnaire de projet et architecte-paysagiste de formation mais, paradoxalement, passionnée depuis toujours par les 0 et les 1... J'ai cofondé à la fin des années 80 une entreprise spécialisée dans le développement de logiciels pour l'aménagement du territoire.   
+            </p>
+            <h5 id="coursDonnes">Cours donnés : Interfaces Web réactives et animées · Stage</h5>
+        </div> -->
+
+            <!-- fin du code HTML-->
+
+            <div id="app-prof">
+                <mon-app></mon-app>
+            </div>
+        
+    
+        <script src="/dist/sass.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="/js/vue-markdown.js"></script>
+        <script src="https://unpkg.com/http-vue-loader"></script>
+        <script src="/js/vueConfig.js" type="module"></script>
+
+    </body>
+
+    <div id="footer" class="footer-page-fixe"></div>
+    <script>
+        $(function(){
+        $("#footer").load("footer.html");
         });
-      </script>
-
-      <!-- code HTML de la page ici -->
-
-      
-      <div id="grille-profs">
-        <grille-prof></grille-prof>
-      </div>
-    </div>
-
-    <!-- fin du code HTML-->
-
-    <script src="/dist/sass.js"></script>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="/js/vue-markdown.js"></script>
-    <script src="https://unpkg.com/http-vue-loader"></script>
-    <script src="/js/vueConfig.js" type="module"></script>
-  </body>
-
-  <div id="footer" class="footer-page-fixe"></div>
-  <script>
-    $(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
-  <script src="js/equipe.js"></script>
+    </script>
+         <script src="js/equipe.js"></script>
 </html>
