@@ -553,7 +553,6 @@
     z-index: 10000;
     background-color: #7F7F7F;
     opacity: 0.5;
-    animation: popupClose 0.3s;
 }
 
 #popup{
@@ -572,7 +571,6 @@
     left: 25%;
     width: 50%;
     height: 60%;
-    animation: popupOpen 0.5s;
     grid-template-rows:[img] 30% [nom] 5% [courriel] 5% [desc] 40% [cours] 10%;
     padding-top: 1.5em;
     text-align: center;
