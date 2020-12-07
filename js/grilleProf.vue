@@ -47,7 +47,7 @@ module.exports = {
     },
     
     enleverpopup() {
-      //this.affichemodal = false;
+      this.affichemodal = false;
         document.getElementById("popup").style.animation="popupClose 0.3s"
         setTimeout(function() {
         document.getElementById("popup").style.display = "none";
