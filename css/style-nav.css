@@ -56,22 +56,54 @@
 #nav-mobile-footer{
   position: absolute;
   width: 50%;
-  height: Calc(66vh - 25vw);
+  height: auto;
   bottom: 5%;
   left: 25%;
-  /*background-color: red;*/
 }
 #nav-mobile-footer-icons{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-height: 45vh;
 }
+.nav-mobile-footer-icon{
+  padding: Calc(2.5vh - 1.66vw) 0 Calc(2.5vh - 1.66vw) 0;
+  font-size: Min(6vw, 5vh);
+}
+#maisonneuve-logo-nav{
+  width: Min(6vw, 5vh);;
+  height: Min(6vw, 5vh);;
+  background-image: url('../media/maisonneuve.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.nav-mobile-footer-icon-bottom{
+  padding-bottom: Min(4vw, 3vh);
+}
+.nav-mobile-footer-icon-top{
+  padding-top: Min(4vw, 3vh);
+}
+
 #nav-mobile-footer-bordure-top{
-  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: 0 0 0 0;
+  border: 5px white solid;
+  pointer-events: none;
 }
 #nav-mobile-footer-bordure-bottom{
-
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: 0 0 0 0;
+  border: 5px white solid;
+  transform: translate(-10px, -10px);
+  pointer-events: none;
 }
 
 #primary-menu-burger-bouton{
