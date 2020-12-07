@@ -96,7 +96,7 @@
   width: 7vw;
   height: 7vw;
   transform:rotate(45deg);
-  border:#dfc516 0.5em solid;
+  border:#dfc516 0.5vw solid;
   z-index: 2;
   display: flex; 
   justify-content: space-around;
@@ -105,7 +105,7 @@
 }
 .btn:hover {
   background-color: #dfc516;
-  border:#6a07d2 0.5em solid;
+  border:#6a07d2 0.5vw solid;
 }
 
 .textBtn{

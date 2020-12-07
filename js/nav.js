@@ -3,6 +3,7 @@ var barreBas = document.getElementById("barre-bas");
 
 var boutonsNav = document.getElementById("site-navigation").querySelectorAll("li.page_item");
 var boutonsNavText = document.getElementById("site-navigation").querySelectorAll("a");
+var boutonsNavMobileBarres = document.getElementById("nav-menu-mobile").querySelectorAll(".barre_nav_mobile_group")
 var boutonsNavArr = Array.from(boutonsNav);
 var boutonNavBurger = document.getElementById("primary-menu-burger");
 var boutonNavBurgerBouton = document.getElementById("primary-menu-burger-bouton");
@@ -19,6 +20,8 @@ idBoutonASuivre = idBoutonOriginal;
 
 boutonsNavText[idBoutonASuivre].style.color = "#6A07D2";
 boutonsNavText[idBoutonASuivre].style.fontWeight = "bold";
+boutonsNavText[idBoutonASuivre+4].style.color = "#DFC516";
+boutonsNavMobileBarres[idBoutonASuivre].style.display = "initial";
 
 for(var i = 0; i < boutonsNavArr.length; i++){
 

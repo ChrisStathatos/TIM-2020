@@ -6,7 +6,6 @@
     background-image: url('../media/tim-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    display: none;
 }
   
 #tim-logo-link{
@@ -14,6 +13,7 @@
   transform: translate(20px, 20px);
   width: 5em;
   height: 2.5em;
+  display: none;
 }
 
 #site-navigation{
@@ -53,34 +53,44 @@
   background-color: #6A07D2;
   transform: translate(100%, 0);
 }
+#nav-mobile-grid{
+  margin: 0;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 33.333333333333333% 66.6666666666666666666%;
+  align-items: center;
+}
+.nav-mobile-griditem{
+  width: 100%;
+  height: 100%;
+}
 #nav-mobile-footer{
-  position: absolute;
-  width: 50%;
-  height: auto;
+  display: grid;
+  width: 100%;
+  height: 100%;
   bottom: 5%;
-  left: 25%;
+  align-items: center;
 }
 #nav-mobile-footer-icons{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: 45vh;
 }
 .nav-mobile-footer-icon{
-  padding: Calc(2.5vh - 1.66vw) 0 Calc(2.5vh - 1.66vw) 0;
-  font-size: Min(6vw, 5vh);
+  padding: 2vh 0 2vh 0;
+  font-size: min(400%, 7vh);
 }
 #maisonneuve-logo-nav{
-  width: Min(6vw, 5vh);;
-  height: Min(6vw, 5vh);;
+  width: Min(10vw, 5vh);;
+  height: Min(10vw, 5vh);;
   background-image: url('../media/maisonneuve.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .nav-mobile-footer-icon-bottom{
-  padding-bottom: Min(4vw, 3vh);
+  margin-bottom: Min(4vw, 3vh);
 }
 .nav-mobile-footer-icon-top{
   padding-top: Min(4vw, 3vh);
@@ -88,21 +98,19 @@
 
 #nav-mobile-footer-bordure-top{
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  width: 7em;
+  height: 63%;
   position: 0 0 0 0;
-  border: 5px white solid;
+  border: 3px white solid;
   pointer-events: none;
 }
 #nav-mobile-footer-bordure-bottom{
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  width: 7em;
+  height: 63%;
   position: 0 0 0 0;
-  border: 5px white solid;
-  transform: translate(-10px, -10px);
+  border: 3px white solid;
+  transform: translate(-6px, -6px);
   pointer-events: none;
 }
 
@@ -119,17 +127,30 @@
   pointer-events: all;
 }
 
-#site-navigation .page_item_burger{
-  margin: 5vh 0 0 0;
-  font-size: 5vw;
-  text-transform: uppercase;
-}
-
 #primary-menu-burger .nav-menu{
   position: relative;
   margin: 2em 5vw 0 0;
   padding: 0 0 0 0;
   width: 100%;
+}
+#nav-menu-mobile {
+  margin: 0 0 0 -2vw !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  justify-content: space-between;
+}
+#nav-menu-mobile li:first-of-type{
+  padding-top: 1em;
+}
+#nav-menu-mobile li:last-of-type{
+  padding-bottom: 1em;
+}
+#site-navigation .page_item_burger{
+  font-size: min(1.6em, 4.8vw);
+  letter-spacing: .2em;
+  text-transform: uppercase;
 }
 #site-navigation a{
   color: white;
@@ -147,7 +168,33 @@
   transition: 0.1s;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) {
+.barre_nav_mobile_group{
+  display: none;;
+}
+.barre_nav_mobile_top_wrapper, .barre_nav_mobile_bottom_wrapper{
+  height: 0.1em;
+  width: 100%;
+  pointer-events: none;
+  margin-bottom: 0.3em;
+  text-align: -webkit-right;
+}
+
+.barre_nav_mobile_bottom_wrapper{
+  margin-bottom: 0;
+}
+
+.barre_nav_mobile_top{
+  width: 70%;
+  height: 100%;
+  background-color: #ff04a1;
+}
+.barre_nav_mobile_bottom{
+  width: 55%;
+  height: 100%;
+  background-color: #dfc516;
+}
+
+@media screen and (min-width: 769px) {
 
   #site-navigation a{
     color: black;
@@ -173,13 +220,13 @@
   #tim-logo{
     width: 3.2em;
     height: 1.6em;
-    display: initial;
   }
 
   #tim-logo-link{
     transform: translate(15px, 15px);
     width: 3.2em;
     height: 1.6em;
+    display: initial;
   }
 
   #primary-menu{

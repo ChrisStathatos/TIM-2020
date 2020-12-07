@@ -149,6 +149,136 @@
     .prof14{
         grid-area: 7 / 2 / span 1 / span 1;
     }
+
+    
+#popup{
+    margin: 0 auto;
+    /* display: none; */
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 0;
+    z-index: 10001;
+    margin: 0 auto;
+    background-color: #6a07d2;
+    box-shadow: .8em .8em #ff04a1;
+    top: 75;
+    left: 0;
+    right: 0;
+    width: 85%;
+    height: 75%;
+    grid-template-rows:[img] 10% [nom] 5% [courriel] 5% [desc] 70% [cours] 10%;
+    padding-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@keyframes popupOpen {
+    0%{
+      transform: scale(0.0);
+    }
+
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  @keyframes popupClose {
+    0%{
+      transform: scale(1);
+    }
+
+    100%{
+      transform: scale(0.0);
+    }
+  }
+
+  .boitePortraitPopup{
+    margin: 0 auto;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border:#ff04a1 0.3em solid;
+    grid-area: img;
+    display: flex;
+    justify-self: center;
+  }
+
+   .boitePortraitPopup img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 50%;
+  }
+
+  #nomProf{
+      font-size: 1em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      color:  #dfc516;
+      grid-area: nom;
+      letter-spacing: .2em;
+  }
+
+  #courrielProf{
+      font-size: .6em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      color:  #dfc516;
+      grid-area: courriel;
+      letter-spacing: .2em;
+  }
+
+  #courrielProf:hover{
+    color: #ff04a1;
+    cursor: pointer;
+  }
+
+  #courrielProf:active{
+    color: white;
+  }
+  
+  #areaDescriptionEspacementScrollbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: desc;
+    padding: 0 3vw 0 3vw;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    color: white;
+    line-height: 2.3em;
+    letter-spacing: .2em;
+  }
+
+  #description{
+    height: 55%;
+    width: 90%;
+    font-size: .65em;
+    overflow-y: scroll;
+    padding: 0 2em 0 2em;
+  }
+
+    #description::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  #description::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  #description::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }  
+
+  #coursDonnes{
+      grid-area: cours;
+      color:  #dfc516;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      font-size: 1em;
+      letter-spacing: .2em;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px){
@@ -279,6 +409,139 @@
     .prof14{
         grid-area: 5 / 5 / span 2 / span 1;
     }
+
+    #popup{
+        margin: 0 auto;
+        /* display: none; */
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 0;
+        z-index: 10001;
+        margin: 0 auto;
+        background-color: #6a07d2;
+        box-shadow: .8em .8em #dfc516;
+        box-shadow: .8em .8em #ff04a1;
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 75%;
+        height: 80%;
+        animation: popupOpen 0.5s;
+        grid-template-rows:[img] 30% [nom] 5% [courriel] 3% [desc] 55% [cours] 7%;
+        padding-top: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    @keyframes popupOpen {
+        0%{
+          transform: scale(0.0);
+        }
+    
+        100%{
+          transform: scale(1);
+        }
+      }
+    
+      @keyframes popupClose {
+        0%{
+          transform: scale(1);
+        }
+    
+        100%{
+          transform: scale(0.0);
+        }
+      }
+    
+      .boitePortraitPopup{
+        margin:0 auto;
+        width: 9em;
+        height: 9em;
+        border-radius: 50%;
+        border:#ff04a1 0.4em solid;
+        grid-area: img;
+        margin-bottom: 1em;
+        display: flex;
+        justify-self: center;
+      }
+    
+       .boitePortraitPopup img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left top;
+        border-radius: 50%;
+      }
+    
+      #nomProf{
+          font-size: 1.9em;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color:  #dfc516;
+          grid-area: nom;
+          letter-spacing: .2em;
+          margin-bottom: auto;
+      }
+    
+      #courrielProf{
+          font-size: 1em;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color:  #dfc516;
+          grid-area: courriel;
+          letter-spacing: .2em;
+      }
+    
+      #courrielProf:hover{
+        color: #ff04a1;
+        cursor: pointer;
+      }
+    
+      #courrielProf:active{
+        color: white;
+      }
+      
+      #areaDescriptionEspacementScrollbar{
+        margin-top: 3em;
+        margin-bottom: 0;
+        grid-area: desc;
+        padding: 0 6vw 0 6vw;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 500;
+        color: white;
+        line-height: 2.5em;
+        letter-spacing: .2em;
+      }
+    
+      #description{
+        height: 50%;
+        width: 90%;
+        font-size: .8em;
+        overflow-y: scroll;
+        padding: 0 3em 0 3em;
+      }
+    
+        #description::-webkit-scrollbar {
+        width: .4em;
+      }
+    
+      #description::-webkit-scrollbar-track {
+        background: none; 
+      }
+    
+      #description::-webkit-scrollbar-thumb {
+        background: #dfc516;
+      }  
+    
+      #coursDonnes{
+          grid-area: cours;
+          color:  #dfc516;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bolder;
+          font-size: 1em;
+          letter-spacing: .2em;
+      }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
@@ -405,6 +668,140 @@
     .prof14{
         grid-area: 5 / 5 / span 2 / span 1;
     }
+
+    
+    #popup{
+        margin: 0 auto;
+        /* display: none; */
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 0;
+        z-index: 10001;
+        margin: 0 auto;
+        background-color: #6a07d2;
+        box-shadow: .8em .8em #dfc516;
+        box-shadow: .8em .8em #ff04a1;
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 75%;
+        height: 80%;
+        animation: popupOpen 0.5s;
+        grid-template-rows:[img] 30% [nom] 5% [courriel] 3% [desc] 55% [cours] 7%;
+        padding-top: 2em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    @keyframes popupOpen {
+        0%{
+          transform: scale(0.0);
+        }
+    
+        100%{
+          transform: scale(1);
+        }
+      }
+    
+      @keyframes popupClose {
+        0%{
+          transform: scale(1);
+        }
+    
+        100%{
+          transform: scale(0.0);
+        }
+      }
+    
+      .boitePortraitPopup{
+        margin: 0 auto;
+        width: 11em;
+        height: 11em;
+        border-radius: 50%;
+        border:#ff04a1 0.4em solid;
+        grid-area: img;
+        margin-bottom: 1em;
+        display: flex;
+        justify-self: center;
+      }
+    
+       .boitePortraitPopup img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left top;
+        border-radius: 50%;
+      }
+    
+      #nomProf{
+          font-size: 2.2em;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color:  #dfc516;
+          grid-area: nom;
+          letter-spacing: .2em;
+          margin-bottom: auto;
+      }
+    
+      #courrielProf{
+          font-size: 1.2em;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color:  #dfc516;
+          grid-area: courriel;
+          letter-spacing: .2em;
+      }
+    
+      #courrielProf:hover{
+        color: #ff04a1;
+        cursor: pointer;
+      }
+    
+      #courrielProf:active{
+        color: white;
+      }
+      
+      #areaDescriptionEspacementScrollbar{
+        margin-top: 2em;
+        margin-bottom: 0;
+        grid-area: desc;
+        padding: 0 6vw 0 6vw;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 500;
+        color: white;
+        line-height: 2.5em;
+        letter-spacing: .2em;
+      }
+    
+      #description{
+        height: 55%;
+        width: 90%;
+        font-size: 1.2em;
+        overflow-y: scroll;
+        padding: 0 3em 0 3em;
+      }
+    
+        #description::-webkit-scrollbar {
+        width: .4em;
+      }
+    
+      #description::-webkit-scrollbar-track {
+        background: none; 
+      }
+    
+      #description::-webkit-scrollbar-thumb {
+        background: #dfc516;
+      }  
+    
+      #coursDonnes{
+          grid-area: cours;
+          color:  #dfc516;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bolder;
+          font-size: 1.2em;
+          letter-spacing: .2em;
+      }
 }
 
 @media screen and (min-width: 1200px){
@@ -435,8 +832,6 @@
 }
 
     .boite-photo{
-    /* height: 10em;
-    width: 8em; */
     height: 17vh;
     width: 6vw;
      border: .4em solid #dfc516; 
@@ -562,18 +957,19 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    grid-row-gap: .1em;
+    grid-row-gap: 0;
     z-index: 10001;
     margin: 0 auto;
     background-color: #6a07d2;
     box-shadow: .8em .8em #dfc516;
     box-shadow: .8em .8em #ff04a1;
     top: 16.25%;
-    left: 25%;
+    left: 0;
+    right: 0;
     width: 50%;
-    height: 60%;
+    height: 65%;
     animation: popupOpen 0.5s;
-    grid-template-rows:[img] 30% [nom] 5% [courriel] 5% [desc] 40% [cours] 10%;
+    grid-template-rows:[img] 30% [nom] 5% [courriel] 3% [desc] 42% [cours] 10%;
     padding-top: 1.5em;
     text-align: center;
     text-transform: uppercase;
@@ -626,7 +1022,7 @@
       color:  #dfc516;
       grid-area: nom;
       letter-spacing: .2em;
-      margin-bottom: 1.1em;
+      margin-bottom: auto;
   }
 
   #courrielProf{
@@ -646,19 +1042,38 @@
   #courrielProf:active{
     color: white;
   }
+  
+  #areaDescriptionEspacementScrollbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: desc;
+    padding: 0 6vw 0 6vw;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    color: white;
+    line-height: 2.5em;
+    letter-spacing: .2em;
+  }
 
   #description{
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: .8em;
-      grid-area: desc;
-      padding: 0 12em 0 12em;
-      font-family: 'Comfortaa', cursive;
-      font-weight: 500;
-      color: white;
-      line-height: 2.5em;
-      letter-spacing: .2em;
+    height: 40%;
+    width: 90%;
+    font-size: .8em;
+    overflow-y: scroll;
+    padding: 0 3em 0 3em;
   }
+
+    #description::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  #description::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  #description::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }  
 
   #coursDonnes{
       grid-area: cours;

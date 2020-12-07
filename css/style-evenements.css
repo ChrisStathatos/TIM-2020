@@ -7,7 +7,24 @@
   .boutonEvent{
     display: block;
   }
-  
+
+  .modal-close {
+    color:  #6a07d2;
+    line-height: 50px;
+    font-size: 3em;
+    position: absolute;
+    right: -0.5em;
+    text-align: center;
+    top: -0.5em;
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:  #dfc516;
+  }
+  #dot{
+    height: 0;
+  }
   .noMobile{
     display: none;
   }
@@ -30,6 +47,7 @@
     width: 100%;
     border-bottom: 1em solid #6a07d2;
     border-right:1em solid #6a07d2;
+    transform: translateY(1em);
   }
   
   #plus2{
@@ -236,14 +254,32 @@
     box-shadow: .5em .5em #ff04a1;
   }
   
+  #description{
+    margin-top: 0.5em;
+    height: 60%;
+  }
+
   #texte-pop
   {
     width: 90%;
     margin: 0 auto;
     text-align: justify;
-    height: 45%;
+    height: 100%;
     overflow-y: scroll;
+    padding: 0 10px 0 10px;
   }
+
+  #texte-pop::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  #texte-pop::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  #texte-pop::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }  
   
     @keyframes popupOpen {
       0%{
@@ -286,7 +322,7 @@
     }
   
     .itemSelect{
-      
+      margin-top: 1em;
       align-self: stretch;
       text-align: center;
       grid-area: txt;
@@ -297,11 +333,12 @@
     }
   
     .titre-event-select{
-      font-family: 'Comfortaa', cursive;
+      font-family: Montserrat, sans-serif;
       margin-top: 0.1em;
       margin-bottom: 0;
       text-transform: uppercase;
       font-size: 1.3em;
+      color: #6a07d2;
   }
   
   .date-select{
@@ -312,25 +349,25 @@
       margin-bottom: 0.5em;
       word-spacing: 1.1em;
       font-weight: bold;
+      color: #6a07d2;
   }
   
   #local{
       margin: 0 auto;
       width: 40%;
-      border-bottom:#dfc516 0.4em solid;
+      border-bottom:#dfc516 0.2em solid;
       padding-bottom: 0.7em;
   }
   
   
   .dot {
     position: relative;
-    top: -30;
+    top: -40;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     margin: 0 2px;
-    background-color: #ffffff;
-    border:#6a07d2 0.2em solid;
+    border:#dfc516 0.2em solid;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -346,7 +383,24 @@
     body{
       margin: 0;
     }
+    .modal-close {
+      color:  #6a07d2;
+      line-height: 50px;
+      font-size: 4em;
+      position: absolute;
+      right: -0.5em;
+      text-align: center;
+      top: -0.4em;
+      width: 1em;
+      text-decoration: none;
+      font-family: 'Montserrat',sans-serif;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:  #dfc516;
+    }
     
+    #dot{
+      height: 0;
+    }
     .boutonEvent{
       display: block;
     }
@@ -373,6 +427,7 @@
       width: 100%;
       border-bottom: 1em solid #6a07d2;
       border-right:1em solid #6a07d2;
+      transform: translateY(1em);
     }
     
     #plus2{
@@ -569,6 +624,11 @@
       align-items: center;
     }
     
+    #description{
+      height: 60%;
+      margin-top: 0.5em;
+    }
+
     #popup{
       z-index: 10001;
       position: fixed;
@@ -591,10 +651,22 @@
       width: 90%;
       margin: 0 auto;
       text-align: justify;
-      height: 60%;
+      height: 100%;
       overflow-y: scroll;
+      padding: 0 10px 0 10px;
     }
-    
+  
+    #texte-pop::-webkit-scrollbar {
+      width: .4em;
+    }
+  
+    #texte-pop::-webkit-scrollbar-track {
+      background: none; 
+    }
+  
+    #texte-pop::-webkit-scrollbar-thumb {
+      background: #dfc516;
+    } 
       @keyframes popupOpen {
         0%{
           transform: scale(0.0);
@@ -636,7 +708,7 @@
       }
     
       .itemSelect{
-        
+      margin-top: 1em;
       align-self: stretch;
       text-align: center;
       grid-area: txt;
@@ -646,11 +718,12 @@
       }
     
       .titre-event-select{
-      font-family: 'Comfortaa', cursive;
+        font-family: 'Montserrat', sans-serif;
       margin-top: 0.1em;
       margin-bottom: 0;
       text-transform: uppercase;
       font-size: 2em;
+      color: #6a07d2;
     }
     
     .date-select{
@@ -661,25 +734,25 @@
       margin-bottom: 0.5em;
       word-spacing: 1.1em;
       font-weight: bold;
+      color: #6a07d2;
     }
     
     #local{
       margin: 0 auto;
       width: 40%;
-      border-bottom:#dfc516 0.4em solid;
+      border-bottom:#dfc516 0.2em solid;
       padding-bottom: 0.7em;
     }
     
     
     .dot {
       position: relative;
-      top: -30;
+      top: -40;
       cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 25px;
+      width: 25px;
       margin: 0 2px;
-      background-color: #ffffff;
-      border:#6a07d2 0.2em solid;
+      border:#dfc516 0.2em solid;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
@@ -695,7 +768,23 @@
     body{
         margin: 0;
     }
-    
+    .modal-close {
+      color:  #6a07d2;
+      line-height: 50px;
+      font-size: 6em;
+      position: absolute;
+      right: -0.5em;
+      text-align: center;
+      top: -0.3em;
+      width: 1em;
+      text-decoration: none;
+      font-family: 'Montserrat',sans-serif;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:  #dfc516;
+    }
+    #dot{
+      height: 0;
+    }
     .boutonEvent{
       display: block;
     }
@@ -719,10 +808,10 @@
     }
     
     #plus1{
-    
       width: 100%;
       border-bottom: 1em solid #6a07d2;
       border-right:1em solid #6a07d2;
+      transform: translateY(1em);
     }
     
     #plus2{
@@ -936,6 +1025,11 @@
       box-shadow: .5em .5em #ff04a1;
     }
     
+    #description{
+      margin-top: 0.5em;
+      height: 75%;
+    }
+
     #texte-pop
     {
       font-size: 1.3em;
@@ -944,8 +1038,20 @@
       text-align: justify;
       height: 100%;
       overflow-y: scroll;
+      padding: 0 10px 0 10px;
     }
-    
+  
+    #texte-pop::-webkit-scrollbar {
+      width: .4em;
+    }
+  
+    #texte-pop::-webkit-scrollbar-track {
+      background: none; 
+    }
+  
+    #texte-pop::-webkit-scrollbar-thumb {
+      background: #dfc516;
+    } 
       @keyframes popupOpen {
         0%{
           transform: scale(0.0);
@@ -987,7 +1093,7 @@
       }
     
       .itemSelect{
-        
+        margin-top: 1em;
         align-self: stretch;
         text-align: center;
         grid-area: txt;
@@ -997,11 +1103,12 @@
       }
     
       .titre-event-select{
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Montserrat', sans-serif;
         margin-top: 0.1em;
         margin-bottom: 0;
         text-transform: uppercase;
         font-size: 2em;
+        color: #6a07d2;
     }
     
     .date-select{
@@ -1012,25 +1119,25 @@
         margin-bottom: 0.5em;
         word-spacing: 1.1em;
         font-weight: bold;
+        color: #6a07d2;
     }
     
     #local{
         margin: 0 auto;
         width: 40%;
-        border-bottom:#dfc516 0.4em solid;
+        border-bottom:#dfc516 0.2em solid;
         padding-bottom: 0.7em;
     }
     
     
     .dot {
       position: relative;
-      top: -30;
+      top: -40;
       cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 25px;
+      width: 25px;
       margin: 0 2px;
-      background-color: #ffffff;
-      border:#6a07d2 0.2em solid;
+      border:#dfc516 0.2em solid;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
@@ -1052,7 +1159,9 @@
       background-color: #7F7F7F;
       opacity: 0.5;
   }
-  
+  .modal-close {
+    display: none;
+  }
   .grid-evenement{
       margin-top: 4em;
       display: grid;
@@ -1068,7 +1177,8 @@
   }
   
   .evenement-dans-grille:hover{
-    outline: 3px #ff04a1 solid;
+    outline: 3px #dfc516 solid;
+    background-color: rgb(223, 197, 22, 1);
     z-index: 1001;
     cursor: pointer;
   }
@@ -1121,6 +1231,10 @@
       font-weight: bold;
       text-transform: none;
   }
+
+  #description-event-recent{
+    text-align: justify;
+  }
   
   .description-txt{
       margin-left: 2em;
@@ -1129,8 +1243,6 @@
   }
   
   .description-txt-popup{
-    margin-left: 2em;
-    margin-right: 2em;
     text-align: justify;
     line-height: 2em;
     color: black;
@@ -1167,6 +1279,11 @@
       margin-top: 0.5em;
       margin-bottom: 3em;
       font-weight: bold;
+      border-bottom: #dfc516 solid 0.2em;
+      padding-bottom: 1em;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 0.5em;
   }
   
   #afficherPlus{
@@ -1213,7 +1330,7 @@
     .border-outer-top{
       height:40%;
       width:100%;
-      border:solid 0.6em #6a07d2;
+      border:solid 0.3em #6a07d2;
       padding-top: 0.2em;
       padding-left: 0.5em;
     }
@@ -1221,10 +1338,10 @@
     .border-top{
       display: flex;
       padding-right: 0.5em;
-      padding-bottom: 0.2em;
+      padding-bottom: 0.5em;
       height:100%;
       width:100%;
-      border:solid 0.6em #ff04a1;
+      border:solid 0.3em #ff04a1;
       float:left;
       justify-content: center;
       align-items: center;
@@ -1247,7 +1364,37 @@
         box-shadow: .8em .8em #dfc516;
         box-shadow: .8em .8em #ff04a1;
     }
-  
+
+  #texte-pop
+  {
+    margin: 0 auto;
+    height: 65%;
+    overflow-y: scroll;
+    padding: 0 15px 0 15px;
+    margin-top: 0.5em;
+  }
+
+  #description{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+
+  #texte-pop::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  #texte-pop::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  #texte-pop::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  } 
+    #dot{
+      height: 0;
+    }
+
     @keyframes popupOpen {
       0%{
         transform: scale(0.0);
@@ -1288,7 +1435,7 @@
     }
   
     .itemSelect{
-      
+      margin-top: 1em;
       align-self: stretch;
       text-align: center;
       grid-area: txt;
@@ -1322,18 +1469,18 @@
   #local{
       margin: 0 auto;
       width: 40%;
-      border-bottom:#dfc516 0.4em solid;
+      border-bottom:#dfc516 0.2em solid;
+      padding-bottom: 1em;
   }
   
   .dot {
       position: relative;
-      top: -30;
+      top: -40;
       cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 25px;
+      width: 25px;
       margin: 0 2px;
-      background-color: #ffffff;
-      border:#6a07d2 0.2em solid;
+      border:#dfc516 0.2em solid;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
