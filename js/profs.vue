@@ -6,7 +6,9 @@
           </div>
           <h3 id="nomProf">{{ unprofesseur.nom }}</h3>
           <h4 id="courrielProf">{{ unprofesseur.courriel }}</h4>
+          <div id="areaDescriptionEspacementScrollbar">
           <p id="description">{{ unprofesseur.description }}</p>
+          </div>
           <h5 id="coursDonnes">Cours donnés :...</h5>
         </div>
       </div>

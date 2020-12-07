@@ -646,19 +646,38 @@
   #courrielProf:active{
     color: white;
   }
+  
+  #areaDescriptionEspacementScrollbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: desc;
+    padding: 0 6vw 0 6vw;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    color: white;
+    line-height: 2.5em;
+    letter-spacing: .2em;
+  }
 
   #description{
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: .8em;
-      grid-area: desc;
-      padding: 0 12em 0 12em;
-      font-family: 'Comfortaa', cursive;
-      font-weight: 500;
-      color: white;
-      line-height: 2.5em;
-      letter-spacing: .2em;
+    height: 35%;
+    width: 90%;
+    font-size: .8em;
+    overflow-y: scroll;
+    padding: 0 3em 0 3em;
   }
+
+    #description::-webkit-scrollbar {
+    width: .4em;
+  }
+
+  #description::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  #description::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }  
 
   #coursDonnes{
       grid-area: cours;
