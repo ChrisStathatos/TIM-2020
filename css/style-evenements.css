@@ -7,6 +7,21 @@
   .boutonEvent{
     display: block;
   }
+
+  .modal-close {
+    color:  #6a07d2;
+    line-height: 50px;
+    font-size: 3em;
+    position: absolute;
+    right: -0.5em;
+    text-align: center;
+    top: -0.5em;
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:  #dfc516;
+  }
   #dot{
     height: 0;
   }
@@ -368,6 +383,21 @@
     body{
       margin: 0;
     }
+    .modal-close {
+      color:  #6a07d2;
+      line-height: 50px;
+      font-size: 4em;
+      position: absolute;
+      right: -0.5em;
+      text-align: center;
+      top: -0.4em;
+      width: 1em;
+      text-decoration: none;
+      font-family: 'Montserrat',sans-serif;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:  #dfc516;
+    }
+    
     #dot{
       height: 0;
     }
@@ -737,6 +767,20 @@
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     body{
         margin: 0;
+    }
+    .modal-close {
+      color:  #6a07d2;
+      line-height: 50px;
+      font-size: 6em;
+      position: absolute;
+      right: -0.5em;
+      text-align: center;
+      top: -0.3em;
+      width: 1em;
+      text-decoration: none;
+      font-family: 'Montserrat',sans-serif;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:  #dfc516;
     }
     #dot{
       height: 0;
@@ -1115,7 +1159,9 @@
       background-color: #7F7F7F;
       opacity: 0.5;
   }
-  
+  .modal-close {
+    display: none;
+  }
   .grid-evenement{
       margin-top: 4em;
       display: grid;
@@ -1185,6 +1231,10 @@
       font-weight: bold;
       text-transform: none;
   }
+
+  #description-event-recent{
+    text-align: justify;
+  }
   
   .description-txt{
       margin-left: 2em;
@@ -1229,6 +1279,11 @@
       margin-top: 0.5em;
       margin-bottom: 3em;
       font-weight: bold;
+      border-bottom: #dfc516 solid 0.2em;
+      padding-bottom: 1em;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 0.5em;
   }
   
   #afficherPlus{
