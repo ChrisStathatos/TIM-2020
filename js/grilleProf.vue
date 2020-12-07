@@ -45,12 +45,20 @@ module.exports = {
       this.unprof = professeur;
       this.affichemodal = !this.affichemodal;
     },
+    
     enleverpopup() {
-      this.affichemodal = false;
+      //this.affichemodal = false;
+        document.getElementById("popup").style.animation="popupClose 0.3s"
+        setTimeout(function() {
+        document.getElementById("popup").style.display = "none";
+        }, 300);
+        
+        document.getElementById("cover").style.display = "none";
     }
   },
 
 };
 </script>
 
-<style></style>
+<style>
+</style>
