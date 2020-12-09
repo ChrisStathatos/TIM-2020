@@ -67,7 +67,7 @@ font-family: 'Comfortaa', cursive;
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .media {
  display: none;
   }
@@ -75,7 +75,7 @@ font-family: 'Comfortaa', cursive;
   .copyright{
     padding: -0.4rem;
     font-size: 0.8em;
-    left: 50%;
+    left: 41%;
     letter-spacing: 1px;
     margin-top: 15px;
     color: white;
@@ -87,15 +87,41 @@ font-family: 'Comfortaa', cursive;
    display:none;
 }
 
-
-
 }
-
 
 
 @media screen and (max-width: 769px) {
 .media {
- display: none;
+display: none;
+}
+
+.copyright{
+  padding: -0.4rem;
+  font-size: 0.8em;
+  left: 41%;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
+#maisonneuve-logo{
+
+ display:none;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+.media {
+  position: relative;
+  display: flex;
+  padding: 0.6rem;
+  font-size: 1.5em;
+  left: 89%;
+  width: 100%;
+  letter-spacing: 14px;
 }
 
 .media a{
@@ -123,8 +149,8 @@ footer {
   position: absolute;
   display: flex;
   padding: -0.4rem;
-  font-size: 1em;
-  left: 35%;
+  font-size: 1.2em;
+  left: 47%;
   letter-spacing: 1px;
   margin-top: 15px;
   color: white;
@@ -135,7 +161,7 @@ footer {
 #maisonneuve-logo{
   
     position: absolute;
-    display: none;
+    display: flex;
     margin-top: 0.625em; 
     margin-left: 1.625em;
     width: 1.5625em;
