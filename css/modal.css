@@ -278,10 +278,10 @@ body{
 
   #listeDesCours {
     padding-left: 0vw;
-    border-bottom: solid 1.2vw #ff04a1;
+    border-bottom: solid 1.3vw #ff04a1;
   }
 
-
+/* 
   .sessions {
     display: grid;
     justify-content: flex-start;
@@ -289,9 +289,23 @@ body{
     width: 0%;
     margin-bottom: 0em;
     
-  }
+  } */
 
-
+.sessions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+      "cell1 cell2"
+      "cell3 cell4"
+      "cell5 cell6"
+      "cell7 cell8"
+      "cell9 cell10";
+  justify-content: flex-start;
+  margin-left: 32%;
+  width: 0%;
+  margin-bottom: -0.1em;
+}
 
   .sessions h1 {
     border-style: solid;
@@ -328,7 +342,7 @@ body{
     color: black;
     width: 100vw;
     height: 7vw;
-    /* border: solid 1px #ff04a1; */
+    border: solid 1px #ff04a1;
     border-top:solid 0.35em #ff04a1;
     /* border-bottom: solid 0.1em #ff04a1; */
     border-right: none;
@@ -412,7 +426,6 @@ body{
     box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
-
     position: relative;
     cursor: pointer;
   }
@@ -420,7 +433,7 @@ body{
   
   .lesCours {
     display: grid;
-    margin-top: 3em;
+    margin-top: 4.3em;
     /* width: 96%; */
     margin-left: 0em;
     width: 11vw;
@@ -428,21 +441,37 @@ body{
   }
 
 
-
+.btnChoix{
+ display: none;
+}
   
 
   #listeDesCours div:nth-child(6) .sessions {
     border-bottom: 0.25em solid #ff04a1;
   }
 
-  /* .lesCours div:nth-child(5) .dropdown {
-    border-bottom: 0.25em solid #e427ec;
+
+/* 
+  #listeDesCours div:nth-child(4)  {
+    grid-area: cell9;
   } */
+
+
+  /* .lesCours div:nth-child(4) .dropdown {
+    border-bottom: 0.1em solid #ff04a1;
+  } */
+
+  
 
   /* .dropdown {
     display: none;
   } */
 
+  #session div:nth-child(4).dropdown   {
+    display: none;
+  }
+
+  
   /* .sessions div:nth-child(4) .dropdown{
   display: none;    
 }
@@ -731,7 +760,7 @@ body{
     color: black;
     width: 100vw;
     height: 7vw;
-    /* border: solid 1px #ff04a1; */
+    border: solid 1px #ff04a1;
     border-top:solid 0.65em #ff04a1;
     /* border-bottom: solid 0.1em #ff04a1; */
     border-right: none;

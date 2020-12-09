@@ -27,8 +27,6 @@ fetch("data/cours.json")
       boutonSession.classList = "bouton";
       elUneSession.appendChild(boutonSession);
 
-      
-
       for (const unCours of uneSession) {
         if (unCours.length > 1) {
           const elUnCours = document.createElement("div");
