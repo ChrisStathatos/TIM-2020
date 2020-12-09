@@ -1,15 +1,19 @@
+#global{
+  margin: 0 auto;
+}
 
-.interior{
+
+.interior {
   margin-top: 30%;
   margin-right: 100%;
   padding-top: 50%;
   padding-right: 30%;
-  margin-bottom:60%
+  margin-bottom: 60%;
 }
 
 .modal-window {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color:#7F7F7F;
   top: 0;
   right: 0;
   bottom: 0;
@@ -29,15 +33,15 @@
 }
 
 .modal-window > div {
-  width:70vw;
+  width: 70vw;
   position: absolute;
-  height:70vh;
+  height: 70vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2em;
-  background-color: #E8E8DB;
-  border:#dfc516 0.8em solid;
+  background-color: #e8e8db;
+  border: #dfc516 0.8em solid;
 }
 
 .modal-window header {
@@ -45,32 +49,34 @@
 }
 
 .modal-window h1 {
-    color: #6a07d2;
-    font-family: 'Montserrat',sans-serif;
-    text-transform: uppercase;
-    font-size:2vw;
-    margin:0;
+  color: #6a07d2;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2vw;
+  margin: 0;
+  width: 100%;
 }
 
 .titre {
   color: #6a07d2;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size:2vw;
-  margin:0;
+  font-size: 2vw;
+  margin: 0;
+  width: 100%;
 }
 
-
-.ponderation{
-  margin:0;
+.ponderation {
+  margin: 0;
   color: #6a07d2;
-   font-size: 1.5vw;
-  font-family: 'Montserrat',sans-serif;
+  font-size: 1.5vw;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  padding-bottom: 0.5em;
 }
 
 .modal-close {
-  color:  #6a07d2;
+  color: #6a07d2;
   line-height: 3vw;
   font-size: 3vw;
   position: absolute;
@@ -79,7 +85,7 @@
   top: 10;
   width: 70px;
   text-decoration: none;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 1;
 }
 
@@ -95,120 +101,123 @@
   color: white;
   width: 7vw;
   height: 7vw;
-  transform:rotate(45deg);
-  border:#dfc516 0.5vw solid;
+  transform: rotate(45deg);
+  border: #dfc516 0.5vw solid;
   z-index: 2;
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .btn:hover {
   background-color: #dfc516;
-  border:#6a07d2 0.5vw solid;
+  border: #6a07d2 0.5vw solid;
 }
 
-.textBtn{
-  transform:rotate(-45deg);
-  font-size:1vw;
+.textBtn {
+  transform: rotate(-45deg);
+  font-size: 1vw;
   text-transform: uppercase;
 }
 
-.prerequis :last-child{
+.prerequis :last-child {
   color: black;
-  font-size:1.2vw;
-  font-family: 'Montserrat',sans-serif;
-  margin:-0.6em;
+  font-size: 1.2vw;
+  font-family: "Montserrat", sans-serif;
+  margin: -0.6em;
   margin-right: 0em;
   justify-self: flex-end;
   text-align: right;
 }
-.prerequis :first-child{
+.prerequis :first-child {
   color: #6a07d2;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-align: right;
-  margin:0;
+  margin: 0;
 }
-.prerequis{
+.prerequis {
   justify-self: flex-end;
   grid-area: cell3;
-  font-size:1vw;
+  font-size: 1vw;
   margin-top: 4em;
+  grid-area: cell6;
 }
-.heures :last-child{
+.heures :last-child {
   color: black;
-  font-size:1.2vw;
-  font-family: 'Montserrat',sans-serif;
-  margin:-0.6em;
+  font-size: 1.2vw;
+  font-family: "Montserrat", sans-serif;
+  margin: -0.6em;
   margin-right: 0em;
   justify-self: flex-end;
   text-align: right;
 }
-.heures :first-child{
+.heures :first-child {
   color: #6a07d2;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-align: right;
-  margin:0;
+  margin: 0;
 }
-.heures{
+.heures {
   justify-self: flex-end;
   grid-area: cell3;
-  font-size:1vw;
-}
-
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "cell1 cell2"
-                       "cell3 cell3";
-  margin-top:2vw;
-}
-.description{
-  margin:0;
-  font-size: .8em;
-  font-family: 'Comfortaa', cursive;
-  line-height: 1.6vw;
-  margin-right:1vw; 
-  text-transform: uppercase;
-  flex:1;
-  height: 100%;
-  overflow-y: scroll;
+  font-size: 1vw;
+  grid-area: cell6;
   
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.9fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+      "cell1 cell1"
+      "cell3 cell4"
+      "cell5 cell6";
+}
+.description {
+  margin: 0;
+  font-size: 0.8em;
+  font-family: "Comfortaa", cursive;
+  line-height: 1.6vw;
+  margin-right: 1vw;
+  text-transform: uppercase;
+  flex: 1;
+  height: 100%;
+  overflow-y: scroll;
+  grid-area: cell3;
+}
+
 .description::-webkit-scrollbar {
-  width: .4em;
+  width: 0.4em;
 }
 
 .description::-webkit-scrollbar-track {
-  background: none; 
+  background: none;
 }
 
 .description::-webkit-scrollbar-thumb {
   background: #dfc516;
-}  
-
-
-
-
-.sessionTxt{
-  font-size:1vw; 
 }
-.imgCours{
-  width:30vw;
+
+.sessionTxt {
+  font-size: 1vw;
+}
+.imgCours {
+  width: 30vw;
   justify-self: center;
-  margin-right:-4vw;
-  margin-left:1vw;
+  margin-right: -4vw;
+  margin-left: 1vw;
   margin-bottom: 1vw;
   border-bottom: 0.5vw #ff04a1 solid;
+  grid-area: cell4;
 }
 
-
-.bouton{
+.bouton {
   display: none;
 }
 
@@ -224,123 +233,217 @@
 
 
 
-@media screen and (max-width: 600px) and (min-width: 700px) {
-  
-  .interior{
-    margin-top: 10%;
-    margin-right: 10%;
-    padding-top: 10%;
-    padding-right: 10%;
-    margin-bottom:10%
-  }
+/* STYLE Mobile */
+@media screen and (max-width: 600px) {
 
-  .modal-window > div {
-    width:115vw;
-    height:95vh;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-    background-color: #E8E8DB;
-    border:#dfc516 0.3em solid;
-  }
-
-
-
-
-#listeDesCours{
-margin-top: 8em;
+  #global{
+    margin: 0 auto;
+    
 }
 
-.sessions h1{
-  border-style: solid;
-  border-width: 0.1em;
-  border-color: #6a07d2;
-  border-spacing: 40px 15px;
-  width: -10em;
+body{
+  margin: 0 0 0 0;
+  margin-bottom: 50%;
 }
 
-
-.btn {
-  background-color: none;
-  padding: 1em 1em 1em;
-  border-radius: 3px;
-  text-decoration: none;
-  color: black;
-  width: 7vw;
-  height: 7vw;
-  border:solid #e427ec;
-  z-index: 2;
-  transform: rotate(0deg);
-  display: flex; 
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Montserrat',sans-serif;
-}
-
-.textBtn{
-  transform:rotate(0deg);
-  font-size:1vw;
-  text-transform: uppercase;
-}
-
-
-.lignes {
-  margin-top: 0vw; 
+#cercles {
+  /* margin-top: 2em; */
+  background-image: url(../media/motif-picot.png);
   position: absolute;
-  right: 0;
   display: none;
-  justify-content: center;
-  align-self: center;
-  width: 100%;
-  height: 1vw;
-  background-color: #e427ec;
-}
-
-.fleche{
-  display: block;
-  box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
-  border-style: solid;
-  border-color: #6a07d2;
-  border-width: 0px 5px 5px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-  left: 15em;
-  bottom: 4.5em;
-  box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
-  -webkit-box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
-  -moz-box-shadow: 3px 3px 0px 0px rgba(223,197,22,0.75);
-
-  position: relative;
-  cursor: pointer;
+  width: 40em;
+  height: 20em;
+  /* background-color: #0da5c5; */
 }
 
 
-.sessions {
-  display: grid;
-  justify-content: flex-start;
-  margin-left: 11em;
-  border-width: 100%;
+  .interior {
+    margin-top: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+    padding-right: 0%;
+    margin-bottom: 0%;
+  }
+
+  footer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 2.8em;
+    background-color: #6A07D2;
+    text-align: 10%;
+    bottom: 0%;
+    z-index:1200;
+    }
+
+  #listeDesCours {
+    padding-left: 0vw;
+    border-bottom: solid 1.2vw #ff04a1;
+  }
+
+
+  .sessions {
+    display: grid;
+    justify-content: flex-start;
+    margin-left: 32%;
+    width: 0%;
+    margin-bottom: 0em;
+    
+  }
+
+
+
+  .sessions h1 {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #6a07d2;
+    color: #6A07D2;
+   border-width: 0.2em;
+    font-size: 4.3vw;
+    padding-top: 1vh;
+    padding-right: 3.5vw;
+    padding-left: 3.8vw;
+    width: 25vw;
+    height: 7vw;
+    
+  }
+
+  .sessions h1:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    right: -8px;
+    bottom: -8px;
+    border-style: solid;
+    border-color: #dfc516;
+    z-index: -1200;
+  }
+
+
+  .btn {
+    background-color: #E8E8DB;
+    padding: 1em 1em 1em;
+    text-decoration: none;
+    color: black;
+    width: 100vw;
+    height: 7vw;
+    /* border: solid 1px #ff04a1; */
+    border-top:solid 0.35em #ff04a1;
+    /* border-bottom: solid 0.1em #ff04a1; */
+    border-right: none;
+    z-index: 2;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .btn:hover {
+    background-color: #dfc516;
+    border-top:solid 0.35em #ff04a1;
+    border-bottom: solid 0.1em #ff04a1;
+    
+  }
+
+
+  .textBtn {
+    transform: rotate(0deg);
+    font-size: 5vw;
+    margin-right: -1em;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+  }
+
+  .lignes{
+    margin-top: -1vw;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 1.2vw;
+    background-color: #ff04a1;
 }
+#listeDesCours .lignes{
+    padding-left:1vw;
+    background-color: #ff04a1;   
+}
+
+#listeDesCours div:nth-child(1) .lignes{
+  background-color: #ff04a1;    
+}
+#listeDesCours div:nth-child(2) .lignes{
+  background-color: #ff04a1;    
+}
+
+#listeDesCours div:nth-child(3) .lignes{
+    background-color: #ff04a1;  
+    height: 1.2vw;
+}
+#listeDesCours div:nth-child(4) .lignes{
+    background-color: #ff04a1;   
+    height: 1.2vw; 
+}
+#listeDesCours div:nth-child(5) .lignes{
+    background-color: #ff04a1;    
+    height: 1.2vw;
+}
+#listeDesCours div:nth-child(6) .lignes{
+    background-color: #ff04a1;  
+    height: 1.2vw;
+}
+
+  .fleche {
+    display: block;
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: #6a07d2;
+    border-width: 0px 5px 5px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    left: 12em;
+    bottom: -1.1em;
+    box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+
+    position: relative;
+    cursor: pointer;
+  }
+
   
-.dropdown{
-  border-top: 0.2em solid #e427ec;
-  border-width: 100%;
-}
+  .lesCours {
+    display: grid;
+    margin-top: 3em;
+    /* width: 96%; */
+    margin-left: 0em;
+    width: 11vw;
+    border-width: 100%;
+  }
 
-.sessions div:nth-child(7) .dropdown{
-  border-bottom: 0.2em solid #e427ec; 
-} 
 
 
- .dropdown{
-  display: none;
-}
+  
 
-/* .sessions div:nth-child(4) .dropdown{
+  #listeDesCours div:nth-child(6) .sessions {
+    border-bottom: 0.25em solid #ff04a1;
+  }
+
+  /* .lesCours div:nth-child(5) .dropdown {
+    border-bottom: 0.25em solid #e427ec;
+  } */
+
+  /* .dropdown {
+    display: none;
+  } */
+
+  /* .sessions div:nth-child(4) .dropdown{
   display: none;    
 }
 
@@ -356,19 +459,589 @@ margin-top: 8em;
   display: none;    
 } */
 
-.show {
-  display: block;
+  .show {
+    display: block;
+  }
+
+  .modal-window h1 {
+    width: 115%;
+    justify-self: center;
+    margin-right: 1vw;
+    /* margin-left: 1vw; */
+    margin-bottom: 1vw;
+    margin-top: -1.4vh;
+    margin-left: 13vw;
+    border-style: none;
+    grid-area: cell2;
+  }
+
+  .titre :last-child {
+    color: #6a07d2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    margin-left: 13vw;
+    
+  }
+
+  .modal-window {
+    
+    background-color: rgba(255, 255, 255, 0.25);
+    
+  }
+
+  .modal-close {
+    color: #6a07d2;
+    line-height: 50px;
+    font-size: 3em;
+    position: absolute;
+    right: -0.5em;
+    text-align: center;
+    top: -0.5em;
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #dfc516;
+  }
+
+ #cover{
+   position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 10000;
+  background-color: #7F7F7F;
+  opacity: 0.5;}
+
+
+  
+  .modal-window > div {
+    z-index: 10001;
+    position: fixed;
+    left: 49vw;
+    right: 0;
+    grid-template-rows: [img] auto[txt] auto;
+    top: 19.5em;
+    height: 61%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #E8E8DB;
+    margin-bottom: 10em;
+    border: 0.3em solid #dfc516;
+    box-shadow: 0.5em 0.5em #ff04a1;
+  }
+
+  .ponderation {
+    color: #6a07d2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    margin-left: 35vw;
+    margin-top: -0.8em;
+  }
+
+  .imgCours {
+    width: 123%;
+    justify-self: center;
+    margin-right: 1vw;
+    /* margin-left: 1vw; */
+    margin-bottom: 1vw;
+    margin-top: -4.5vh;
+    border-bottom: 0.5vw #dfc516 solid;
+    grid-area: cell1;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1.1fr 0.6fr 2.2fr 2.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "cell1"
+        "cell2"
+        "cell3"
+        "cell4"
+  
 }
 
-.modal-window h1 {
-  color: #6a07d2;
-  font-family: 'Montserrat',sans-serif;
-  text-transform: uppercase;
-  font-size:2vw;
-  margin:0;
-  border-style: none;
-}
+
+  .description {
+    margin: 0;
+    font-size: 0.6em;
+    font-family: "Comfortaa", cursive;
+    line-height: 3vw;
+    margin-right: 1vw;
+    text-transform: uppercase;
+    flex: 1;
+    height: 15vh;
+    margin-top: -6em;
+    overflow-y: scroll;
+    grid-area: cell3;
+  }
+
+  p .description{
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 10px 0 10px;
+  }
+
+  .description::-webkit-scrollbar {
+    width: 0.4em;
+  }
+  
+  .description::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  .description::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }
+
+
+  .prerequis {
+    justify-self: flex-end;
+    grid-area: cell4;
+    font-size: 0.7em;
+    margin-top: -23.8em;
+  }
+
+  .prerequis :last-child {
+    color: black;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    margin: -0.6em;
+    margin-right: 0em;
+    justify-self: flex-end;
+    text-align: right;
+  }
+
+
+  .heures {
+    justify-self: flex-end;
+    grid-area: cell4;
+    font-size: 0.7em;
+    margin-top: -27.5em;
+  }
+  .heures :last-child {
+    color: black;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    margin: -0.6em;
+    margin-right: 0em;
+    justify-self: flex-end;
+    text-align: right;
+  }
 
 }
 
 
+
+
+
+
+/*Style TABLETTE*/
+@media screen and (min-width:601px) and (max-width: 768px) {
+
+  #global{
+    margin: 0 auto;
+    
+}
+
+body{
+  margin: 0 0 0 0;
+  margin-bottom: 50%;
+}
+
+#cercles {
+  /* margin-top: 2em; */
+  background-image: url(../media/motif-picot.png);
+  position: absolute;
+  display: none;
+  width: 40em;
+  height: 20em;
+  /* background-color: #0da5c5; */
+}
+
+
+  .interior {
+    margin-top: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+    padding-right: 0%;
+    margin-bottom: 0%;
+  }
+
+  footer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 2.8em;
+    background-color: #6A07D2;
+    text-align: 10%;
+    bottom: 0%;
+    z-index:1200;
+    }
+
+  #listeDesCours {
+    padding-left: 0vw;
+    border-bottom: solid 1.2vw #ff04a1;
+  }
+
+
+  .sessions {
+    display: grid;
+    justify-content: flex-start;
+    margin-left: 32%;
+    width: 0%;
+    margin-bottom: 0em;
+    
+  }
+
+
+
+  .sessions h1 {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #6a07d2;
+    color: #6A07D2;
+   border-width: 0.2em;
+    font-size: 4.3vw;
+    padding-top: 1vh;
+    padding-right: 3.8vw;
+    padding-left: 3.8vw;
+    width: 25vw;
+    height: 7vw;
+    
+  }
+
+  .sessions> .sessions {
+   
+  }
+
+
+
+  .btn {
+    background-color: #E8E8DB;
+    padding: 1em 1em 1em;
+    text-decoration: none;
+    color: black;
+    width: 100vw;
+    height: 7vw;
+    /* border: solid 1px #ff04a1; */
+    border-top:solid 0.65em #ff04a1;
+    /* border-bottom: solid 0.1em #ff04a1; */
+    border-right: none;
+    z-index: 2;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .btn:hover {
+    background-color: #dfc516;
+    /* border-top:solid 0.2em #ff04a1;
+    border-bottom: solid 0.1em #ff04a1; */
+    
+  }
+
+
+  .textBtn {
+    transform: rotate(0deg);
+    font-size: 4vw;
+    margin-right: 0em;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+  }
+
+  .lignes{
+    margin-top: -1vw;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 1.2vw;
+    background-color: #ff04a1;
+}
+#listeDesCours .lignes{
+    padding-left:1vw;
+    background-color: #ff04a1;   
+}
+
+#listeDesCours div:nth-child(1) .lignes{
+  background-color: #ff04a1;    
+}
+#listeDesCours div:nth-child(2) .lignes{
+  background-color: #ff04a1;    
+}
+
+#listeDesCours div:nth-child(3) .lignes{
+    background-color: #ff04a1;  
+    height: 1.2vw;
+}
+#listeDesCours div:nth-child(4) .lignes{
+    background-color: #ff04a1;   
+    height: 1.2vw; 
+}
+#listeDesCours div:nth-child(5) .lignes{
+    background-color: #ff04a1;    
+    height: 1.2vw;
+}
+#listeDesCours div:nth-child(6) .lignes{
+    background-color: #ff04a1;  
+    height: 1.2vw;
+}
+
+  .fleche {
+    display: block;
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: #6a07d2;
+    border-width: 0px 5px 5px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    left: 27em;
+    bottom: -1.1em;
+    box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+
+    position: relative;
+    cursor: pointer;
+  }
+
+  
+  .lesCours {
+    display: grid;
+    margin-top: 5em;
+    /* width: 96%; */
+    margin-left: 3em;
+    width: 11vw;
+    border-width: 100%;
+  }
+
+  /* .dropdown {
+   display: none;
+  } */
+
+  
+
+  #listeDesCours div:nth-child(6) .sessions {
+    border-bottom: 0.25em solid #ff04a1;
+  }
+
+  .lesCours div:nth-child(5) .dropdown {
+    border-bottom: 0.25em solid #e427ec;
+  }
+
+  /* .dropdown {
+    display: none;
+  } */
+
+  /* .sessions div:nth-child(4) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(5) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(6) .dropdown{
+  display: none;    
+}
+
+.sessions div:nth-child(7) .dropdown{
+  display: none;    
+} */
+
+  .show {
+    display: block;
+  }
+
+  .modal-window h1 {
+    width: 115%;
+    justify-self: center;
+    margin-right: 1vw;
+    /* margin-left: 1vw; */
+    margin-bottom: 1vw;
+    margin-top: -1.4vh;
+    margin-left: 15vw;
+    border-style: none;
+    grid-area: cell2;
+  }
+
+  .titre :last-child {
+    color: #6a07d2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    margin-left: 13vw;
+    
+  }
+
+  .modal-window {
+    
+    background-color: rgba(255, 255, 255, 0.25);
+    
+  }
+
+  .modal-close {
+    color: #6a07d2;
+    line-height: 50px;
+    font-size: 3em;
+    position: absolute;
+    right: -0.5em;
+    text-align: center;
+    top: -0.5em;
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #dfc516;
+  }
+
+
+  .modal-window > div {
+    z-index: 10001;
+    position: fixed;
+    left: 49vw;
+    right: 0;
+    grid-template-rows: [img] auto[txt] auto;
+    top: 19.5em;
+    height: 61%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #E8E8DB;
+    margin-bottom: 10em;
+    border: 0.3em solid #dfc516;
+    box-shadow: 0.5em 0.5em #ff04a1;
+  }
+
+  .ponderation {
+    color: #6a07d2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    margin-left: 35vw;
+    margin-top: -0.8em;
+  }
+
+  .imgCours {
+    width: 123%;
+    justify-self: center;
+    margin-right: 1vw;
+    /* margin-left: 1vw; */
+    margin-bottom: 1vw;
+    margin-top: -4.5vh;
+    border-bottom: 0.5vw #dfc516 solid;
+    grid-area: cell1;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1.1fr 0.6fr 2.2fr 2.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "cell1"
+        "cell2"
+        "cell3"
+        "cell4"
+  
+}
+
+
+  .description {
+    margin: 0;
+    /* font-size: 0.5em; */
+    font-family: "Comfortaa", cursive;
+    line-height: 3vw;
+    margin-right: 1vw;
+    text-transform: uppercase;
+    flex: 1;
+    height: 15vh;
+    margin-top: -4em;
+    overflow-y: scroll;
+    grid-area: cell3;
+  }
+
+  p .description{
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 10px 0 10px;
+  }
+
+  .description::-webkit-scrollbar {
+    width: 0.4em;
+  }
+  
+  .description::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  .description::-webkit-scrollbar-thumb {
+    background: #dfc516;
+  }
+
+
+  .prerequis {
+    justify-self: flex-end;
+    grid-area: cell4;
+    font-size: 0.7em;
+    margin-top: -23.8em;
+  }
+
+  .prerequis :last-child {
+    color: black;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    margin: -0.6em;
+    margin-right: 0em;
+    justify-self: flex-end;
+    text-align: right;
+  }
+
+
+  .heures {
+    justify-self: flex-end;
+    grid-area: cell4;
+    font-size: 0.7em;
+    margin-top: -27.5em;
+  }
+  .heures :last-child {
+    color: black;
+    font-size: 0.9em;
+    font-family: "Montserrat", sans-serif;
+    margin: -0.6em;
+    margin-right: 0em;
+    justify-self: flex-end;
+    text-align: right;
+  }
+  }
+  
+
+
+
+
+
+
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        margin: 0;
+    }
+    
+    }
