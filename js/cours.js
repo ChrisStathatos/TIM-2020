@@ -42,6 +42,8 @@ fetch("data/cours.json")
                         <div class="dropdown">
                             <div class="interior"> 
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
+                                <span class="btnChoix"></span>
+                                <span class="btnChoix"></span>
                             </div>
                             <div id="${unCours[0].nom}" class="modal-window">
                             <div>

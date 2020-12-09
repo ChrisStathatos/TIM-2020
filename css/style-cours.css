@@ -46,7 +46,6 @@
 #cercles{
     /*margin-top:2em;*/
     background-image:url("../media/motif-picot.png");
-    
     position:absolute;
     width:40em;
     height:20em;
@@ -103,15 +102,26 @@
     text-transform: uppercase;
     font-size:1.5vw;
     padding-top:6vw;
-    z-index: 1;
 }
-/*.btnChoix{
-    margin-left:5vw;
-    width:1vw;
-    height:1vw;
+.btnChoix{
+    position: relative;
+    display:block;
+    left:3.5vw;
+    bottom:1vw; 
+    width:0.8vw;
+    height:0.8vw;
     border-radius: 50%;
-    background-color: black;
+    border:white solid 0.1vw;
     z-index: 99999;
-}*/
+    transition: background-color 0.6s ease;
+
+}
+.interior span:last-child{
+  left:5.1vw;
+  bottom:2vw;
+}
+.active, .btnChoix:hover{
+    background-color:white;
+}
 
 
