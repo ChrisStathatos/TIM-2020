@@ -278,6 +278,7 @@ body{
 
   #listeDesCours {
     padding-left: 0vw;
+    padding-top:0em;
     border-bottom: solid 1.3vw #ff04a1;
   }
 
@@ -304,7 +305,7 @@ body{
   justify-content: flex-start;
   margin-left: 32%;
   width: 0%;
-  margin-bottom: -0.1em;
+  margin-bottom: 3.9em;
 }
 
   .sessions h1 {
