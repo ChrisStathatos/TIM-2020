@@ -68,3 +68,33 @@ function exitHoverAffichez()
   document.getElementsByClassName("border-outer")[0].style.borderColor = "#6a07d2";
   document.getElementsByClassName("border")[0].style.borderColor = "#ff04a1";
 }
+
+function afficherPlusEvent()
+{
+  if (document.getElementById("grille2").style.display === "none") 
+  {
+    document.getElementById("grille2").style.display = "grid";
+    document.getElementsByClassName("border")[0].innerHTML = "afficher moins";
+  } 
+  else 
+  {
+    document.getElementById("grille2").style.display = "none";
+    document.getElementsByClassName("border")[0].innerHTML = "afficher plus";
+  }
+}
+
+function afficherPlusEventMobile()
+{
+  if (document.getElementById("grille2").style.display === "none") 
+  {
+    document.getElementById("grille2").style.display = "grid";
+    document.getElementById("plus1").style.borderRight="0em solid #6a07d2";
+    document.getElementById("plus4").style.borderLeft="0em solid  #dfc516";
+  } 
+  else 
+  {
+    document.getElementById("grille2").style.display = "none";
+    document.getElementById("plus1").style.borderRight="1em solid #6a07d2";
+    document.getElementById("plus4").style.borderLeft="1em solid  #dfc516";
+  }
+}

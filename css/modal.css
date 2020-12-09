@@ -111,12 +111,22 @@
 }
 .btn:hover {
   background-color: #dfc516;
+<<<<<<< HEAD
   border: #6a07d2 0.5vw solid;
 }
 
 .textBtn {
   transform: rotate(-45deg);
   font-size: 1vw;
+=======
+  border:#6a07d2 0.5vw solid;
+  transition: background-color,border-color 0.6s ease;
+}
+
+.textBtn{
+  transform:rotate(-45deg);
+  font-size:0.9vw;
+>>>>>>> c53a5317194833a0cabbf4d92c187e44af38833d
   text-transform: uppercase;
 }
 
