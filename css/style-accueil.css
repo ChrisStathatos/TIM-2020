@@ -1,33 +1,58 @@
+#accueil-grand-ecran{
+    display: none;
+}
+#accueil-mobile{
+    display: initial;
+}
+
+#accueil-mobile-title-wrapper{
+    margin-top: 30vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: calc(50vh - 25vw);
+}
+
+
 #site-title, #site-subtitle{ 
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     letter-spacing: .2em;
-    padding-left: 10%;
+    text-align: center;
 }
 
 #site-title{
     font-weight: bolder;
-    font-size: 1.6em;
+    font-size: 3.02vw;
     letter-spacing: .2em;
-    padding-top: 30vh;
     margin-bottom: 0px;
 }
 
 #site-title-barre{
     background-color: #FF04A1;
-    margin-left: 10%;
-    margin-right: 10%;
     height: 5px;
-    width: 80%;
-    margin-top: 8px;
+    margin-top: .3vw;
+}
+
+#logo-tim-mobile{
+    background-image: url("../media/tim-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 47vw;
+    filter: brightness(-100%);
 }
 
 #site-subtitle{
     font-weight: normal;
-    font-size: 1.3em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 3vh;
+    font-size: 2.5vw;
     letter-spacing: .2em;
-    padding-left: 10%;
+    padding-left: 0;
     margin-top: 8px;
 }
 
@@ -364,6 +389,16 @@ color: white;
 }
 
 @media screen and (min-width: 768px) {
+    #accueil-grand-ecran{
+        display: initial;
+    }
+    #accueil-mobile{
+        display: none;
+    }
+    #site-title, #site-subtitle{
+        padding-left: 10%;
+        text-align: left;
+    }
     #site-title{
         font-size: 1.4em;
         letter-spacing: .28em;
@@ -375,10 +410,17 @@ color: white;
         height: 4px;
         width: min(45.30em, 80.89vw);
         margin-top: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     #site-subtitle{
+        position: initial;
+        bottom: initial;
+        text-align: left;
+        width: initial;
         font-weight: normal;
         font-size: min(1em, 1.78vw);
+        padding-left: 10%;
         letter-spacing: .2em;
         margin-top: 8px;
     }
