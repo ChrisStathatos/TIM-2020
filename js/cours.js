@@ -8,14 +8,18 @@ fetch("data/cours.json")
       // console.log(typeof uneSession)
       const elUneSession = document.createElement("div");
       elUneSession.classList = "sessions";
-
-      var boutonSession = document.createElement("div");
-      boutonSession.classList.add("fleche");
-      boutonSession.classList.add(indexSession);
-      elUneSession.appendChild(boutonSession);
+      elUneSession.innerHTML=`
+      <div class="fleche ${indexSession}"onclick="montrerSession(${i})" ></div>
+      `;
+      //var boutonSession = document.createElement("div");
+      //boutonSession.classList.add("fleche");
+      //boutonSession.classList.add(indexSession);
+      //elUneSession.appendChild(boutonSession);
+      //boutonSession.onclick=console.log("allo");
 
       const elLesCours = document.createElement("div");
       elLesCours.classList = "lesCours";
+      elLesCours.dataset.valeur = 0;
       const numeroSession = document.createElement("h1");
       numeroSession.textContent = "Session " + i;
       elUneSession.appendChild(numeroSession);
@@ -103,4 +107,25 @@ fetch("data/cours.json")
       ulCours.appendChild(elUneSession);
       i++;
     }
+
+
   });
+  function montrerSession(session){
+   var sessionChoisi = document.getElementsByClassName("sessions")[session-1];
+   if(sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur==0){
+        sessionChoisi.getElementsByClassName("lesCours")[0].style="display:grid;";
+        sessionChoisi.getElementsByClassName("lesCours")[0].removeAttribute('data-valeur');
+        sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur=1;
+   }
+   else{
+    sessionChoisi.getElementsByClassName("lesCours")[0].style="display:none;";
+    sessionChoisi.getElementsByClassName("lesCours")[0].removeAttribute('data-valeur');
+    sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur=0;
+   }
+    
+   
+
+
+
+    
+}

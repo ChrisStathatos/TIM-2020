@@ -287,11 +287,8 @@ body{
     justify-content: flex-start;
     margin-left: 32%;
     width: 0%;
-    margin-bottom: 0em;
-    
+    margin-bottom: 0em; 
   }
-
-
 
   .sessions h1 {
     border-style: solid;
@@ -425,6 +422,7 @@ body{
     margin-left: 0em;
     width: 11vw;
     border-width: 100%;
+    display:none;
   }
 
 
