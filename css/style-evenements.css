@@ -22,6 +22,9 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color:  #dfc516;
   }
+  #grille2{ 
+    display: none;
+  }
   #dot{
     height: 0;
   }
@@ -41,6 +44,7 @@
     height: 10em;
     margin: 0 auto;
     margin-top: 2em;
+    margin-bottom: 5em;
   }
   
   #plus1{
@@ -376,6 +380,10 @@
     .active, .dot:hover {
       background-color: #dfc516;
     }
+
+    #afficherPlus{
+      display: none;
+    }
   }
   
   /* STYLE TABLETTE */
@@ -397,7 +405,9 @@
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color:  #dfc516;
     }
-    
+    #grille2{ 
+      display: none;
+    }
     #dot{
       height: 0;
     }
@@ -421,6 +431,7 @@
       height: 10em;
       margin: 0 auto;
       margin-top: 2em;
+      margin-bottom: 5em;
     }
     
     #plus1{
@@ -796,6 +807,10 @@
     .bottom{
       margin-top: 2em;
     }
+
+    #grille2{ 
+      display: none;
+    }
     
     #plus{
       display: grid;
@@ -805,6 +820,7 @@
       height: 10em;
       margin: 0 auto;
       margin-top: 2em;
+      margin-bottom: 5em;
     }
     
     #plus1{
@@ -1171,6 +1187,11 @@
       align-content: flex-end;
   }
   
+  #grille2{
+    margin-top: 0;
+    display: none;
+  }
+
   .evenement-dans-grille{
     display: grid;
     grid-template-columns: 50%  auto;
