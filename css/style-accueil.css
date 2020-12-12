@@ -10,10 +10,12 @@ body{
 }
 
 #accueil-mobile-title-wrapper{
-    margin-top: 30vh;
+    /*margin-top: 30vh;*/
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: calc(50vh - 25vw);
+    /*margin-top: calc(50vh - 25vw);*/
+    position: fixed;
+    top: calc(45% - 25vw);
 }
 
 
@@ -47,6 +49,7 @@ body{
     width: 100%;
     height: 47vw;
     filter: brightness(-100%);
+    /*animation: tim-mobile 5s cubic-bezier(.5,0,.5,1) infinite;*/
 }
 
 #site-subtitle{
@@ -241,6 +244,22 @@ a{
 
 #RectangleBouge23{
     animation: bouge23 4.789645s cubic-bezier(.6,0,.4,1) infinite;
+}
+
+@keyframes tim-mobile {
+    30% { filter: brightness(0%); }
+    30.1% { filter: brightness(0%) hue-rotate(280deg);}
+    32% { filter: brightness(75%) hue-rotate(280deg); }
+    42.5% { filter: brightness(75%) hue-rotate(280deg); }
+    44.4% { filter: brightness(0%) hue-rotate(280deg);}
+    44.5% { filter: brightness(0%); }
+
+    80% { filter: brightness(0%); }
+    80.1% { filter: brightness(0%) saturate(500%) hue-rotate(0deg);}
+    82% { filter: brightness(200%) saturate(500%) hue-rotate(0deg); }
+    92.5% { filter: brightness(200%) saturate(500%) hue-rotate(0deg); }
+    94.4% { filter: brightness(0%) saturate(500%) hue-rotate(0deg);}
+    94.5% { filter: brightness(0%); }
 }
 
 @keyframes fleche-mobile {
