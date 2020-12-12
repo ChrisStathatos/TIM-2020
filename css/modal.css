@@ -35,7 +35,7 @@
 .modal-window > div {
   width: 70vw;
   position: absolute;
-  height: 70vh;
+  height: 40vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -177,11 +177,11 @@
   grid-template-areas:
       "cell1 cell1"
       "cell3 cell4"
-      "cell5 cell6";
+      "cell3 cell6";
 }
 .description {
   margin: 0;
-  font-size: 0.8em;
+  font-size: 0.8vw;
   font-family: "Comfortaa", cursive;
   line-height: 1.6vw;
   margin-right: 1vw;

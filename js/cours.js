@@ -11,12 +11,6 @@ fetch("data/cours.json")
       elUneSession.innerHTML=`
       <div class="fleche ${indexSession}"onclick="montrerSession(${i})" ></div>
       `;
-      //var boutonSession = document.createElement("div");
-      //boutonSession.classList.add("fleche");
-      //boutonSession.classList.add(indexSession);
-      //elUneSession.appendChild(boutonSession);
-      //boutonSession.onclick=console.log("allo");
-
       const elLesCours = document.createElement("div");
       elLesCours.classList = "lesCours";
       elLesCours.dataset.valeur = 0;
@@ -37,36 +31,35 @@ fetch("data/cours.json")
         if (unCours.length > 1) {
           const elUnCours = document.createElement("div");
           elUnCours.innerHTML = `
-                        <div class="dropdown">
                             <div class="interior"> 
-                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
-                                <span class="btnChoix"></span>
-                                <span class="btnChoix"></span>
+                                <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p>
+                                <p class="textBtn cache">${unCours[1].nomCourt}</p>
+                                </a>
+                                <span class="btnChoix active" data-cours="1" "onclick="changerCours(0)"></span>
+                                <span class="btnChoix" data-cours="2" "onclick="changerCours(1)"></span>
                             </div>
-                            <div id="${unCours[0].nom}" class="modal-window">
-          <div>
-          <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
-          
-          <div class="container">
-          <div>
-          <h1 class="titre">${unCours[0].nom}<br><p class="ponderation">${unCours[0].ponderation}</p></h1>
-          
-          </div>
-          <p class="description" >${unCours[0].description}</p>
-          <img src="${unCours[0].photo}" class="imgCours" >
-          <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
-          <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[0].nombreHeure}</p></div>
-          </div>
-          </div>
-          </div>
-      </div>
-  </div>
-</ul>`;
+                        <div id="${unCours[0].nom}" class="modal-window" id="cover">
+                        <div>
+                        <a href="# +${unCours[0].nom}" title="Close" class="modal-close">X</a>
+                        <div class="container">
+                        <div>
+                        <h1 class="titre">${unCours[0].nom}<br><p class="ponderation">${unCours[0].ponderation}</p></h1>
+                        </div>
+                        <p class="description" >${unCours[0].description}</p>
+                        <img src="${unCours[0].photo}" class="imgCours" >
+                        <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
+                        <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[0].nombreHeure}</p></div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>`;
+          elUnCours.classList = `dropdown ${indexSession}`
           elLesCours.appendChild(elUnCours);
         } else {
           const elUnCours = document.createElement("div");
           elUnCours.innerHTML = `
-                        <ul class="dropdown ${indexSession}">
                         <div class="interior"> 
                             <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                         </div>
@@ -88,7 +81,8 @@ fetch("data/cours.json")
                         </div>
                     </div>
                 </div>
-              </ul>`;
+              </div>`;
+              elUnCours.classList = `dropdown ${indexSession}`
           elLesCours.appendChild(elUnCours);
         }
       }
@@ -121,6 +115,10 @@ fetch("data/cours.json")
     sessionChoisi.getElementsByClassName("lesCours")[0].style="display:none;";
     sessionChoisi.getElementsByClassName("lesCours")[0].removeAttribute('data-valeur');
     sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur=0;
+   }
+
+   function changerCours(choix){
+
    }
     
    
