@@ -48,6 +48,7 @@
   bottom: 0;
   overflow: hidden;
   position: relative;
+  z-index: 999;
 }
 
 #primary-menu-burger{
@@ -63,6 +64,20 @@
   text-align: right;
   background-color: #6A07D2;
   transform: translate(100%, 0);
+  z-index: 999;
+}
+#primary-menu-burger-scrollbg{
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100vh;
+  text-align: right;
+  background-color: #6A07D2;
+  z-index: 998;
 }
 #nav-mobile-grid{
   overflow: hidden;
@@ -80,7 +95,7 @@
 #nav-mobile-footer{
   display: grid;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   bottom: 5%;
   align-items: center;
 }
@@ -91,7 +106,7 @@
   justify-content: center;
 }
 .nav-mobile-footer-icon{
-  padding: 2vh 0 2vh 0;
+  padding: min(1.5vh, 10%) 0 min(1.5vh, 10%) 0;
   font-size: min(400%, 7vh);
 }
 #maisonneuve-logo-nav{
