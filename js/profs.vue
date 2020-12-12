@@ -2,6 +2,7 @@
   <div>
 
         <div id="popup">
+        <a onclick="fermerPopUp()" title="Close" class="modal-close">X</a>
           <div class="boitePortraitPopup">
             <img class="imgProfPopup" :src="unprofesseur.photo" alt="" />
           </div>
