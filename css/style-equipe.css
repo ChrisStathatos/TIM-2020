@@ -311,7 +311,7 @@
     .boite-photo{
         height: 10em;
         width: 6.4em;
-         border: .4em solid red; 
+         border: .4em solid #dfc516; 
               /* animation  */
         animation-name: floating; 
         animation-duration: 3s; 
@@ -574,7 +574,7 @@
     .boite-photo{
         height: 15em;
         width: 9.6em;
-         border: .4em solid blue; 
+         border: .4em solid #dfc516; 
         /* animation  */
         animation-name: floating; 
         animation-duration: 3s; 
