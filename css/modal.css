@@ -279,9 +279,13 @@ body{
   #listeDesCours {
     padding-left: 0vw;
     padding-top:0em;
-    border-bottom: solid 1.3vw #ff04a1;
   }
 
+
+span{
+  display: block;
+}
+  
 /* 
   .sessions {
     display: grid;
@@ -305,7 +309,8 @@ body{
   justify-content: flex-start;
   margin-left: 32%;
   width: 0%;
-  margin-bottom: 3.9em;
+  margin-bottom: 3.2em;
+ 
 }
 
   .sessions h1 {
@@ -313,7 +318,7 @@ body{
     border-width: 0.1em;
     border-color: #6a07d2;
     color: #6A07D2;
-   border-width: 0.2em;
+    border-width: 0.2em;
     font-size: 4.3vw;
     padding-top: 1vh;
     padding-right: 3.5vw;
@@ -330,23 +335,22 @@ body{
     left: 2px;
     right: -8px;
     bottom: -8px;
-    border-style: solid;
-    border-color: #dfc516;
     z-index: -1200;
   }
 
 
   .btn {
     background-color: #E8E8DB;
-    padding: 1em 1em 1em;
+    padding: 1em 0em 1em;
     text-decoration: none;
     color: black;
-    width: 100vw;
+    width: 102vw;
     height: 7vw;
-    border: solid 1px #ff04a1;
-    border-top:solid 0.35em #ff04a1;
+    border: solid 6px #ff04a1;
+    border-top:solid 0.4em #ff04a1;
     /* border-bottom: solid 0.1em #ff04a1; */
     border-right: none;
+    border-left:none;
     z-index: 2;
     transform: rotate(0deg);
     display: flex;
@@ -357,16 +361,18 @@ body{
 
   .btn:hover {
     background-color: #dfc516;
-    border-top:solid 0.35em #ff04a1;
-    border-bottom: solid 0.1em #ff04a1;
-    
+    border: solid 6px #ff04a1;
+    border-top:solid 0.4em #ff04a1;
+    border-right: none;
+    border-left:none;
   }
 
 
   .textBtn {
     transform: rotate(0deg);
     font-size: 5vw;
-    margin-right: -1em;
+    width: 85vw;
+    margin-right: 0em;
     justify-content: center;
     align-items: center;
     text-transform: none;
@@ -376,12 +382,13 @@ body{
     margin-top: -1vw;
     position: absolute;
     right: 0;
+    left: 0vw;
     display: flex;
     justify-content: center;
     align-self: center;
     width: 100%;
     height: 1.2vw;
-    background-color: #ff04a1;
+    border-top: 0.01em solid #ff04a1;
 }
 #listeDesCours .lignes{
     padding-left:1vw;
@@ -428,16 +435,22 @@ body{
     -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     position: relative;
-    cursor: pointer;
+
+  }
+
+
+  .fleche::before {
+    background-color: #ff04a1; 
   }
 
   
+  
   .lesCours {
     display: grid;
-    margin-top: 4.3em;
+    margin-top: 4.4em;
     /* width: 96%; */
     margin-left: 0em;
-    width: 11vw;
+    width: 9vw;
     border-width: 100%;
   }
 
@@ -447,54 +460,105 @@ body{
 }
   
 
-  #listeDesCours div:nth-child(6) .sessions {
-    border-bottom: 0.25em solid #ff04a1;
-  }
-
-
-/* 
-  #listeDesCours div:nth-child(4)  {
-    grid-area: cell9;
-  } */
 
 
   /* .lesCours div:nth-child(4) .dropdown {
-    border-bottom: 0.1em solid #ff04a1;
+    border-bottom: 0.4em solid #ff04a1;
   } */
 
+  .lesCours div:nth-child(1) .dropdown {
+    border-top: 0.4em solid #ff04a1;
   
+  }
+
+  .lesCours div:nth-child(1) .btn {
+    border-top: none;
+    grid-area: cell1;
+  }
+
+  .lesCours div:nth-child(4) .btn {
+    border-bottom: none;
+  }
+
+
+  .lesCours div:nth-child(4) .dropdown {
+    margin-bottom: -7vh;
+}
 
   /* .dropdown {
     display: none;
   } */
 
-  #session div:nth-child(4).dropdown   {
-    display: none;
-  }
 
-  
-  /* .sessions div:nth-child(4) .dropdown{
-  display: none;    
+  .lesCours div:nth-child(5) .dropdown {
+    margin-left: 5.6vh;
+    margin-bottom: -12.5vh;
 }
 
-.sessions div:nth-child(5) .dropdown{
-  display: none;    
+
+
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .btn {
+    border-bottom: none;
+    width: 48%;
+    height: 99%;
+    margin-right: 0vw;
+    left: 50%;
+    top: 0vh;
+    position: relative;
+    border-left: 0.4em solid #ff04a1;
+    padding-bottom: 2em;
 }
 
-.sessions div:nth-child(6) .dropdown{
-  display: none;    
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .textBtn {
+  border-bottom: none;
+  margin-left: 2vw;
+  margin-top: 4vh;
 }
 
-.sessions div:nth-child(7) .dropdown{
-  display: none;    
-} */
 
-  .show {
-    display: block;
-  }
+
+/* Bouton choix de cours session 5*/
+  #listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .btn {
+    border-bottom: none;
+    width: 53%;
+    height: 100%;
+    margin-right: 0vw;
+    left: 47.5%;
+    position: relative;
+    border-left: 0.4em solid #ff04a1;
+    border-top: 0em solid #ff04a1;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .btn {
+  border-bottom: none;
+  width: 46%;
+  height: 65%;
+  margin-right: 0vw;
+  left: 52.7%;
+  top: 0vh;
+  position: relative;
+  border-left: 0.4em solid #ff04a1;
+  padding-bottom: 2em;
+  border-bottom: 0.4em solid #ff04a1;
+  z-index: 100;
+}
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .textBtn {
+  margin: auto;
+}
+
+
+
+
+
+
 
   .modal-window h1 {
-    width: 115%;
+    width: 75%;
+    font-size: 4vw;
     justify-self: center;
     margin-right: 1vw;
     /* margin-left: 1vw; */
@@ -554,7 +618,7 @@ body{
     grid-template-rows: [img] auto[txt] auto;
     top: 19.5em;
     height: 61%;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     background-color: #E8E8DB;
     margin-bottom: 10em;
@@ -572,12 +636,15 @@ body{
   }
 
   .imgCours {
-    width: 123%;
+    width: 85vw;
+    height: 30vh;
     justify-self: center;
-    margin-right: 1vw;
+    align-content: center;
+    margin-right: 0vw;
+    margin-left: -9vw;
     /* margin-left: 1vw; */
-    margin-bottom: 1vw;
-    margin-top: -4.5vh;
+    /* margin-bottom: 1vw; */
+    margin-top: -5.1vh;
     border-bottom: 0.5vw #dfc516 solid;
     grid-area: cell1;
   }
@@ -598,14 +665,16 @@ body{
 
   .description {
     margin: 0;
-    font-size: 0.6em;
+    font-size: 3vw;
     font-family: "Comfortaa", cursive;
-    line-height: 3vw;
-    margin-right: 1vw;
+    line-height: 4vw;
+    margin-right: 0vw;
+    margin-top: -4vh;
     text-transform: uppercase;
     flex: 1;
+    width: 75vw;
     height: 15vh;
-    margin-top: -6em;
+    /* margin-top: -6em; */
     overflow-y: scroll;
     grid-area: cell3;
   }
@@ -635,16 +704,17 @@ body{
   .prerequis {
     justify-self: flex-end;
     grid-area: cell4;
-    font-size: 0.7em;
-    margin-top: -23.8em;
+    font-size: 3vw;
+    margin-top: -18.8em;
+    margin-right: 3vw;
   }
 
   .prerequis :last-child {
     color: black;
-    font-size: 0.9em;
+    font-size: 2.9vw;
     font-family: "Montserrat", sans-serif;
-    margin: -0.6em;
-    margin-right: 0em;
+    margin: -1.6vw;
+    margin-right: 0vw;
     justify-self: flex-end;
     text-align: right;
   }
@@ -653,15 +723,16 @@ body{
   .heures {
     justify-self: flex-end;
     grid-area: cell4;
-    font-size: 0.7em;
-    margin-top: -27.5em;
+    font-size: 3vw;
+    margin-top: -22.5em;
+    margin-right: 3vw;
   }
   .heures :last-child {
     color: black;
-    font-size: 0.9em;
+    font-size: 2.9vw;
     font-family: "Montserrat", sans-serif;
-    margin: -0.6em;
-    margin-right: 0em;
+    margin: -1.6vw;
+    margin-right: 0vw;
     justify-self: flex-end;
     text-align: right;
   }
@@ -718,10 +789,10 @@ body{
 
   #listeDesCours {
     padding-left: 0vw;
-    border-bottom: solid 1.2vw #ff04a1;
+    padding-top:0em;
   }
 
-
+/* 
   .sessions {
     display: grid;
     justify-content: flex-start;
@@ -729,42 +800,62 @@ body{
     width: 0%;
     margin-bottom: 0em;
     
-  }
+  } */
 
-
+.sessions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+      "cell1 cell2"
+      "cell3 cell4"
+      "cell5 cell6"
+      "cell7 cell8"
+      "cell9 cell10";
+  justify-content: flex-start;
+  margin-left: 32%;
+  width: 0%;
+  margin-bottom: 5.2em;
+}
 
   .sessions h1 {
     border-style: solid;
     border-width: 0.1em;
     border-color: #6a07d2;
     color: #6A07D2;
-   border-width: 0.2em;
+    border-width: 0.2em;
     font-size: 4.3vw;
     padding-top: 1vh;
-    padding-right: 3.8vw;
+    padding-right: 3.5vw;
     padding-left: 3.8vw;
     width: 25vw;
     height: 7vw;
     
   }
 
-  .sessions> .sessions {
-   
+  .sessions h1:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    right: -8px;
+    bottom: -8px;
+    z-index: -1200;
   }
-
 
 
   .btn {
     background-color: #E8E8DB;
-    padding: 1em 1em 1em;
+    padding: 1em 0em 1em;
     text-decoration: none;
     color: black;
-    width: 100vw;
+    width: 102vw;
     height: 7vw;
-    border: solid 1px #ff04a1;
-    border-top:solid 0.65em #ff04a1;
+    border: solid 0.5em #ff04a1;
+    border-top:solid 0.4em #ff04a1;
     /* border-bottom: solid 0.1em #ff04a1; */
     border-right: none;
+    border-left:none;
     z-index: 2;
     transform: rotate(0deg);
     display: flex;
@@ -775,15 +866,17 @@ body{
 
   .btn:hover {
     background-color: #dfc516;
-    /* border-top:solid 0.2em #ff04a1;
-    border-bottom: solid 0.1em #ff04a1; */
-    
+    border: solid 0.5em #ff04a1;
+    border-top:solid 0.4em #ff04a1;
+    border-right: none;
+    border-left:none;
   }
 
 
   .textBtn {
     transform: rotate(0deg);
-    font-size: 4vw;
+    font-size: 5vw;
+    width: 80vw;
     margin-right: 0em;
     justify-content: center;
     align-items: center;
@@ -791,18 +884,18 @@ body{
   }
 
   .lignes{
-    margin-top: -1vw;
+    margin-top: -0.5vw;
     position: absolute;
     right: 0;
+    left: 0vw;
     display: flex;
     justify-content: center;
     align-self: center;
     width: 100%;
-    height: 1.2vw;
-    background-color: #ff04a1;
+    height: 1vw;
 }
 #listeDesCours .lignes{
-    padding-left:1vw;
+  padding-left: 0.4vw;
     background-color: #ff04a1;   
 }
 
@@ -840,12 +933,11 @@ body{
     border-width: 0px 5px 5px 0px;
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;
-    left: 27em;
+    left: 25em;
     bottom: -1.1em;
     box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
     -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
-
     position: relative;
     cursor: pointer;
   }
@@ -853,53 +945,116 @@ body{
   
   .lesCours {
     display: grid;
-    margin-top: 5em;
-    /* width: 96%; */
-    margin-left: 3em;
-    width: 11vw;
+    margin-top: 7.4em;
+    margin-left: 1.3em;
+    width: 9vw;
     border-width: 100%;
   }
 
-  /* .dropdown {
-   display: none;
-  } */
 
+.btnChoix{
+ display: none;
+}
   
 
-  #listeDesCours div:nth-child(6) .sessions {
-    border-bottom: 0.25em solid #ff04a1;
+
+  #listeDesCours div:nth-child(4) .sessions  {
+    grid-area: cell9;
   }
 
-  .lesCours div:nth-child(5) .dropdown {
-    border-bottom: 0.25em solid #e427ec;
+
+  /* .lesCours div:nth-child(4) .dropdown {
+    border-bottom: 0.4em solid #ff04a1;
+  } */
+
+  .lesCours div:nth-child(1) .dropdown {
+    border-top: 0.5em solid #ff04a1;
+  
   }
+
+  .lesCours div:nth-child(1) .btn {
+    border-top: none;
+    grid-area: cell1;
+  }
+
+  .lesCours div:nth-child(4) .btn {
+    border-bottom: none;
+  }
+
+
+  .lesCours div:nth-child(4) .dropdown {
+    margin-bottom: -7vh;
+}
 
   /* .dropdown {
     display: none;
   } */
 
-  /* .sessions div:nth-child(4) .dropdown{
-  display: none;    
+
+  .lesCours div:nth-child(5) .dropdown {
+    margin-left: 5.6vh;
+    margin-bottom: -9.5vh;
 }
 
-.sessions div:nth-child(5) .dropdown{
-  display: none;    
+
+
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .btn {
+    border-bottom: none;
+    width: 49%;
+    height: 131%;
+    margin-right: 0vw;
+    left: 50%;
+    top: 0vh;
+    position: relative;
+    border-left: 0.4em solid #ff04a1;
+    padding-bottom: 2em;
 }
 
-.sessions div:nth-child(6) .dropdown{
-  display: none;    
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .textBtn {
+  border-bottom: none;
+  margin-left: 2vw;
+  margin-top: 4vh;
 }
 
-.sessions div:nth-child(7) .dropdown{
-  display: none;    
-} */
+
+
+/* Bouton choix de cours session 5*/
+  #listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .btn {
+    border-bottom: none;
+    width: 53%;
+    height: 76%;
+    margin-right: 0vw;
+    left: 46.1%;
+    margin-top: -1%;
+    position: relative;
+    border-left: 0.4em solid #ff04a1;
+    
+}
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .btn {
+  border-bottom: none;
+    width: 49%;
+    height: 70%;
+    margin-right: 0vw;
+    left: 50%;
+    top: 0vh;
+    position: relative;
+    border-left: 0.4em solid #ff04a1;
+    border-bottom: 0.4em solid #ff04a1;
+    padding-bottom: 2em;
+}
+
+
+
 
   .show {
     display: block;
   }
 
   .modal-window h1 {
-    width: 115%;
+    width: 50vw;
+    font-size: 3.4vw;
     justify-self: center;
     margin-right: 1vw;
     /* margin-left: 1vw; */
@@ -928,11 +1083,11 @@ body{
   .modal-close {
     color: #6a07d2;
     line-height: 50px;
-    font-size: 3em;
+    font-size: 5em;
     position: absolute;
     right: -0.5em;
     text-align: center;
-    top: -0.5em;
+    top: -0.3em;
     width: 1em;
     text-decoration: none;
     font-family: 'Montserrat',sans-serif;
@@ -940,15 +1095,25 @@ body{
     -webkit-text-stroke-color: #dfc516;
   }
 
+ #cover{
+   position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 10000;
+  background-color: #7F7F7F;
+  opacity: 0.5;}
 
+
+  
   .modal-window > div {
     z-index: 10001;
     position: fixed;
     left: 49vw;
     right: 0;
     grid-template-rows: [img] auto[txt] auto;
-    top: 19.5em;
-    height: 61%;
+    top: 27.5em;
+    height: 65%;
     width: 70%;
     margin: 0 auto;
     background-color: #E8E8DB;
@@ -967,12 +1132,13 @@ body{
   }
 
   .imgCours {
-    width: 123%;
+    width: 79vw;
+    height: 33vh;
     justify-self: center;
-    margin-right: 1vw;
-    /* margin-left: 1vw; */
+    margin-right: -1vw;
+    margin-left: -4vw;
     margin-bottom: 1vw;
-    margin-top: -4.5vh;
+    margin-top: -3vh;
     border-bottom: 0.5vw #dfc516 solid;
     grid-area: cell1;
   }
@@ -993,14 +1159,15 @@ body{
 
   .description {
     margin: 0;
-    /* font-size: 0.5em; */
+    font-size: 2vw;
     font-family: "Comfortaa", cursive;
     line-height: 3vw;
-    margin-right: 1vw;
+    margin-right: 0vw;
+    margin-top: -9vh;
     text-transform: uppercase;
     flex: 1;
+    width: 70vw;
     height: 15vh;
-    margin-top: -4em;
     overflow-y: scroll;
     grid-area: cell3;
   }
@@ -1030,13 +1197,13 @@ body{
   .prerequis {
     justify-self: flex-end;
     grid-area: cell4;
-    font-size: 0.7em;
-    margin-top: -23.8em;
+    font-size: 2vw;
+    margin-top: -33.8em;
   }
 
   .prerequis :last-child {
     color: black;
-    font-size: 0.9em;
+    font-size: 2.5vw;
     font-family: "Montserrat", sans-serif;
     margin: -0.6em;
     margin-right: 0em;
@@ -1048,18 +1215,19 @@ body{
   .heures {
     justify-self: flex-end;
     grid-area: cell4;
-    font-size: 0.7em;
-    margin-top: -27.5em;
+    font-size: 2vw;
+    margin-top: -37.5em;
   }
   .heures :last-child {
     color: black;
-    font-size: 0.9em;
+    font-size: 2.5vw;
     font-family: "Montserrat", sans-serif;
     margin: -0.6em;
     margin-right: 0em;
     justify-self: flex-end;
     text-align: right;
   }
+
   }
   
 

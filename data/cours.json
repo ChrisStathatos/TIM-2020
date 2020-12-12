@@ -8,7 +8,7 @@
       "nombreHeure":"75H",
       "prealabe": "Aucun",
       "description": "Ce cours initie l’étudiant au traitement des images en mouvement, au traitement du son ainsi qu'aux bases de la scénarisation linéaire. L’étudiant apprend à utiliser les périphériques associés au traitement du son et de la vidéo et à exploiter de façon créative les fonctions des logiciels de traitement vidéo et sonore. <br/> <br/> Les techniques de montage (structure narrative, affinage de coupe, correction de couleur, etc.) sont étudiées. L’étudiant apprend à représenter ses idées et ses concepts par le dessin et l’écrit, à l’aide de scénarimages, de synopsis et de scénarios. Les particularités de la fonction de travail liées au traitement de la vidéo, du son, ainsi qu'à la scénarisation sont présentées de même que les compétences techniques et comportementales associées.",
-      "photo": "media/event3.jpg"
+      "photo": "media/video.jpg"
     }
   ],
   [
@@ -102,7 +102,7 @@
       "nombreHeure": "75H",
       "prealabe": "Relatif : Conception graphique et imagerie vectorielle (582-2M4-MA)",
       "description": "Dans ce cours, l’étudiant est initié au monde de l’imagerie de synthèse. Il est amené à maîtriser les outils et les fonctionnalités de base d’un logiciel de production 3D pour la création d'images fixes (ex : interface graphique, logo ou autres objets).<br/> <br/> Il apprend les techniques et méthodes de travail liées à la modélisation, à la création et à l’application de matériaux et de textures ainsi qu’aux techniques d’éclairage et de rendu en image. Enfin, des principes de scénarisation liés à l’univers de la 3D sont également abordés.",
-      "photo": "media/event1.jpg"
+      "photo": "coursimages/projet3d.jpg"
     }
   ],
   [
@@ -171,7 +171,7 @@
       "nombreHeure":"105H",
       "prealabe": "Relatif: Création de jeu 3D (582-3J3-MA)",
       "description": "Dans ce cours qui s'appuie sur une pédagogie par projets, l’étudiant réalise un projet d’envergure en équipe de travail. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences acquises afin de réaliser un prototype de jeu numérique. Il franchit, en collaboration avec les membres de son équipe, toutes les étapes du processus de production d’une telle application, qui sont : la conception du produit, la planification de sa production, la réalisation et l’intégration des médias, la programmation de l’interactivité, la réalisation des tests pour contrôler la qualité du produit ainsi que la rédaction du guide utilisateur et la présentation du produit fini. Par le fait même, ce cours initie l’étudiant à la communication interpersonnelle et à l’intégration à une équipe de production multimédia.",
-      "photo": "media/event1.jpg"
+      "photo": "cours/Manette.PNG"
       }
     ],
     [
@@ -191,7 +191,7 @@
         "nombreHeure":"75H",
         "prealabe": "Relatif : Imagerie 3D (582-3M5-MA); En session 4, l'étudiant doit choisir entre ce cours et le cours Interfaces Web réactives et animées.",
         "description": "Ce cours a pour but de permettre à l’étudiant d’approfondir les notions acquises dans le cours « 582-3M5 : Imagerie 3D » et de les appliquer dans la création de scènes élaborées. Le cours approfondit également les techniques de scénarisation couvertes dans les cours précédents.<br/> <br/>L’étudiant apprend notamment les outils et techniques de modélisation organique ainsi que les techniques d’organisation des hiérarchies, de montage des systèmes d’articulation et d’animation. Enfin, l’étudiant apprend à maîtriser les techniques d’optimisation et d’exportation en vue de diffuser les productions 3D pour le Web ou pour des applications 3D en temps réel.",
-        "photo": "media/event1.jpg"
+        "photo": "coursimages/projets/3d.png"
       }
     ]
   ],
