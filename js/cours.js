@@ -37,7 +37,7 @@ fetch("data/cours.json")
         if (unCours.length > 1) {
           const elUnCours = document.createElement("div");
           elUnCours.innerHTML = `
-                        <div class="dropdown">
+                        <ul class="dropdown">
                             <div class="interior"> 
                                 <a class="btn" href="#${unCours[0].nom}"><p class="textBtn">${unCours[0].nomCourt}</p></a>
                                 <span class="btnChoix"></span>
@@ -113,12 +113,12 @@ fetch("data/cours.json")
   function montrerSession(session){
    var sessionChoisi = document.getElementsByClassName("sessions")[session-1];
    if(sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur==0){
-        sessionChoisi.getElementsByClassName("lesCours")[0].style="display:grid;";
+        sessionChoisi.getElementsByClassName("lesCours")[0].style="display:none;";
         sessionChoisi.getElementsByClassName("lesCours")[0].removeAttribute('data-valeur');
         sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur=1;
    }
    else{
-    sessionChoisi.getElementsByClassName("lesCours")[0].style="display:none;";
+    sessionChoisi.getElementsByClassName("lesCours")[0].style="display:grid;";
     sessionChoisi.getElementsByClassName("lesCours")[0].removeAttribute('data-valeur');
     sessionChoisi.getElementsByClassName("lesCours")[0].dataset.valeur=0;
    }
