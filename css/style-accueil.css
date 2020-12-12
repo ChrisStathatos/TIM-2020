@@ -1,3 +1,7 @@
+body{
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
 #accueil-grand-ecran{
     display: none;
 }
@@ -23,9 +27,10 @@
 
 #site-title{
     font-weight: bolder;
-    font-size: 3.02vw;
+    font-size: 3.01vw;
     letter-spacing: .2em;
     margin-bottom: 0px;
+    overflow-wrap: break-word;
 }
 
 #site-title-barre{
@@ -54,6 +59,30 @@
     letter-spacing: .2em;
     padding-left: 0;
     margin-top: 8px;
+}
+
+.fleche{
+    /* left: 24vw; */
+    left: 42.5vw  !important;
+    bottom: 8vh !important;
+    width: 15vw !important;
+    height: 15vw !important;
+    border-width: 0px 2vw 2vw 0px !important;
+    box-shadow: 0.9vw 0.9vw 0px 0px rgba(223, 197, 22, 0.75) !important;
+    -webkit-box-shadow: 0.9vw 0.9vw 0px 0px rgba(223, 197, 22, 0.75) !important;
+    -moz-box-shadow: 0.9vw 0.9vw 0px 0px rgba(223, 197, 22, 0.75) !important;
+}
+
+#fleche-mobile{
+    /* align: center; */
+    position: fixed;
+    width: 50vw;
+    justify-content: space-around;
+    /* margin-left: 25vw; */
+    left: 0vw;
+    bottom: 5vw;
+    z-index: -9999;
+    animation: fleche-mobile 4.80531s cubic-bezier(.5,0,.5,1) infinite;
 }
 
 a{
@@ -213,7 +242,16 @@ a{
 #RectangleBouge23{
     animation: bouge23 4.789645s cubic-bezier(.6,0,.4,1) infinite;
 }
-  
+
+@keyframes fleche-mobile {
+    0% { transform: translateY(-2vw) }
+    10% { transform: translateY(2vw)}
+    20% { transform: translateY(-2vw) }
+    30% { transform: translateY(2vw)}
+    40% { transform: translateY(-2vw) }
+    100% { transform: translateY(-2vw) }
+}
+
 @keyframes bouge1 {
     0% { transform: translateX(0%) }
     50% { transform: translateX(0%)}
