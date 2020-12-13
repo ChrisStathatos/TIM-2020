@@ -1,0 +1,16 @@
+(function(){
+    var flecheProgramme = document.getElementById("fleche-programme-wrapper");
+    var lienProgramme = document.getElementById("site-subtitle");
+
+    lienProgramme.addEventListener("mouseenter", function(){
+        flecheProgramme.style.transitionTimingFunction = "cubic-bezier(.21,.92,.5,1)";
+        flecheProgramme.style.opacity = "100%";
+        flecheProgramme.style.transform = "translateX(0%)";
+    });
+    lienProgramme.addEventListener("mouseleave", function(){
+        flecheProgramme.style.transitionTimingFunction = "cubic-bezier(.5,0,.79,.08)";
+        flecheProgramme.style.opacity = "0%";
+        flecheProgramme.style.transform = "translateX(15%)";
+    });
+})();
+

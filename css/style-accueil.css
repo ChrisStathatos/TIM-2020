@@ -1,14 +1,21 @@
+/*  */
 body{
     margin-bottom: 0 !important;
     overflow: hidden;
 }
+
+/*  */
 #accueil-grand-ecran{
     display: none;
 }
+
+/*  */
 #accueil-mobile{
     display: initial;
 }
 
+
+/*  */
 #accueil-mobile-title-wrapper{
     /*margin-top: 30vh;*/
     margin-left: 5%;
@@ -18,7 +25,7 @@ body{
     top: calc(45% - 25vw);
 }
 
-
+/*  */
 #site-title, #site-subtitle{ 
     text-decoration: none;
     text-transform: uppercase;
@@ -27,6 +34,7 @@ body{
     text-align: center;
 }
 
+/*  */
 #site-title{
     font-weight: bolder;
     font-size: 3.01vw;
@@ -35,12 +43,14 @@ body{
     overflow-wrap: break-word;
 }
 
+/*  */
 #site-title-barre{
     background-color: #FF04A1;
     height: 5px;
     margin-top: .3vw;
 }
 
+/*  */
 #logo-tim-mobile{
     background-image: url("../media/tim-logo.svg");
     background-repeat: no-repeat;
@@ -52,6 +62,7 @@ body{
     /*animation: tim-mobile 5s cubic-bezier(.5,0,.5,1) infinite;*/
 }
 
+/*  */
 #site-subtitle{
     font-weight: normal;
     position: fixed;
@@ -64,7 +75,22 @@ body{
     margin-top: 8px;
 }
 
-.fleche{
+/*  */
+#site-subtitle:hover{
+    color: #6A07D2;
+    transition: 0.3s;
+}
+
+/*  */
+#site-subtitle:active{
+    color: white;
+    transition: 0.1s;
+}
+
+
+
+/*  */
+.fleche-mobile{
     /* left: 24vw; */
     left: 42.5vw  !important;
     bottom: 8vh !important;
@@ -76,7 +102,8 @@ body{
     -moz-box-shadow: 0.9vw 0.9vw 0px 0px rgba(223, 197, 22, 0.75) !important;
 }
 
-#fleche-mobile{
+/*  */
+#fleche-mobile-wrapper{
     /* align: center; */
     position: fixed;
     width: 50vw;
@@ -88,19 +115,28 @@ body{
     animation: fleche-mobile 4.80531s cubic-bezier(.5,0,.5,1) infinite;
 }
 
+
+
+/*  */
 a{
     text-decoration: none;
     transition: 0.3s;
 }
-#site-subtitle:hover{
-    color: #6A07D2;
-    transition: 0.3s;
-}
-#site-subtitle:active{
+
+/*  */
+.media-accueil a{
     color: white;
-    transition: 0.1s;
 }
 
+/*  */
+.media-accueil a:hover{
+    color: grey;
+    transition: 0.3s;
+}
+
+
+
+/*  */
 #rectangles-gauche, #rectangles-gauche-tmp{
     position: absolute;
     margin: 0 0 0 0;
@@ -110,6 +146,8 @@ a{
     left: 0px;
     z-index: -999;
 }
+
+/*  */
 #rectangles-droit, #rectangles-droit-tmp{
     position: absolute;
     margin: 0 0 0 0;
@@ -120,20 +158,16 @@ a{
     z-index: -999;
 }
 
-#rectangles-gauche-tmp{
+/*  */
+#rectangles-gauche{
     /*background-color: blue;*/
     background-image: url("../media/rec2.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
 }
-#rectangles-droit-tmp{
-    /*background-color: red;*/
-    background-image: url("../media/rec1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
+
+/*  */
 #rectangles-droit svg{
     /*background-color: red;*/
     /*background-image: url("../media/rec1.svg");
@@ -147,6 +181,8 @@ a{
     transform-origin: botttom right;
     max-height: 75vh;
 }
+
+/*  */
 #rectangles-droit-wrapper{
     display: flex;
     flex-direction: column-reverse;
@@ -154,6 +190,10 @@ a{
     width: auto;
 
 }
+
+
+
+/*  */
 #RectangleBouge1{
     animation: bouge1 4.8746s cubic-bezier(.6,0,.4,1) infinite;
 }
@@ -245,6 +285,7 @@ a{
 #RectangleBouge23{
     animation: bouge23 4.789645s cubic-bezier(.6,0,.4,1) infinite;
 }
+
 
 @keyframes tim-mobile {
     30% { filter: brightness(0%); }
@@ -387,18 +428,7 @@ a{
     100% { transform: translateY(0%) }
 } 
 
-.media-accueil a{
-color: white;
-}
-
-.media-accueil a:hover{
-
-    color: grey;
-    transition: 0.3s;
-
-}
-
-  #maisonneuve-accueil{
+#maisonneuve-accueil{
     
     position: absolute;
     display: none;
@@ -445,7 +475,7 @@ color: white;
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #accueil-grand-ecran{
         display: initial;
     }
@@ -474,24 +504,69 @@ color: white;
         position: initial;
         bottom: initial;
         text-align: left;
-        width: initial;
+        width: min(33em, 60.78vw);
         font-weight: normal;
         font-size: min(1em, 1.78vw);
         padding-left: 10%;
         letter-spacing: .2em;
         margin-top: 8px;
+        pointer-events: all;
     }
 
-   
+    #site-subtitle-wrapper{
+        pointer-events: none;
+    }
 
-      .media-accueil {
+    /*  */
+    .fleche-programme{
+        display: block;
+        box-sizing: border-box;
+        height: min(2vw, 1.2em);
+        width: min(2vw, 1.2em);
+        border-style: solid;
+        border-color: #6a07d2;
+        border-width: 0px min(0.6vw, .28em) min(0.6vw, .28em) 0px;
+        transform: rotate(135deg);
+        transition: border-width 150ms ease-in-out;
+        box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+        -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+        -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
+        position: relative;
+        cursor: pointer;
+    }
+
+    /*  */
+    #fleche-programme-wrapper{
+        padding-left: 100%;
+        text-align: left;
+        /* align: center; */
+        position: relative;
+        justify-content: space-around;
+        /* margin-left: 25vw; */
+        left: 0vw;
+        margin-top: -3.6%;
+        width: 5%;
+        z-index: -9999;
+        /* background-color: red; */
+        opacity: 0;
+        transform: translateX(15%);
+        transition: transform 0.5s opacity 0.5s;
+        transition-duration: 0.5s;
+    }
+
+    #fleche-programme-wrapper:hover{
+        transform: translateX(500%);
+        pointer-events: none;
+    }
+
+    .media-accueil {
         position: relative;
         display: flex;
         padding: 0.6rem;
         font-size: 1.4em;
         left: 80%;
         letter-spacing: 14px;
-      }
+    }
 
     #maisonneuve-accueil, .footer-accueil{
         display: flex;
@@ -517,6 +592,24 @@ color: white;
         margin-top: 8px;
     }
    
+    /*  */
+    .fleche-programme{
+        display: block;
+        box-sizing: border-box;
+        height: min(2vw, 1.2em);
+        width: min(2vw, 1.2em);
+        border-style: solid;
+        border-color: #6a07d2;
+        border-width: 0px 0.4vw 0.4vw 0px;
+        transform: rotate(135deg);
+        transition: border-width 150ms ease-in-out;
+        box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
+        -webkit-box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
+        -moz-box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
+        position: relative;
+        cursor: pointer;
+    }
+
     .footer-accueil {
         position: absolute;
         display: flex;
