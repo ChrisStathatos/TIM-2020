@@ -1,21 +1,21 @@
-/*  */
+/* On initialise la page d'accueil avec aucune marge et aucun overflow hors de la page (pour éviter du scroll inutile) */
 body{
     margin-bottom: 0 !important;
     overflow: hidden;
 }
 
-/*  */
+/* L'accueil grand écran est caché en mobile */
 #accueil-grand-ecran{
     display: none;
 }
 
-/*  */
+/* L'accueil mobile est affiché en mobile, mais caché en grand écran */
 #accueil-mobile{
     display: initial;
 }
 
 
-/*  */
+/* Un groupe contenant le "Commencez à explorer notre programme" de la version mobile (on décale le titre, logo et barre mauve pour centrer le tout dans la page) */
 #accueil-mobile-title-wrapper{
     /*margin-top: 30vh;*/
     margin-left: 5%;
@@ -25,7 +25,7 @@ body{
     top: calc(45% - 25vw);
 }
 
-/*  */
+/* On initie le texte de l'accueil avec en premier lieu la version mobile */
 #site-title, #site-subtitle{ 
     text-decoration: none;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ body{
     text-align: center;
 }
 
-/*  */
+/* Paramètres spécifiques du titre de la version mobile */
 #site-title{
     font-weight: bolder;
     font-size: 3.01vw;
@@ -43,26 +43,7 @@ body{
     overflow-wrap: break-word;
 }
 
-/*  */
-#site-title-barre{
-    background-color: #FF04A1;
-    height: 5px;
-    margin-top: .3vw;
-}
-
-/*  */
-#logo-tim-mobile{
-    background-image: url("../media/tim-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 47vw;
-    filter: brightness(-100%);
-    /*animation: tim-mobile 5s cubic-bezier(.5,0,.5,1) infinite;*/
-}
-
-/*  */
+/* Paramètres spécifiques du sous-titre de la version mobile */
 #site-subtitle{
     font-weight: normal;
     position: fixed;
@@ -75,21 +56,39 @@ body{
     margin-top: 8px;
 }
 
-/*  */
+/* Couleur de hover lorsque le sous-titre est survolé par la souris */
 #site-subtitle:hover{
     color: #6A07D2;
     transition: 0.3s;
 }
 
-/*  */
+/* Couleur de clic lorsque le sous-titre est cliqué dessus */
 #site-subtitle:active{
     color: white;
     transition: 0.1s;
 }
 
+/* Initialisation de la barre en dessous du titre "Techniques d'Intégration Multimédia" */
+#site-title-barre{
+    background-color: #FF04A1;
+    height: 5px;
+    margin-top: .3vw;
+}
+
+/* Initialisation du logo TIM de la page mobile */
+#logo-tim-mobile{
+    background-image: url("../media/tim-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 47vw;
+    filter: brightness(-100%);
+}
 
 
-/*  */
+
+/* Initialisation de la flèche au dessus du "Commencez à explorer notre programme" de la page mobile */
 .fleche-mobile{
     /* left: 24vw; */
     left: 42.5vw  !important;
@@ -102,7 +101,7 @@ body{
     -moz-box-shadow: 0.9vw 0.9vw 0px 0px rgba(223, 197, 22, 0.75) !important;
 }
 
-/*  */
+/* Paramètres du conteneur de la page mobile (on le place tout en bas de la page) */
 #fleche-mobile-wrapper{
     /* align: center; */
     position: fixed;
@@ -117,38 +116,51 @@ body{
 
 
 
-/*  */
+/* Le footer de l'accueil est unique, donc on doit  l'afficher différemment du footer régulier */
+.footer-accueil{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 2.8em;
+    text-align: 10%;
+    bottom: 0%;
+
+}
+
+/* On enlève la décoration des liens */
 a{
     text-decoration: none;
     transition: 0.3s;
 }
 
-/*  */
+/* Les seuls liens avec une couleur différente (si nous ne comptons pas la navigation mobile) sont les boutons du footer */
 .media-accueil a{
     color: white;
 }
 
-/*  */
+/* La couleur de hover de ces boutons aussi sont différent */
 .media-accueil a:hover{
     color: grey;
     transition: 0.3s;
 }
 
-
-
-/*  */
-#rectangles-gauche, #rectangles-gauche-tmp{
+/* Vu que le logo de Maisonneuve n'est pas une icône de FontAwesome mais une image, on doit l'afficher différemment des autres icônes */
+#maisonneuve-accueil{
     position: absolute;
-    margin: 0 0 0 0;
-    width: 25vw;
-    height: 90vh;
-    bottom: 0px;
-    left: 0px;
-    z-index: -999;
+    display: none;
+    margin-top: 0.625em; 
+    margin-left: 1.625em;
+    width: 1.5625em;
+    height:1.5625em;
+    background-image: url('../media/maisonneuve.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/*  */
-#rectangles-droit, #rectangles-droit-tmp{
+
+
+/* Initialisation du conteneur des rectangles à droite de la page d'accueil (qui sont dynamiques) */
+#rectangles-droit{
     position: absolute;
     margin: 0 0 0 0;
     width: 40vw;
@@ -158,16 +170,23 @@ a{
     z-index: -999;
 }
 
-/*  */
+/* Initialisation des rectangles à gauche de la page d'accueil (statiques) */
 #rectangles-gauche{
     /*background-color: blue;*/
     background-image: url("../media/rec2.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 25vw;
+    height: 90vh;
+    bottom: 0px;
+    left: 0px;
+    z-index: -999;
 }
 
-/*  */
+/* Initialisation du conteneur SVG qui contient tout les calques des rectangles qui sont en bas à droite de la page */
 #rectangles-droit svg{
     /*background-color: red;*/
     /*background-image: url("../media/rec1.svg");
@@ -182,7 +201,7 @@ a{
     max-height: 75vh;
 }
 
-/*  */
+/* On s'assure que les rectangles à droites de la page sont affichés correctement et que leur conteneur reste en place */
 #rectangles-droit-wrapper{
     display: flex;
     flex-direction: column-reverse;
@@ -193,7 +212,7 @@ a{
 
 
 
-/*  */
+/* Les liens vers les animations des 23 rectangles qui sont animés */
 #RectangleBouge1{
     animation: bouge1 4.8746s cubic-bezier(.6,0,.4,1) infinite;
 }
@@ -285,24 +304,9 @@ a{
 #RectangleBouge23{
     animation: bouge23 4.789645s cubic-bezier(.6,0,.4,1) infinite;
 }
+/* Fin des liens vers les animations */
 
-
-@keyframes tim-mobile {
-    30% { filter: brightness(0%); }
-    30.1% { filter: brightness(0%) hue-rotate(280deg);}
-    32% { filter: brightness(75%) hue-rotate(280deg); }
-    42.5% { filter: brightness(75%) hue-rotate(280deg); }
-    44.4% { filter: brightness(0%) hue-rotate(280deg);}
-    44.5% { filter: brightness(0%); }
-
-    80% { filter: brightness(0%); }
-    80.1% { filter: brightness(0%) saturate(500%) hue-rotate(0deg);}
-    82% { filter: brightness(200%) saturate(500%) hue-rotate(0deg); }
-    92.5% { filter: brightness(200%) saturate(500%) hue-rotate(0deg); }
-    94.4% { filter: brightness(0%) saturate(500%) hue-rotate(0deg);}
-    94.5% { filter: brightness(0%); }
-}
-
+/* Keyframes de la flèche en haut du sous-titre mobile */
 @keyframes fleche-mobile {
     0% { transform: translateY(-2vw) }
     10% { transform: translateY(2vw)}
@@ -312,6 +316,7 @@ a{
     100% { transform: translateY(-2vw) }
 }
 
+/* Toutes les animations de chacun des rectangles qui sont en bas à droite de la page */
 @keyframes bouge1 {
     0% { transform: translateX(0%) }
     50% { transform: translateX(0%)}
@@ -427,65 +432,30 @@ a{
     50% { transform: translateY(-3%)}
     100% { transform: translateY(0%) }
 } 
-
-#maisonneuve-accueil{
-    
-    position: absolute;
-    display: none;
-    margin-top: 0.625em; 
-    margin-left: 1.625em;
-    width: 1.5625em;
-    height:1.5625em;
-    background-image: url('../media/maisonneuve.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.footer-accueil{
-    
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 2.8em;
-    text-align: 10%;
-    bottom: 0%;
-
-}
-
-.media-accueil {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1.5em;
-    left: 89%;
-    letter-spacing: 14px;
-  }
+/* Fin des animations des rectangles */
 
 
-  @media screen and (min-width: 400px) {
-   
-    .media-accueil {
-    position: relative;
-    display: flex;
-    padding: 0.6rem;
-    font-size: 1em;
-    left: 70%;
-    letter-spacing: 14px;
-    }
 
-}
-
+/* VERSION TABLETTE */
 @media screen and (min-width: 769px) {
+
+    /* On affiche l'accueil en version plus grand écrans à partir de cette résolution */
     #accueil-grand-ecran{
         display: initial;
     }
+
+    /* On cache la version mobile à partir de cette résolution */
     #accueil-mobile{
         display: none;
     }
+
+    /* On ajuste le padding et l'alignement du texte pour qu'il soit vers la gauche de l'écran */
     #site-title, #site-subtitle{
         padding-left: 10%;
         text-align: left;
     }
+
+    /* On ajuste la taille du titre dépendamment de la largeur de la page, jusqu'à un certain maximum */
     #site-title{
         font-size: 1.4em;
         letter-spacing: .28em;
@@ -493,6 +463,8 @@ a{
         padding-top: 30vh;
         margin-right: 0%;
     }
+
+    /* On ajuste la taille de la barre en bas du titre dépendamment de la largeur de la page, jusqu'à un certain maximum */
     #site-title-barre{
         height: 4px;
         width: min(45.30em, 80.89vw);
@@ -500,6 +472,8 @@ a{
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    /* On ajuste la taille du sous-titre dépendamment de la largeur de la page, jusqu'à un certain maximum */
     #site-subtitle{
         position: initial;
         bottom: initial;
@@ -513,11 +487,12 @@ a{
         pointer-events: all;
     }
 
+    /* Pour une raison quelconque, on pouvais cliquer sur le lien du sous-titre sur toute la largeur de la page. On enlève donc tout événement de pointeur sur cet élément pour les garder uniquement pour le texte lui-même */
     #site-subtitle-wrapper{
         pointer-events: none;
     }
 
-    /*  */
+    /* L'affichage de la flèche à droite de "Commencez à explorer notre programme" */
     .fleche-programme{
         display: block;
         box-sizing: border-box;
@@ -535,7 +510,7 @@ a{
         cursor: pointer;
     }
 
-    /*  */
+    /* La position de la flèche à droite de "Commencez à explorer notre programme" (qui est animé par script) */
     #fleche-programme-wrapper{
         padding-left: 100%;
         text-align: left;
@@ -554,11 +529,7 @@ a{
         transition-duration: 0.5s;
     }
 
-    #fleche-programme-wrapper:hover{
-        transform: translateX(500%);
-        pointer-events: none;
-    }
-
+    /* Positionnement du groupe de boutons dans le footer de la page d'accueil (qui est unique) */
     .media-accueil {
         position: relative;
         display: flex;
@@ -568,23 +539,30 @@ a{
         letter-spacing: 14px;
     }
 
+    /* Affichage du footer et de l'icône de maisonneuve en mode Flex */
     #maisonneuve-accueil, .footer-accueil{
         display: flex;
     }
 }
 
+/* GRAND ÉCRAN */
 @media screen and (min-width: 1200px) {
+    /* On ajuste la marge, le padding, l'alignement et la taille du titre pour le mode grand écran */
     #site-title{
         font-size: 2vw;
         letter-spacing: .4vw;
         padding-top: 30vh;
         margin-right: 0%;
     }
+
+    /* On ajuste la marge et la taille de la barre en dessous du titre pour le mode grand écran */
     #site-title-barre{
         height: 5px;
         width: 59.2vw;
         margin-top: 8px;
     }
+
+    /* On ajuste la marge et la taille du sous-titre pour le mode grand écran */
     #site-subtitle{
         font-weight: normal;
         font-size: 1.3vw;
@@ -592,41 +570,32 @@ a{
         margin-top: 8px;
     }
    
-    /*  */
+    /* Ajustement de la taille et épaisseur de la flèche à droite du sous-titre */
     .fleche-programme{
-        display: block;
-        box-sizing: border-box;
-        height: min(2vw, 1.2em);
-        width: min(2vw, 1.2em);
-        border-style: solid;
-        border-color: #6a07d2;
         border-width: 0px 0.4vw 0.4vw 0px;
-        transform: rotate(135deg);
-        transition: border-width 150ms ease-in-out;
         box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
         -webkit-box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
         -moz-box-shadow: 0.3vw 0.3vw 0px 0px rgba(223, 197, 22, 0.75);
-        position: relative;
-        cursor: pointer;
     }
 
+    /* Ajustement du footer pour la version grand écran */
     .footer-accueil {
         position: absolute;
-        display: flex;
         height: 2.8em;
         right: 0;
         bottom: 0;
         text-align: 10%;
        
-      }
+    }
 
-      .media-accueil {
+    /* Ajustement de la taille des icônes du footer de la page grand écran */
+    .media-accueil {
         position: relative;
         display: flex;
         padding: 0.6rem;
         font-size: 1.5em;
         left: 90%;
         letter-spacing: 14px;
-      }
+    }
 }
 

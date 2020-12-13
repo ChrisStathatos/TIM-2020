@@ -1,3 +1,4 @@
+// Simple fonction anonyme pour initialiser la flèche à côté du "Commencez à explorer notre programme" de la page d'accueil version grand écran
 (function(){
     var flecheProgramme = document.getElementById("fleche-programme-wrapper");
     var lienProgramme = document.getElementById("site-subtitle");
