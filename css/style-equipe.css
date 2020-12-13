@@ -1,4 +1,4 @@
-
+/* STYLE MOBILE */
 @media screen and (max-width: 600px) {
 
     #global{
@@ -160,8 +160,9 @@
     grid-row-gap: 0;
     z-index: 10001;
     margin: 0 auto;
-    background-color: #6a07d2;
-    box-shadow: .8em .8em #ff04a1;
+    background-color: #E8E8DB;
+    border:0.3em solid #dfc516 ;
+    box-shadow: .5em .5em #ff04a1;
     top: 75;
     left: 0;
     right: 0;
@@ -172,6 +173,32 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+.modal-close {
+    color:  #6a07d2;
+    line-height: 50px;
+    font-size: 3em;
+    position: absolute;
+    right: -0.05em; 
+    text-align: center;
+     top: 0.03em; 
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+  .modal-close:active {
+    color: white;
+    line-height: 50px;
+    font-size: 2em;
+    position: absolute;
+    right: -0.05em; 
+    text-align: center;
+     top: 0.03em; 
+    width: 1em;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+  }
 
 @keyframes popupOpen {
     0%{
@@ -216,7 +243,7 @@
       font-size: 1em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      color:  #dfc516;
+      color:  #6a07d2;
       grid-area: nom;
       letter-spacing: .2em;
   }
@@ -225,13 +252,13 @@
       font-size: .6em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      color:  #dfc516;
+      color:  #6a07d2;
       grid-area: courriel;
       letter-spacing: .2em;
   }
 
   #courrielProf:hover{
-    color: #ff04a1;
+    color: #dfc516;
     cursor: pointer;
   }
 
@@ -257,6 +284,7 @@
     font-size: .65em;
     overflow-y: scroll;
     padding: 0 2em 0 2em;
+    color: black;
   }
 
     #description::-webkit-scrollbar {
@@ -273,7 +301,7 @@
 
   #coursDonnes{
       grid-area: cours;
-      color:  #dfc516;
+      color:  #6a07d2;
       font-family: 'Montserrat', sans-serif;
       font-weight: bolder;
       font-size: 1em;
@@ -281,6 +309,7 @@
   }
 }
 
+/* STYLE TABLETTE */
 @media screen and (max-width: 768px) and (min-width: 600px){
 
     #global{
@@ -419,9 +448,9 @@
         grid-row-gap: 0;
         z-index: 10001;
         margin: 0 auto;
-        background-color: #6a07d2;
-        box-shadow: .8em .8em #dfc516;
-        box-shadow: .8em .8em #ff04a1;
+        background-color: #E8E8DB;
+        border:0.3em solid #dfc516 ;
+        box-shadow: .5em .5em #ff04a1;
         top: 10%;
         left: 0;
         right: 0;
@@ -433,6 +462,32 @@
         text-align: center;
         text-transform: uppercase;
     }
+
+    .modal-close {
+        color:  #6a07d2;
+        line-height: 50px;
+        font-size: 4em;
+        position: absolute;
+        right: -0.05em; 
+        text-align: center;
+         top: 0.1em; 
+        width: 1em;
+        text-decoration: none;
+        font-family: 'Montserrat',sans-serif;
+      }
+    
+      .modal-close:active {
+        color: white;
+        line-height: 50px;
+        font-size: 3em;
+        position: absolute;
+        right: -0.05em; 
+        text-align: center;
+         top: 0.1em; 
+        width: 1em;
+        text-decoration: none;
+        font-family: 'Montserrat',sans-serif;
+      }
     
     @keyframes popupOpen {
         0%{
@@ -478,7 +533,7 @@
           font-size: 1.9em;
           font-family: 'Montserrat', sans-serif;
           font-weight: 900;
-          color:  #dfc516;
+          color:  #6a07d2;
           grid-area: nom;
           letter-spacing: .2em;
           margin-bottom: auto;
@@ -488,7 +543,7 @@
           font-size: 1em;
           font-family: 'Montserrat', sans-serif;
           font-weight: 900;
-          color:  #dfc516;
+          color:  #6a07d2;
           grid-area: courriel;
           letter-spacing: .2em;
       }
@@ -520,6 +575,7 @@
         font-size: .8em;
         overflow-y: scroll;
         padding: 0 3em 0 3em;
+        color: black;
       }
     
         #description::-webkit-scrollbar {
@@ -536,7 +592,7 @@
     
       #coursDonnes{
           grid-area: cours;
-          color:  #dfc516;
+          color:  #6a07d2;
           font-family: 'Montserrat', sans-serif;
           font-weight: bolder;
           font-size: 1em;
@@ -544,6 +600,7 @@
       }
 }
 
+/* STYLE GRANDE TABLETTE */
 @media screen and (max-width: 1200px) and (min-width: 769px){
     
     #global{
@@ -679,9 +736,9 @@
         grid-row-gap: 0;
         z-index: 10001;
         margin: 0 auto;
-        background-color: #6a07d2;
-        box-shadow: .8em .8em #dfc516;
-        box-shadow: .8em .8em #ff04a1;
+        background-color: #E8E8DB;
+        border:0.3em solid #dfc516 ;
+        box-shadow: .5em .5em #ff04a1;
         top: 10%;
         left: 0;
         right: 0;
@@ -713,6 +770,32 @@
           transform: scale(0.0);
         }
       }
+
+      .modal-close {
+        color:  #6a07d2;
+        line-height: 50px;
+        font-size: 6em;
+        position: absolute;
+        right: -0.05em; 
+        text-align: center;
+        top: 0.25em; 
+        width: 1em;
+        text-decoration: none;
+        font-family: 'Montserrat',sans-serif;
+      }
+    
+      .modal-close:active {
+        color: white;
+        line-height: 50px;
+        font-size: 3em;
+        position: absolute;
+        right: -0.05em; 
+        text-align: center;
+        top: 0.25em; 
+        width: 1em;
+        text-decoration: none;
+        font-family: 'Montserrat',sans-serif;
+      }
     
       .boitePortraitPopup{
         margin: 0 auto;
@@ -738,7 +821,7 @@
           font-size: 2.2em;
           font-family: 'Montserrat', sans-serif;
           font-weight: 900;
-          color:  #dfc516;
+          color:  #6a07d2;
           grid-area: nom;
           letter-spacing: .2em;
           margin-bottom: auto;
@@ -748,7 +831,7 @@
           font-size: 1.2em;
           font-family: 'Montserrat', sans-serif;
           font-weight: 900;
-          color:  #dfc516;
+          color:  #6a07d2;
           grid-area: courriel;
           letter-spacing: .2em;
       }
@@ -770,7 +853,7 @@
         font-family: 'Comfortaa', cursive;
         font-weight: 500;
         color: white;
-        line-height: 2.5em;
+        line-height: 3.4em;
         letter-spacing: .2em;
       }
     
@@ -780,6 +863,7 @@
         font-size: 1.2em;
         overflow-y: scroll;
         padding: 0 3em 0 3em;
+        color: black;
       }
     
         #description::-webkit-scrollbar {
@@ -796,7 +880,7 @@
     
       #coursDonnes{
           grid-area: cours;
-          color:  #dfc516;
+          color:  #6a07d2;
           font-family: 'Montserrat', sans-serif;
           font-weight: bolder;
           font-size: 1.2em;
@@ -804,6 +888,7 @@
       }
 }
 
+/* STYLE GRAND ÉCRAN */
 @media screen and (min-width: 1200px){
 
 #global{
@@ -960,9 +1045,9 @@
     grid-row-gap: 0;
     z-index: 10001;
     margin: 0 auto;
-    background-color: #6a07d2;
-    box-shadow: .8em .8em #dfc516;
-    box-shadow: .8em .8em #ff04a1;
+    background-color: #E8E8DB;
+    border:0.3em solid #dfc516 ;
+    box-shadow: .5em .5em #ff04a1;
     top: 16.25%;
     left: 0;
     right: 0;
@@ -995,6 +1080,10 @@
     }
   }
 
+  .modal-close {
+      display: none;
+  }
+
   .boitePortraitPopup{
     margin:0 auto;
     width: 9em;
@@ -1019,7 +1108,7 @@
       font-size: 1.9em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      color:  #dfc516;
+      color:  #6a07d2;
       grid-area: nom;
       letter-spacing: .2em;
       margin-bottom: auto;
@@ -1029,7 +1118,7 @@
       font-size: .9em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
-      color:  #dfc516;
+      color:  #6a07d2;
       grid-area: courriel;
       letter-spacing: .2em;
   }
@@ -1061,6 +1150,7 @@
     font-size: .8em;
     overflow-y: scroll;
     padding: 0 3em 0 3em;
+    color:black;
   }
 
     #description::-webkit-scrollbar {
@@ -1077,7 +1167,7 @@
 
   #coursDonnes{
       grid-area: cours;
-      color:  #dfc516;
+      color:  #6a07d2;
       font-family: 'Montserrat', sans-serif;
       font-weight: bolder;
       font-size: 1em;
