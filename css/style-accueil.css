@@ -133,17 +133,6 @@ a{
     transition: 0.3s;
 }
 
-/* Les seuls liens avec une couleur différente (si nous ne comptons pas la naviguation mobile) sont les boutons du footer */
-.media-accueil a{
-    color: white;
-}
-
-/* La couleur de hover de ces boutons aussi sont différent */
-.media-accueil a:hover{
-    color: grey;
-    transition: 0.3s;
-}
-
 /* Vu que le logo de Maisonneuve n'est pas une icône de FontAwesome mais une image, on doit l'afficher différemment des autres icônes */
 #maisonneuve-accueil{
     position: absolute;
@@ -531,12 +520,24 @@ a{
 
     /* Positionnement du groupe de boutons dans le footer de la page d'accueil (qui est unique) */
     .media-accueil {
-        position: relative;
+        position: fixed;
         display: flex;
         padding: 0.6rem;
         font-size: 1.4em;
-        left: 80%;
         letter-spacing: 14px;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Les seuls liens avec une couleur différente (si nous ne comptons pas la naviguation mobile) sont les boutons du footer */
+    .media-accueil a{
+        color: white;
+    }
+
+    /* La couleur de hover de ces boutons aussi sont différent */
+    .media-accueil a:hover{
+        color: grey;
+        transition: 0.3s;
     }
 
     /* Affichage du footer et de l'icône de maisonneuve en mode Flex */
@@ -590,12 +591,7 @@ a{
 
     /* Ajustement de la taille des icônes du footer de la page grand écran */
     .media-accueil {
-        position: relative;
-        display: flex;
-        padding: 0.6rem;
         font-size: 1.5em;
-        left: 90%;
-        letter-spacing: 14px;
     }
 }
 
