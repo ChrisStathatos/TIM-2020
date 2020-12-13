@@ -108,26 +108,31 @@
 }
 .btnChoix{
     position: relative;
-    display:block;
-    left:3.5vw;
-    bottom:1vw; 
-    width:0.8vw;
-    height:0.8vw;
+    top:-2vw;
+    left:4vw;
+    cursor:pointer;
+    display:inline-block;
+    width: 0.5vw;
+    height: 0.5vw;
     border-radius: 50%;
-    border:white solid 0.1vw;
-    z-index: 2;
+    border: white solid 0.1vw;
+    z-index: 3;
     transition: background-color 0.6s ease;
 
 }
+.dots{
+    height: 0;
+    text-align:center;
+}
 .interior span:last-child{
-  left:5.1vw;
-  bottom:2vw;
+    top:-2.7vw;
+    left:5vw;
 }
 .active, .btnChoix:hover{
     background-color:white;
 }
 .cache{
-    display: none;
+    display: none !important;
 }
 .textBtn{
     font-size:0.9vw !important;
