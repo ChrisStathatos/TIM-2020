@@ -133,7 +133,7 @@ a{
     transition: 0.3s;
 }
 
-/* Les seuls liens avec une couleur différente (si nous ne comptons pas la navigation mobile) sont les boutons du footer */
+/* Les seuls liens avec une couleur différente (si nous ne comptons pas la naviguation mobile) sont les boutons du footer */
 .media-accueil a{
     color: white;
 }

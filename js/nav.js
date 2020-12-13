@@ -3,7 +3,7 @@ var estEnHover = false;     // Détermine si la souris survole un bouton (utilis
 var aHoverUneFois = false;  // En raison d'un bogue avec l'initialisation des barres au démarrage de la page, on les initialise en boucle tant et aussi longtemps que l'utilisateur n'a pas encore survolé un bouton.
 var burgerOuvert = false;   // Détermine si le menu burger est présentement ouvert
 
-// Fonction d'initialisation du menu de navigation (pour grand écran et pour mobile en même temps)
+// Fonction d'initialisation du menu de naviguation (pour grand écran et pour mobile en même temps)
 (function(){
     var barreHaut = document.getElementById("barre-haut");                                                                  // La barre mauve dans la naviguation grand écran
     var barreBas = document.getElementById("barre-bas");                                                                    // La barre jaune dans la naviguation grand écran
