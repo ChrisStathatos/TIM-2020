@@ -86,7 +86,7 @@
       "nomCourt": "Création de jeu 2D",
       "ponderation": "2-2-2",
       "nombreHeure":"60H",
-      "prealabe": "Relatif : Animation et interactivité en jeu (582-1J1-MA)",
+      "prealabe": "Animation et interactivité en jeu (582-1J1-MA)",
       "description": "Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie aux concepts de base d'un moteur de jeu. Le cours permet d'approfondir la maîtrise de la structure d'affichage ainsi que le contrôle de l'animation et de l'interactivité.  Par la création d'un prototype simple, l'étudiant apprend les concepts de base reliés à l'intégration d'un jeu ou d'une application interactive en exploitant les principales classes intégrées d’objets graphiques et médiatiques et en créant ses propres classes d’objets.",
       "photo": "media/event1.jpg"
     }
@@ -158,7 +158,7 @@
       "nomCourt": "Interfaces et développement Web",
       "ponderation": "3-3-2",
       "nombreHeure":"90H",
-      "prealabe": "Création de sites Web dynamiques (582-3W3-MA) ",
+      "prealabe": "Création de sites Web dynamiques (582-3W3-MA)",
       "description": "Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de sites Web dynamiques à l’aide d’un gestionnaire de contenu. L’étudiant apprend à développer par programmation des thèmes personnalisés pour répondre aux besoins spécifiques du design d’interfaces des sites Web. L’étudiant apprend aussi les fonctionnalités avancées du gestionnaire de contenu, lui permettant entre autres à programmer des extensions servant les fonctionnalités des sites Web à développer. De plus, l’étudiant est initié à l’utilisation et à l’intégration par programmation des bases de données. Ce cours couvre également l’intégration et l’interfaçage entre le langage utilisé du côté du serveur et les technologies utilisées du côté client. Enfin, l’étudiant poursuit son apprentissage des techniques de test pour contrôler la qualité d’un site Web et valider sa conformité en regard des normes et des standards en vigueur.",
       "photo": "media/event1.jpg"
       }
@@ -180,7 +180,7 @@
         "nomCourt": "Interfaces Web",
         "ponderation": "3-2-2",
         "nombreHeure":"75H",
-        "prealabe": "Création de sites Web dynamiques (582-3W3-MA) En session 4, l'étudiant doit choisir entre ce cours et le cours Animation 3D.",
+        "prealabe": "Création de sites Web dynamiques (582-3W3-MA)",
         "description": "Dans ce cours, l'étudiant ayant un intérêt plus marqué pour la programmation a la possibilité d'approfondir les acquis des cours de la séquence Web en s'initiant à des technologies permettant de réaliser des applications riches du côté du client. Il apprendra à utiliser un cadriciel côté client pour produire un site Web dynamique dont l'interface utilisateur réactive répond en temps réel aux modifications d'états des données de l'application. L’intégration d’effets de transition et d'animation dans l’interface-utilisateur est également couverte.",
         "photo": "media/event1.jpg"
       },
@@ -214,7 +214,7 @@
       "nomCourt": "Communication et dynamique d'équipe",
       "ponderation": "1-2-1",
       "nombreHeure":"45H",
-      "prealabe": "Projet Web en équipe (582-5W5-MA) ",
+      "prealabe": "Projet Web en équipe (582-5W5-MA)",
       "description": "Ce cours permet à l’étudiant de développer ses habiletés en matière de communication interpersonnelle et de mieux interagir dans une équipe multimédia. L’étudiant est appelé à développer sa capacité́ à communiquer et à entrer en relation avec autrui sur les plans personnel et professionnel, notamment avec ses collègues de travail ou ses supérieurs immédiats. Les notions essentielles acquises dans ce cours s’appliquent à la prévention des conflits interpersonnels et à la résolution de problèmes d’équipe notamment dans le cours de Projet Web. De plus, ce cours initie l’étudiant à la présentation du produit tout en favorisant les interactions et la collaboration avec les clients.",
       "photo": "media/event1.jpg"
     }
@@ -225,7 +225,7 @@
       "nomCourt": "Projet Web en équipe",
       "ponderation": "2-5-5",
       "nombreHeure":"105H",
-      "prealabe": "Communication et dynamique d’une équipe de travail (350-5N1-MA); Relatif : Conception d’interfaces et développement Web (582-4W4-MA) ",
+      "prealabe": "Communication et dynamique d’une équipe de travail (350-5N1-MA) ",
       "description": "Dans ce cours, qui s'appuie sur une pédagogie par projets, l’étudiant participe à la réalisation d’un produit multimédia en ligne pour un client. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences et des notions acquises et de s’initier à des méthodes et des techniques de travail professionnelles. Il franchit, en collaboration avec les membres de son équipe de production, toutes les étapes du processus de production d’une telle application, qui sont : la conception du produit, la planification, la réalisation et l’intégration des médias, la programmation de l’interactivité, la réalisation des tests pour contrôler la qualité du produit. Il est également amené à mettre en pratique une approche client basée sur un climat de confiance. Le cours permet également la mise en application de différents outils facilitant la réalisation de projet : communication entre équipiers, gestion de code source. De plus, une attention particulière est portée à la relation avec le client ainsi qu’à la prévention et à la gestion des conflits entre coéquipiers.",
       "photo": "media/event1.jpg"
     }
@@ -236,7 +236,7 @@
       "nomCourt": "Expérimentation en jeu - volet création",
       "ponderation": "3-3-2",
       "nombreHeure":"90H",
-      "prealabe": "Création de jeu en équipe (360-4J4-MA); En 5e session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet programmation.",
+      "prealabe": "Création de jeu en équipe (360-4J4-MA)",
       "description": "En 5e session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet programmation Dans ce cours, l'étudiant complète sa formation en jeu numérique en apprenant des notions avancées ou des techniques complexes de création des médias pour le jeu. L'étudiant plus intéressé par les aspects créatifs liés au jeu a l'occasion d'acquérir une spécialisation en étudiant des techniques d’effets visuels avancés pour le jeu numérique tels que : effets sur des images en temps réel, ajout de particules, de réflexions, d'aberrations chromatiques, éclairages dynamiques et statiques, effets de dessin animé, optimisation de rendus pour appareil mobile, réalité virtuelle, etc.",
       "photo": "media/event1.jpg"
     },
@@ -245,7 +245,7 @@
       "nomCourt": "Expérimentation en jeu - volet programmation",
       "ponderation": "3-3-2",
       "nombreHeure":"90H",
-      "prealabe": "Création de jeu en équipe (360-4J4-MA); En 5ème session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet création.",
+      "prealabe": "Création de jeu en équipe (360-4J4-MA);",
       "description": "En 5e session, l’étudiant doit choisir entre ce cours et le cours Expérimentation en jeu – volet création Dans ce cours, l'étudiant complète sa formation en jeu numérique en apprenant des notions avancées en programmation de jeu. L'étudiant davantage intéressé par les aspects techniques du jeu a l'occasion d'acquérir une spécialisation par l’apprentissage d’aspects avancés, liés à la programmation de jeux numériques parmi les suivants : jeu multijoueurs, réalité virtuelle, jeu pour appareil mobile avec gyroscope, intelligence artificielle, etc.",
       "photo": "media/event1.jpg"
     }
@@ -256,7 +256,7 @@
       "nomCourt": "Technologies émergentes – volet Création",
       "ponderation": "2-2-2",
       "nombreHeure":"60H",
-      "prealabe": "Aucun. ",
+      "prealabe": "Aucun.",
       "description": "En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation. Dans ce cours, l’étudiant davantage intéressé par les aspects créatifs du multimédia est amené à explorer et tester des approches novatrices et émergentes en multimédia telles que : système de captation de mouvement, réalité virtuelle, réalité augmentée, environnements immersifs et habillage vidéo, vidéo 360 degrés.",
       "photo": "media/event1.jpg"
     },
