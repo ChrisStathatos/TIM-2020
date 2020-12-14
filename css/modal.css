@@ -1141,7 +1141,6 @@ body{
     position: relative;
     cursor: pointer;
   }
-
   
   .lesCours {
     display: none;
@@ -1151,12 +1150,9 @@ body{
     border-width: 100%;
   }
 
-
 .btnChoix{
  display: none;
 }
-  
-
 
   .lesCours div:nth-child(1) .dropdown {
     border-top: 0.5em solid #ff04a1;
@@ -1547,10 +1543,6 @@ font-weight: 900;
 
   }
   
-
-
-
-
 
 
 
