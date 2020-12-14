@@ -1546,6 +1546,10 @@
       .active, .dot:hover {
         background-color: #dfc516;
       }
+
+      #afficherPlus{
+        display: none;
+      }
     }
   
   /* STYLE GRANDE TABLETTE */
@@ -1553,6 +1557,11 @@
     body{
         margin: 0;
     }
+    
+    #afficherPlus{
+      display: none;
+    }
+
     .modal-close {
       color:  #6a07d2;
       line-height: 50px;
