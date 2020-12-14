@@ -352,7 +352,7 @@ span{
     padding-left: 3.8vw;
     width: 25vw;
     height: 7vw;
-    
+    margin-top: 2vh;
   }
 
   .sessions h1:after {
@@ -498,9 +498,7 @@ span{
  display: none;
 }
   
-.decor{
-  border-top: 0.4em solid #ff04a1;
- }
+
 
 
   .lesCours div:nth-child(1) .dropdown {
@@ -529,7 +527,7 @@ span{
 #listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .btn {
   border-bottom: none;
   width: 48%;
-  height: 130%;
+  height: 126%;
   margin-right: 0vw;
   left: 50%;
   top: 0vh;

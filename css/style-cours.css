@@ -130,7 +130,7 @@
     background-color:white;
 }
 .cache{
-    display: none !important;
+    display: none;
 }
 .textBtn{
     font-size:0.9vw;
