@@ -135,7 +135,7 @@
       "nombreHeure":"75H",
       "prealabe": "Relatif: Création de jeu 2D (582-2J2-MA)",
       "description": "Ce cours permet à l'étudiant d'intégrer différents types de médias à l'aide des fonctionnalités d'un logiciel d'intégration 3D. L'étudiant est amené à contrôler et à animer les éléments d'une application multimédia par programmation dans un environnement 3D.<br/> <br/>Ce cours initie l’étudiant à l’utilisation d’un environnement d’intégration de la 3D en temps réel. L’accent est d’abord mis sur l’apprentissage des notions de base de la 3D-temps réel et de l’intégration 3D (systèmes de coordonnées, vecteurs, types et propriétés d’objets 3D, caméra, rendu en temps réel, etc.).<br/> <br/>Ensuite l’étudiant est amené à maîtriser les outils et les fonctionnalités de base d’un logiciel d’intégration 3D, afin d'importer et prendre en charge des éléments 3D, paramétrer les comportements ainsi que programmer l’interactivité.",
-      "photo": "media/event1.jpg"
+      "photo": "coursimages/Manette.PNG"
     }
   ]
   ],

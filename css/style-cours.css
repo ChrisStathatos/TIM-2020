@@ -53,10 +53,10 @@
 }
 .sessions{
     display: flex;
-}
-.sessions{
     width:100%;
+    margin-bottom:10vw;
 }
+
 .lesCours{
     display: flex;
     justify-content: center;
@@ -103,7 +103,6 @@
     position: absolute;
     text-transform: uppercase;
     font-size:1.5vw;
-    padding-top:6vw;
     padding-left:1vw;
 }
 .btnChoix{
