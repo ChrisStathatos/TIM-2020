@@ -30,7 +30,7 @@ new Vue({
   el: "#grille-profs",
   // il faut que je dise quels composant j'utilise dans ma page et leur url
   components: {
-    "grille-prof" : httpVueLoader("js/grilleProf.vue")
+    "grille-prof" : httpVueLoader("js/grilleEquipe.vue")
     
   },
 });

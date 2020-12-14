@@ -26,7 +26,7 @@
 module.exports = {
   name: "grille-prof",
   components: {
-    profs: httpVueLoader("js/profs.vue"),
+    profs: httpVueLoader("js/equipe.vue"),
   },
   data() {
     return {
@@ -37,7 +37,7 @@ module.exports = {
     };
   },
   created() {
-    fetch("data/enseignants.json")
+    fetch("data/equipe.json")
       .then((res) => res.json())
       .then((lesDonnes) => (this.lesProfs = lesDonnes));
   },
