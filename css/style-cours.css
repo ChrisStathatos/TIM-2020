@@ -104,6 +104,7 @@
     text-transform: uppercase;
     font-size:1.5vw;
     padding-left:1vw;
+    margin-top:-2vw;
 }
 .btnChoix{
     cursor:pointer;
@@ -132,7 +133,7 @@
     display: none !important;
 }
 .textBtn{
-    font-size:0.9vw !important;
+    font-size:0.9vw;
 }
 #grilleCours{
     display: flex;
@@ -187,5 +188,11 @@
         margin-bottom: 7vw;
     }
 }   
+@media screen and (min-width: 770px)  {
+    .lesCours{
+        display:flex !important;
+    }
+}   
+
 
 
