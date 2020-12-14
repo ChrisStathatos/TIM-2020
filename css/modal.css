@@ -490,7 +490,7 @@ span{
 
   
   .cache{
-    display: grid !important;
+    display: grid;
 }
 
 
@@ -662,10 +662,13 @@ span{
 
 /*L'intérieur des boutons */
   .modal-window h1 {
-    font-size: 3vw;
+    width: 75%;
+    font-size: 4vw;
     justify-self: center;
-    text-align: center;
-    margin-top: 0.4vh;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    margin-top: -1.4vh;
+    margin-left: 13vw;
     border-style: none;
     color: #6a07d2;
     border-style: none;
@@ -687,7 +690,8 @@ span{
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     margin: 0;
-
+    margin-left: 13vw;
+    
   }
 
   .modal-window {
@@ -723,12 +727,11 @@ span{
 
   
   .modal-window > div {
-    display: grid;
     z-index: 10001;
     position: fixed;
     left: 49vw;
     right: 0;
-    grid-template-rows:[cell1] 10% [cell2] 5% [cell3] 5% [cell4] 70%;
+    grid-template-rows: [img] auto[txt] auto;
     top: 20em;
     height: 61%;
     width: 65%;
@@ -737,8 +740,6 @@ span{
     margin-bottom: 10em;
     border: 0.3em solid #dfc516;
     box-shadow: 0.5em 0.5em #ff04a1;
-    align-content: center;
-    justify-content: center;
   }
 
   .ponderation {
@@ -752,42 +753,54 @@ span{
 
   .imgCours {
     width: 85vw;
-    /* height: 34vh; */
-    /* justify-self: center; */
-    /* align-content: center; */
-    /* margin-right: 0vw; */
-    /* margin-left: -8.9vw; */
-    /* margin-top: -5vh; */
+    height: 34vh;
+    justify-self: center;
+    align-content: center;
+    margin-right: 0vw;
+    margin-left: -8.9vw;
+    margin-top: -5vh;
     border-bottom: 1vw #dfc516 solid;
     grid-area: cell1;
   }
 
   .container {
-    
-    grid-template-rows:[cell1] 10% [cell2] 5% [cell3] 5% [cell4] 70%;
+    display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1.1fr 0.6fr 2.2fr 2.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "cell1"
+        "cell2"
+        "cell3"
+        "cell4"
+  
 }
 
 
   .description {
     margin: 0;
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: "Comfortaa", cursive;
     line-height: 4vw;
-    text-align: center;
+    margin-right: 0vw;
+    margin-left: -3vw;
+    margin-top: -10vh;
     text-transform: uppercase;
-    width: 80%;
-    height: 50%;
+    flex: 1;
+    width: 75vw;
+    height: 15vh;
     overflow-y: scroll;
     grid-area: cell3;
   }
 
-  /* p .description{
+  p .description{
+    width: 90%;
     margin: 0 auto;
     text-align: justify;
     height: 100%;
     overflow-y: scroll;
     padding: 0 10px 0 10px;
-  } */
+  }
 
   .description::-webkit-scrollbar {
     width: 0.4em;
@@ -806,8 +819,8 @@ span{
     justify-self: flex-end;
     grid-area: cell4;
     font-size: 3vw;
-    margin-top: -27em;
-    margin-right: 6vw;
+    margin-top: -28.8em;
+    margin-right: 3vw;
   }
 
   .prerequis :last-child {
@@ -817,7 +830,7 @@ span{
     margin: -1.6vw;
     margin-right: 0vw;
     justify-self: flex-end;
-    text-align: center;
+    text-align: right;
   }
 
 
@@ -825,10 +838,9 @@ span{
     justify-self: flex-end;
     grid-area: cell4;
     font-size: 3vw;
-    margin-top: -45.5vh;
-    margin-right: 0vw;
-}
-  
+    margin-top: -54.5vh;
+    margin-right: 3vw;
+  }
   .heures :last-child {
     color: black;
     font-size: 2.9vw;
@@ -836,7 +848,7 @@ span{
     margin: -1.6vw;
     margin-right: 0vw;
     justify-self: flex-end;
-    text-align: center;
+    text-align: right;
   }
 
 
@@ -872,19 +884,10 @@ span{
   font-weight: 900;
 }
 
-
-
-
-
-.flex{
-  display: flex;
-  grid-area: cell1;
 }
 
 
 
-
-}
 
 
 

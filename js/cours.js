@@ -50,10 +50,8 @@ fetch("data/cours.json")
                         </div>
                         <p class="description" >${unCours[0].description}</p> 
                         <img src="${unCours[0].photo}" class="imgCours">
-                        <div class="flex">
                         <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
                         <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[0].nombreHeure}</p></div>
-                        </div>
                         </div>
                         </div>
                         </div>
@@ -68,9 +66,8 @@ fetch("data/cours.json")
                 </div>
                 <p class="description" >${unCours[1].description}</p>
                 <img src="${unCours[1].photo}" class="imgCours">
-                <div class="flex">
-                <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
-                <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[0].nombreHeure}</p></div>
+                <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[1].prealabe}</p></div>
+                <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[1].nombreHeure}</p></div>
                 </div>
                 </div>
                 </div>
@@ -98,10 +95,8 @@ fetch("data/cours.json")
                         </div>
                         <p class="description" >${unCours[0].description}</p>
                         <img src="${unCours[0].photo}" class="imgCours" >
-                        <div class="flex">
                         <div class="prerequis"> <p>Cours prérequis:</p> <br> <p>${unCours[0].prealabe}</p></div>
                         <div class="heures"> <p>Nombres d'heures:</p> <br> <p>${unCours[0].nombreHeure}</p></div>
-                        </div>
                         </div>
                         </div>
                         </div>
