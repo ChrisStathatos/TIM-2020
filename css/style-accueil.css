@@ -485,18 +485,25 @@ a{
     .fleche-programme{
         display: block;
         box-sizing: border-box;
-        height: min(2vw, 1.2em);
-        width: min(2vw, 1.2em);
+        height: min(1.5vw, 0.9em);
+        width: min(1.5vw, 0.9em);
         border-style: solid;
         border-color: #6a07d2;
         border-width: 0px min(0.6vw, .28em) min(0.6vw, .28em) 0px;
-        transform: rotate(135deg);
+        transform: rotate(-45deg) translate(0, 0);
         transition: border-width 150ms ease-in-out;
         box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
         -webkit-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
         -moz-box-shadow: 3px 3px 0px 0px rgba(223, 197, 22, 0.75);
         position: relative;
         cursor: pointer;
+        animation: flechesSousTitre 1.5s cubic-bezier(.6,0,.4,1) infinite;
+    }
+
+    @keyframes flechesSousTitre{
+        0% { transform: rotate(-45deg) translate(0, 0); }
+        50% { transform: rotate(-45deg) translate(20%, 20%); }
+        100% { transform: rotate(-45deg) translate(0, 0); }
     }
 
     /* La position de la flèche à droite de "Commencez à explorer notre programme" (qui est animé par script) */
@@ -508,13 +515,13 @@ a{
         justify-content: space-around;
         /* margin-left: 25vw; */
         left: 0vw;
-        margin-top: -3.6%;
+        margin-top: -3.1%;
         width: 5%;
         z-index: -9999;
         /* background-color: red; */
-        opacity: 0;
-        transform: translateX(15%);
-        transition: transform 0.5s opacity 0.5s;
+        opacity: 100%;
+        transform: translateX(-2%);
+        transition: transform 0.5s;
         transition-duration: 0.5s;
     }
 
