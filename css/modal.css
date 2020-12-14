@@ -662,13 +662,13 @@ span{
 
 /*L'intérieur des boutons */
   .modal-window h1 {
-    width: 75%;
-    font-size: 4vw;
+    width: 80%;
+    font-size: 3vw;
+    text-align: center;
     justify-self: center;
     margin-right: 1vw;
     margin-bottom: 1vw;
-    margin-top: -1.4vh;
-    margin-left: 13vw;
+    margin-top: -1.4vw;
     border-style: none;
     color: #6a07d2;
     border-style: none;
@@ -688,10 +688,11 @@ span{
   .titre :last-child {
     color: #6a07d2;
     font-family: "Montserrat", sans-serif;
-    font-size: 1em;
+    font-size: 3vw;
+    padding-top: 1.5vw;
+    text-align: center;
+    justify-content: center;
     margin: 0;
-    margin-left: 13vw;
-    
   }
 
   .modal-window {
@@ -732,8 +733,8 @@ span{
     left: 49vw;
     right: 0;
     grid-template-rows: [img] auto[txt] auto;
-    top: 20em;
-    height: 61%;
+    top: 22rem;
+    height: 75%;
     width: 65%;
     margin: 0 auto;
     background-color: #E8E8DB;
@@ -779,16 +780,18 @@ span{
 
   .description {
     margin: 0;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: "Comfortaa", cursive;
-    line-height: 4vw;
-    margin-right: 0vw;
+    line-height: 4.5vw;
+    /* padding-top: 5vw; */
+    margin-top: -60;
+    /* margin-right: 3vw; */
     margin-left: -3vw;
-    margin-top: -10vh;
     text-transform: uppercase;
     flex: 1;
+    text-align: center;
     width: 75vw;
-    height: 15vh;
+    height: 50%;
     overflow-y: scroll;
     grid-area: cell3;
   }
@@ -817,29 +820,35 @@ span{
 
   .prerequis {
     justify-self: flex-end;
+    align-items: flex-end;
     grid-area: cell4;
     font-size: 3vw;
-    margin-top: -28.8em;
+    margin-top: -16rem;
     margin-right: 3vw;
   }
 
   .prerequis :last-child {
     color: black;
-    font-size: 2.9vw;
+    font-size: 2.5vw;
+    padding-bottom: 0vw;
     font-family: "Montserrat", sans-serif;
-    margin: -1.6vw;
+    margin-left: 50vw;
     margin-right: 0vw;
     justify-self: flex-end;
     text-align: right;
+    /* margin: 0; */
+    width: 30%;
+
   }
 
 
   .heures {
-    justify-self: flex-end;
+    justify-self: flex-start;
     grid-area: cell4;
     font-size: 3vw;
-    margin-top: -54.5vh;
     margin-right: 3vw;
+    margin-top: -62.2vw;
+}
   }
   .heures :last-child {
     color: black;
