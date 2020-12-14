@@ -171,7 +171,7 @@
       "nombreHeure":"105H",
       "prealabe": "Relatif: Création de jeu 3D (582-3J3-MA)",
       "description": "Dans ce cours qui s'appuie sur une pédagogie par projets, l’étudiant réalise un projet d’envergure en équipe de travail. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences acquises afin de réaliser un prototype de jeu numérique. Il franchit, en collaboration avec les membres de son équipe, toutes les étapes du processus de production d’une telle application, qui sont : la conception du produit, la planification de sa production, la réalisation et l’intégration des médias, la programmation de l’interactivité, la réalisation des tests pour contrôler la qualité du produit ainsi que la rédaction du guide utilisateur et la présentation du produit fini. Par le fait même, ce cours initie l’étudiant à la communication interpersonnelle et à l’intégration à une équipe de production multimédia.",
-      "photo": "cours/Manette.PNG"
+      "photo": "media/event1.jpg"
       }
     ],
     [
@@ -262,7 +262,7 @@
     },
     {
       "nom": "Technologies émergentes et avancées – volet Programmation",
-      "nomCourt": "Technologies émergentes et avancées – volet Programmation",
+      "nomCourt": "Technologies émergentes – volet Programmation",
       "ponderation": "2-2-2",
       "nombreHeure":"60H",
       "prealabe": "Aucun. En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Création.",
