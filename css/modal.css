@@ -489,6 +489,10 @@ span{
   }
 
   
+  .cache{
+    display: grid;
+}
+
 
 .btnChoix{
  display: none;
@@ -536,9 +540,7 @@ span{
 }
 
 
-#listeDesCours div:nth-child(4) .lesCours div:nth-child(5) .btn {
- display:grid;
-}
+
 
 #listeDesCours div:nth-child(4) .lesCours div:nth-child(4) .textBtn {
   border-bottom: none;
@@ -546,33 +548,51 @@ span{
   margin-top: 4vh;
 }
 
+/* Les choix de cours*/
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4)  .cache {
+  border-bottom: none;
+  width: 48%;
+  height: 125%;
+  margin-right: 0vw;
+  left: 2%;
+  top: -8.6vh;
+  position: relative;
+  border-left: none;
+  padding-bottom: 1em;
+  margin-bottom: -8vh;
+}
+
+
 
 
 /* Bouton choix de cours session 5*/
   #listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .btn {
     border-bottom: none;
     width: 50%;
-    height: 104%;
+    height: 219%;
     margin-right: 0vw;
     left: 48.5%;
+    top: -8vh;
     position: relative;
     border-left: 0.4em solid #ff04a1;
     border-top: 0em solid #ff04a1;
-    margin-bottom: -5em;
+    margin-bottom: -3.5em;
     margin-top: 1em;
     z-index: 0;
 }
 
 #listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .textBtn {
 
-  margin-top: 4vh;
+  margin-top: 2vh;
+    margin-left: -2vw;
+    width: 45vw;
 }
 
 
 #listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .btn {
   border-bottom: none;
   width: 50%;
-  height: 75%;
+  height: 44%;
   margin-right: 0vw;
   left: 48.5%;
   top: 0vh;
@@ -580,14 +600,58 @@ span{
   border-left: 0.4em solid #ff04a1;
   padding-bottom: 2em;
   border-bottom: 0.4em solid #ff04a1;
-  z-index: 1;
+  z-index: 2;
 }
 
 #listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .textBtn {
   margin: auto;
-  margin-top: 1vh;
+  top: 0vh;
+  width: 25vh;
 }
 
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4)  .cache {
+  width: 50%;
+  height: 45%;
+  margin-right: 0vw;
+  left: -2%;
+  top: -8vh;
+  /* position: relative; */
+  border-left: 0.4em solid #ff04a1;
+  padding-bottom: 2em;
+  border-bottom: 0.4em solid #ff04a1;
+  z-index: 0;
+}
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .cache .textBtn {
+  margin: auto;
+    width: 43vw;
+    margin-top: -0.2vh;
+}
+
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(5)  .cache {
+  border-bottom: none;
+    width: 50%;
+    height: 140%;
+    margin-right: 0vw;
+    left: -3%;
+    top: -17vh;
+    position: relative;
+    /* border-left: 0.4em solid #ff04a1; */
+    border-top: 0em solid #ff04a1;
+    margin-bottom: -5em;
+    margin-top: 0em;
+    z-index: 0;
+}
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .cache .textBtn {
+  margin: auto;
+  width: 43vw;
+  margin-top: -1vh;
+}
 
 
 #listeDesCours div:nth-child(6) .lesCours div:nth-child(2) .btn {
@@ -1115,7 +1179,7 @@ body{
   width: 43%;
   /* height: 100%; */
   margin-right: 0vw;
-  left: 56%;
+  left: 59%;
   top: 0vh;
   position: relative;
   border-left: 0.4em solid #ff04a1;
@@ -1129,12 +1193,31 @@ body{
 }
 
 
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4)  .cache {
+  border-bottom: none;
+  width: 48%;
+  height: 125%;
+  margin-right: 0vw;
+  left: 11%;
+  top: -3.6vh;
+  position: relative;
+  border-left: none;
+  padding-bottom: 1em;
+  margin-bottom: -8vh;
+}
+
+#listeDesCours div:nth-child(4) .lesCours div:nth-child(4)  .cache .textBtn{
+  margin-left: 14vw;
+}
+
+
+
 
 /* Bouton choix de cours session 5*/
 #listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .btn {
   border-bottom: none;
   width: 50%;
-  height: 122%;
+  height: 110%;
   margin-right: 0vw;
   left: 52.5%;
   position: relative;
@@ -1156,7 +1239,7 @@ body{
 #listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .btn {
   border-bottom: none;
   width: 46%;
-  height: 91%;
+  height: 112%;
   margin-right: 0vw;
   left: 55.5%;
   top: 0vh;
@@ -1173,6 +1256,63 @@ body{
   width: 36vh;
   height: 22vw;
 }
+
+
+
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4)  .cache {
+  width: 50vh;
+  height: 52%;
+  margin-right: 0vw;
+  left: 7%;
+  top: -11vh;
+  /* position: relative; */
+  border-left: 0.4em solid #ff04a1;
+  padding-bottom: 2em;
+  border-bottom: 0.4em solid #ff04a1;
+  z-index: 0;
+}
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(4) .cache .textBtn {
+  margin: auto;
+  width: 40vw;
+  margin-top: -6.2vh;
+}
+
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(5)  .cache {
+  border-bottom: none;
+  width: 50%;
+  height: 60%;
+  margin-right: 0vw;
+  left: -3%;
+  top: -22vh;
+  position: relative;
+  /* border-left: 0.4em solid #ff04a1; */
+  border-top: 0em solid #ff04a1;
+  margin-bottom: -5em;
+  margin-top: 0em;
+  z-index: 0;
+}
+
+
+#listeDesCours div:nth-child(5) .lesCours div:nth-child(5) .cache .textBtn {
+  margin: auto;
+  width: 50vw;
+  margin-top: -1vh;
+  margin-left: 17vh;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1225,8 +1365,8 @@ margin-bottom: -5vh;
     position: absolute;
     right: -0.5em;
     text-align: center;
-    top: -0.3em;
-    width: 1em;
+    top: 0.1em;
+    right: -0.1em;
     text-decoration: none;
     font-family: 'Montserrat',sans-serif;
     -webkit-text-stroke-width: 2px;
